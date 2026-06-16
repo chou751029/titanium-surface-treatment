@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:sites.google.com)",
+      "WebFetch(domain:kevinchoufind.notion.site)",
+      "Bash(curl -sL \"https://kevinchoufind.notion.site/26a7557fa27980c29eaee9647645f28d\" -o /tmp/notion.html -A \"Mozilla/5.0\")",
+      "Read(//tmp/**)",
+      "Bash(curl -sL \"https://r.jina.ai/https://kevinchoufind.notion.site/26a7557fa27980c29eaee9647645f28d\" -o /tmp/notion.md -A \"Mozilla/5.0\")",
+      "Bash(npm -v)",
+      "Bash(git --version)"
+    ]
+  }
+}
