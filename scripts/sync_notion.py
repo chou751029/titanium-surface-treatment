@@ -254,13 +254,79 @@ def build_item(headers, page):
     }
 
 
-def sync_database(headers, database_id, output_file, label, js_var):
+def build_titanium_item(headers, page):
+    """鈦新聞資料庫的欄位解析（與表面處理資料庫不同）。"""
+    props   = page["properties"]
+    page_id = page["id"]
+    slug    = page_id.replace("-", "")
+
+    # 鈦新聞：標題欄位名稱是 "Name"
+    title = rich_text_to_plain(props.get("Name", {}).get("title", []))
+
+    # 鈦新聞：國家是 multi_select，取前兩個合併
+    region_opts = props.get("國家", {}).get("multi_select", [])
+    region = "／".join(o["name"] for o in region_opts[:2]) if region_opts else ""
+
+    # 鈦新聞：標籤來自 Tags + keyword
+    tags = []
+    for prop_name in ("Tags", "keyword"):
+        for option in props.get(prop_name, {}).get("multi_select", []):
+            if option["name"] not in tags:
+                tags.append(option["name"])
+
+    # 鈦新聞：原文連結是 "URL" 欄位
+    source_url = (
+        props.get("URL", {}).get("url")
+        or props.get("URL_2", {}).get("url")
+        or page.get("public_url")
+        or page.get("url")
+        or ""
+    )
+
+    date = page["created_time"][:10]
+
+    # 鈦新聞：先嘗試從「圖片」屬性取圖（property 上傳的圖片）
+    image_path = ""
+    file_prop = props.get("圖片", {}).get("files", [])
+    if file_prop:
+        f = file_prop[0]
+        url = f["file"]["url"] if f["type"] == "file" else f.get("external", {}).get("url", "")
+        if url:
+            image_path = download_image(url, slug)
+
+    # 若屬性欄位無圖，再從頁面 block 找
+    print(f"  抓取頁面內容: {title[:40] or '(無標題)'}")
+    blocks = get_page_blocks(headers, page_id)
+    block_image, summary = extract_image_and_summary(blocks, slug)
+    if not image_path:
+        image_path = block_image
+    time.sleep(REQUEST_DELAY)
+
+    if not title:
+        first_line = summary.split("\n", 1)[0].strip()
+        title = first_line[:80] if first_line else "未命名項目"
+
+    return {
+        "id":        slug,
+        "title":     title,
+        "date":      date,
+        "region":    region,
+        "tags":      tags,
+        "image":     image_path,
+        "sourceUrl": source_url,
+        "summary":   summary,
+    }
+
+
+def sync_database(headers, database_id, output_file, label, js_var, build_fn=None):
     """同步一個 Notion 資料庫，寫出 JS 資料檔。"""
+    if build_fn is None:
+        build_fn = build_item
     print(f"\n=== 同步「{label}」===")
     print(f"資料庫 ID: {database_id}")
     pages = query_database(headers, database_id)
     print(f"共 {len(pages)} 筆，開始抓取每篇內容與圖片…")
-    items = [build_item(headers, page) for page in pages]
+    items = [build_fn(headers, page) for page in pages]
     items_sorted = sorted(items, key=lambda x: x["date"], reverse=True)
 
     header_comment = (
@@ -315,6 +381,7 @@ def main():
             TITANIUM_OUTPUT_FILE,
             "鈦金屬相關新聞資料",
             "window.TITANIUM_DATA",
+            build_fn=build_titanium_item,
         )
 
     print("\n所有同步完成！")
