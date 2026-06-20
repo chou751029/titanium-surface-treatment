@@ -1,72 +1,82 @@
-# 金屬表面處理產業研究網站
+# Chou's 金屬產業分享園地
 
-純 HTML/CSS/JS 靜態網站，不需要任何建置工具（不需 Node.js），可直接部署到 GitHub Pages。
+純 HTML / CSS / JS 靜態網站，不需任何建置工具（不需 Node.js），可直接部署到 GitHub Pages。
+內容後台是 **Notion**：在 Notion 編輯 → `scripts/sync_notion.py` 同步 → 產生資料檔 → 網站顯示。
 
 ## 網站結構
 
 ```
-index.html              首頁（簡介 + 最新新聞）
-news.html               產業新聞列表（可依地區、主題標籤篩選）
-article.html            單篇新聞詳細頁（網址加 ?id=xxx）
-about.html              關於本站
-assets/css/style.css    全站樣式
-assets/js/news-data.js  新聞/案例資料（由 scripts/sync_notion.py 自動產生，請勿手動編輯）
-assets/js/main.js       列表渲染與篩選邏輯
-assets/images/synced/   從 Notion 同步下來的圖片（自動產生）
-scripts/sync_notion.py  Notion 同步腳本
-.env                     存放 Notion API 金鑰（不會上傳到 GitHub）
+index.html                首頁（精選 + 分類 + 各分類最新）
+news.html                 表面處理產業新聞（分類頁）
+titanium.html             鈦金屬相關新聞（分類頁）
+other.html                其他產業（分類頁，待建置）
+category.html             通用分類頁（新分類用 category.html?cat=代號）
+article.html              單篇文章（?id=xxx）：內文、目錄、閱讀時間、上一篇/下一篇、相關文章
+search.html               站內搜尋（多關鍵字 + 高亮 + 分類過濾）
+tag.html                  標籤頁（tag.html?tag=xxx）
+archive.html              歸檔（月份 / 地區 / 標籤；archive.html?month= / ?region=）
+feed.xml                  RSS 訂閱（由 sync 腳本自動產生）
+
+assets/css/chou-style.css 全站樣式（含深色模式）
+assets/js/site-config.js  ★ 全站設定：分類、置頂、站台資訊（新增分類改這裡）
+assets/js/app.js          全站邏輯（設定驅動，動態載入各分類資料）
+assets/js/news-data.js    表面處理資料（sync_notion.py 自動產生，請勿手動編輯）
+assets/js/titanium-data.js 鈦資料（自動產生，請勿手動編輯）
+assets/images/synced/     從 Notion 同步下來的圖片（自動產生）
+scripts/sync_notion.py    Notion 同步腳本（產生資料檔 + feed.xml）
+.env                      Notion 金鑰（不上傳 GitHub）
 ```
 
-## 本機預覽
+> 註：`about.html` 與 `assets/css/style.css`、`assets/js/main.js` 為早期版本檔案，目前主要頁面已不使用。
 
-在這個資料夾下執行：
+## 本機預覽
 
 ```bash
 python3 -m http.server 8000
 ```
+瀏覽器開 http://localhost:8000
 
-然後在瀏覽器開啟 http://localhost:8000
+## 主要功能
 
-## 如何新增一則新聞 / 文章（從 Notion 同步）
+- **首頁**：精選／置頂（可在 site-config.js 的 `SITE_PINNED` 手動置頂）、分類卡、各分類最新。
+- **文章頁**：自動斷段內文、長文目錄（≥3 個小標自動產生）、閱讀時間、上一篇／下一篇、相關文章、分享連結。
+- **分類頁**：地區／標籤／排序篩選。
+- **標籤頁 / 歸檔**：跨分類依標籤、月份、地區瀏覽。
+- **搜尋**：多關鍵字（AND）、關鍵字高亮、依分類過濾、熱門標籤建議。
+- **深色模式**：導覽列右側 ☾／☀ 切換，記住偏好，並會跟隨系統設定。
+- **RSS**：`feed.xml`，頁尾有訂閱連結。
 
-內容來源是你的 Notion 資料庫「表面處理國內外新聞」。流程如下：
+## 從 Notion 同步內容
 
-1. 在 Notion 資料庫中新增一筆資料（填寫名稱、國家、案例類型/應用領域/關鍵字、網站連結，並在頁面內容中放入說明文字與一張圖片）。
-2. 在這個資料夾下執行同步腳本：
+1. 在 Notion 資料庫新增／修改資料（名稱、國家、標籤、連結，頁面內文放說明與圖片）。
+2. 執行：
    ```bash
-   pip3 install -r requirements.txt   # 第一次執行前安裝套件（requests、Pillow）
+   pip3 install requests pillow      # 第一次先安裝
    python3 scripts/sync_notion.py
    ```
-3. 腳本會自動：
-   - 重新查詢整個 Notion 資料庫
-   - 下載每篇第一張圖片到 `assets/images/synced/`（並自動壓縮）
-   - 重新產生 `assets/js/news-data.js`
-4. 重新整理網頁即可看到新內容。
+3. 腳本會：重新查詢 Notion → 下載並壓縮圖片 → 重新產生各 `*-data.js` 與 `feed.xml`。
+4. 重新整理網頁即可。
 
-**注意**：`assets/js/news-data.js` 是自動產生的檔案，每次執行同步都會被整個覆寫，請不要手動編輯它（否則下次同步會被蓋掉）。
+`.env` 需要：
+```
+NOTION_TOKEN=（Integration token）
+NOTION_DATABASE_ID=（表面處理資料庫 ID）
+TITANIUM_DATABASE_ID=（鈦資料庫 ID）
+# SITE_URL=（選填，自訂網域時用於 RSS 連結）
+```
+每個資料庫都要在 Notion 的「連結 (Connections)」加入這個 Integration，否則 API 會回 404。
 
-### Notion 端設定（已完成，供未來參考）
+## ★ 如何新增一個產業分類（最快做法）
 
-- `.env` 內需要 `NOTION_TOKEN`（Integration token）與 `NOTION_DATABASE_ID`（資料庫 ID）。
-- 該資料庫需要在 Notion 的「連結 (Connections)」中加入這個 Integration，否則 API 會回 404。
+見 **[README-新增分類.md](README-新增分類.md)** —— 只需：① 在 sync 腳本加一段同步產生資料檔、
+② 在 `assets/js/site-config.js` 加一筆分類。導覽列、首頁、搜尋、歸檔、標籤頁全部自動帶入。
+
+## 自動同步（GitHub Actions）
+
+`.github/workflows/sync.yml` 每天台灣時間 08:00 自動執行同步並 commit。
+若新增了分類或 feed.xml，記得在該 workflow 的 `git add` 清單加入新的資料檔與 `feed.xml`。
 
 ## 部署到 GitHub Pages
 
-1. 在 GitHub 建立一個新的 repository（例如 `surface-treatment-web`）。
-2. 在這個資料夾執行：
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial site"
-   git branch -M main
-   git remote add origin https://github.com/<你的帳號>/<repo名稱>.git
-   git push -u origin main
-   ```
-3. 到 GitHub repo 的 **Settings → Pages**，Source 選擇 `main` branch、目錄選 `/ (root)`，儲存。
-4. 幾分鐘後即可透過 `https://<你的帳號>.github.io/<repo名稱>/` 瀏覽網站。
-
-## 已知限制
-
-- 目前只會抓取每篇 Notion 頁面中的「第一張圖片」與所有文字段落作為摘要；複雜排版（如多欄、影片、嵌入）不會被同步。
-- `關於本站` 中的「鈦關鍵 / 鈦新聞」區塊為預留位置，可自行補充內容。
-- 部分新聞項目在 Notion 中沒有填寫「國家」或標籤，網站上會顯示為沒有地區/標籤。
+Settings → Pages，Source 選 `main` branch、目錄 `/ (root)`。
+幾分鐘後即可透過 `https://<帳號>.github.io/<repo>/` 瀏覽。

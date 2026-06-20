@@ -1,0 +1,39 @@
+name: Sync Notion Data
+
+on:
+  # 每天台灣時間早上 8:00 自動執行
+  schedule:
+    - cron: '0 0 * * *'   # UTC 00:00 = 台灣 08:00
+  # 也可以在 GitHub Actions 頁面手動觸發
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests pillow
+
+      - name: Run Notion sync
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          TITANIUM_DATABASE_ID: ${{ secrets.TITANIUM_DATABASE_ID }}
+        run: python3 scripts/sync_notion.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/js/news-data.js assets/js/titanium-data.js assets/images/synced/ feed.xml
+          git diff --cached --quiet || git commit -m "chore: sync Notion data [$(date '+%Y-%m-%d')]"
+          git push

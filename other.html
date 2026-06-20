@@ -4,75 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>其他產業 — Chou's 金屬產業分享園地</title>
+  <script>try{var t=localStorage.getItem('chou-theme');if(t==='dark'||(!t&&window.matchMedia&&matchMedia('(prefers-color-scheme:dark)').matches))document.documentElement.setAttribute('data-theme','dark');}catch(e){}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/chou-style.css">
+  <link rel="alternate" type="application/rss+xml" title="Chou's 金屬產業分享園地" href="feed.xml">
 </head>
-<body data-page="other">
+<body data-page="category" data-cat="other">
 
-  <!-- NAV -->
-  <header class="site-nav-wrap">
-    <nav class="site-nav">
-      <a href="index.html" class="site-logo">
-        <span class="site-logo-title">Chou's 金屬產業分享園地</span>
-        <span class="site-logo-sub">METAL INDUSTRY NOTES</span>
-      </a>
-      <div class="site-nav-right">
-        <div class="site-nav-links">
-          <a href="index.html" class="site-nav-link" data-page="home">首頁</a>
-          <a href="news.html" class="site-nav-link" data-page="news">表面處理產業新聞</a>
-          <a href="titanium.html" class="site-nav-link" data-page="titanium">鈦金屬相關新聞</a>
-          <a href="other.html" class="site-nav-link" data-page="other">其他產業</a>
-        </div>
-        <form class="site-search-form" action="search.html" method="get">
-          <span class="site-search-icon">⌕</span>
-          <input class="site-search-input" name="q" type="search" placeholder="搜尋全站新聞…" autocomplete="off">
-        </form>
-      </div>
-    </nav>
-  </header>
+  <header id="site-header"></header>
 
-  <!-- PAGE HEADER -->
-  <div class="page-header" style="background:#264653;">
-    <div class="page-header-inner">
-      <div class="page-header-eyebrow" style="color:#F4A261;">OTHER INDUSTRIES</div>
-      <h1>其他產業</h1>
-      <p>跨領域材料與製程的延伸筆記與觀察。</p>
-    </div>
+  <div id="page-header-slot"></div>
+
+  <div class="filters-wrap" id="filters-wrap">
+    <div class="filter-row"><span class="filter-label">地區</span><div class="filter-chips" id="filter-region"></div></div>
+    <div class="filter-row"><span class="filter-label">標籤</span><div class="filter-chips" id="filter-tag"></div></div>
+    <div class="filter-row"><span class="filter-label">排序</span><div class="filter-chips" id="filter-sort"></div></div>
+  </div>
+  <div class="filter-count-bar">
+    <span class="filter-count" id="cat-count"></span>
+    <span class="filter-notion-note">本頁內容由 Notion 自動同步</span>
   </div>
 
-  <!-- COMING SOON -->
-  <div class="coming-soon-wrap">
-    <div class="coming-soon-banner">
-      <span style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.18em;color:#B5AB98;">COMING SOON</span>
-    </div>
-    <div class="coming-soon-badge" style="color:#B5651D;background:rgba(244,162,97,.22);">待建置</div>
-    <div class="coming-soon-title">這個分類即將上線</div>
-    <p class="coming-soon-desc">其他產業的分享內容正在整理中，後續會陸續補上，敬請期待。</p>
-    <a href="news.html" class="coming-soon-link">← 先看表面處理產業新聞</a>
+  <div class="section-sm">
+    <div class="cards-grid" id="cat-grid"></div>
   </div>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <div class="site-footer-inner">
-      <div>
-        <div class="footer-brand-title">Chou's 金屬產業分享園地</div>
-        <div class="footer-brand-desc">彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</div>
-      </div>
-      <div class="footer-contact">
-        <div>chou751029@gmail.com</div>
-        <div>kchou1029@mail.mirdc.org.tw</div>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/po-hsun-chou-8221b285/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://www.facebook.com/kevinchou751029" target="_blank" rel="noopener">Facebook</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copy">© 2026 Chou's 金屬產業分享園地 · 版權所有，翻印必究</div>
-  </footer>
+  <footer id="site-footer"></footer>
 
-  <script src="assets/js/news-data.js"></script>
+  <script src="assets/js/site-config.js"></script>
   <script src="assets/js/app.js"></script>
 </body>
 </html>

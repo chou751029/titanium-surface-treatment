@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="assets/js/news-data.js"></script>
+<script src="assets/js/titanium-data.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; }
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#FCF8F1;font-family:'Noto Sans TC','Microsoft JhengHei','PingFang TC','Heiti TC',sans-serif;color:#2B2622;">
+
+  <!-- ===== NAV ===== -->
+  <div style="position:sticky;top:0;z-index:50;background:#264653;display:flex;align-items:center;justify-content:space-between;padding:16px 48px;box-shadow:0 2px 18px -8px rgba(0,0,0,.4);">
+    <div onClick="{{ goHome }}" style="cursor:pointer;display:flex;flex-direction:column;line-height:1.15;flex:none;">
+      <span style="font-weight:700;font-size:18px;color:#FBF6EC;white-space:nowrap;">Chou's 金屬產業分享園地</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:.16em;color:rgba(233,196,106,.85);">METAL INDUSTRY NOTES</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:26px;">
+      <div style="display:flex;gap:30px;font-size:14px;">
+        <span onClick="{{ goHome }}" style="cursor:pointer;position:relative;padding-bottom:4px;color:{{ c.home }};">首頁<sc-if value="{{ isHome }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;left:0;right:0;bottom:-2px;height:2px;background:#E9C46A;"></span></sc-if></span>
+        <span onClick="{{ goSurface }}" style="cursor:pointer;position:relative;padding-bottom:4px;color:{{ c.surface }};">表面處理產業新聞<sc-if value="{{ isSurface }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;left:0;right:0;bottom:-2px;height:2px;background:#E9C46A;"></span></sc-if></span>
+        <span onClick="{{ goTitanium }}" style="cursor:pointer;position:relative;padding-bottom:4px;color:{{ c.titanium }};">鈦金屬相關新聞<sc-if value="{{ isTitanium }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;left:0;right:0;bottom:-2px;height:2px;background:#E9C46A;"></span></sc-if></span>
+        <span onClick="{{ goOther }}" style="cursor:pointer;position:relative;padding-bottom:4px;color:{{ c.other }};">其他產業<sc-if value="{{ isOther }}" hint-placeholder-val="{{ false }}"><span style="position:absolute;left:0;right:0;bottom:-2px;height:2px;background:#E9C46A;"></span></sc-if></span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:30px;padding:7px 14px;">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:rgba(251,246,236,.6);">⌕</span>
+        <input value="{{ query }}" onInput="{{ setQuery }}" placeholder="搜尋全站新聞…" style="background:transparent;border:none;outline:none;color:#FBF6EC;font-size:13px;width:170px;font-family:'Noto Sans TC','Microsoft JhengHei','PingFang TC','Heiti TC',sans-serif;">
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== ARTICLE ===== -->
+  <sc-if value="{{ isArticle }}" hint-placeholder-val="{{ false }}">
+  <div>
+    <sc-if value="{{ article.hasImage }}" hint-placeholder-val="{{ false }}">
+      <div style="height:360px;background-image:{{ article.bgImage }};background-size:cover;background-position:center;"></div>
+    </sc-if>
+    <div style="max-width:820px;margin:0 auto;padding:52px 40px 80px;">
+      <div onClick="{{ goBack }}" style="cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:13px;color:#2A9D8F;margin-bottom:32px;display:inline-block;">← 返回列表</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;">
+        <sc-for list="{{ artTags }}" as="t" hint-placeholder-count="2">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;background:rgba(42,157,143,.13);color:#1A6E65;padding:4px 12px;border-radius:20px;">{{ t.label }}</span>
+        </sc-for>
+      </div>
+      <h1 style="font-weight:700;font-size:34px;line-height:1.45;color:#264653;margin:0 0 14px;">{{ article.title }}</h1>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#A89E8C;margin-bottom:36px;">{{ article.date }}</div>
+      <div style="font-size:16px;line-height:2;color:#3E3830;white-space:pre-line;margin-bottom:40px;">{{ article.summary }}</div>
+      <a href="{{ article.sourceUrl }}" target="_blank" rel="noopener" style="display:inline-block;font-family:'JetBrains Mono',monospace;font-size:14px;color:#fff;background:#E76F51;padding:12px 28px;border-radius:8px;text-decoration:none;">閱讀原文 →</a>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ===== SEARCH RESULTS ===== -->
+  <sc-if value="{{ isSearch }}" hint-placeholder-val="{{ false }}">
+  <div>
+    <div style="background:#264653;padding:48px 48px 40px;">
+      <div style="max-width:1140px;margin:0 auto;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;color:#2A9D8F;margin-bottom:14px;">SEARCH</div>
+        <h1 style="font-weight:700;font-size:30px;color:#FBF6EC;margin:0 0 12px;">搜尋「{{ queryText }}」</h1>
+        <p style="font-family:'JetBrains Mono',monospace;font-size:13px;color:rgba(251,246,236,.7);margin:0;">{{ searchCount }} 篇符合的文章 · <span onClick="{{ clearSearch }}" style="cursor:pointer;color:#E9C46A;">清除搜尋</span></p>
+      </div>
+    </div>
+    <div style="max-width:1140px;margin:0 auto;padding:32px 48px 64px;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;">
+        <sc-for list="{{ searchResults }}" as="a" hint-placeholder-count="6">
+          <div onClick="{{ a.onClick }}" style="cursor:pointer;background:#fff;border-radius:12px;overflow:hidden;border:1px solid rgba(38,70,83,.08);display:block;" style-hover="box-shadow:0 16px 36px -20px rgba(38,70,83,.45)">
+            <sc-if value="{{ a.hasImage }}" hint-placeholder-val="{{ false }}">
+              <div style="height:150px;background-image:{{ a.bgImage }};background-size:cover;background-position:center;"></div>
+            </sc-if>
+            <sc-if value="{{ a.noImage }}" hint-placeholder-val="{{ true }}">
+              <div style="height:150px;background:repeating-linear-gradient(135deg,#EADFCB,#EADFCB 9px,#F3EADA 9px,#F3EADA 18px);display:flex;align-items:center;justify-content:center;"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#A89E8C;">無封面圖</span></div>
+            </sc-if>
+            <div style="padding:18px 18px 22px;">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:#2A9D8F;">{{ a.meta }}</div>
+              <div style="font-weight:600;font-size:16px;color:#2B2622;line-height:1.55;margin:9px 0 8px;">{{ a.title }}</div>
+              <div style="font-size:13px;color:#7A7264;line-height:1.7;margin-bottom:14px;">{{ a.excerpt }}</div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#A89E8C;">{{ a.date }}</div>
+            </div>
+          </div>
+        </sc-for>
+        <sc-if value="{{ searchNoResults }}" hint-placeholder-val="{{ false }}"><div style="grid-column:1/-1;padding:56px 0;text-align:center;color:#8A8275;font-size:14px;">找不到符合「{{ queryText }}」的文章。</div></sc-if>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ===== HOME ===== -->
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <div>
+
+    <!-- featured -->
+    <div style="max-width:1140px;margin:0 auto;padding:0 48px;">
+      <div onClick="{{ featured.onClick }}" style="display:grid;grid-template-columns:1.15fr 1fr;gap:0;border-bottom:1px solid rgba(38,70,83,.1);cursor:pointer;">
+        <sc-if value="{{ featured.hasImage }}" hint-placeholder-val="{{ false }}">
+          <div style="height:380px;background-image:{{ featured.bgImage }};background-size:cover;background-position:center;"></div>
+        </sc-if>
+        <sc-if value="{{ featured.noImage }}" hint-placeholder-val="{{ true }}">
+          <div style="height:380px;background:repeating-linear-gradient(135deg,#D9C4A8,#D9C4A8 11px,#E6D6BB 11px,#E6D6BB 22px);"></div>
+        </sc-if>
+        <div style="padding:48px 0 48px 48px;display:flex;flex-direction:column;justify-content:center;">
+          <div style="display:flex;gap:10px;align-items:center;margin-bottom:18px;">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;background:#2A9D8F;color:#fff;padding:4px 11px;border-radius:3px;">表面處理</span>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#8A8275;">{{ featured.date }}</span>
+          </div>
+          <h2 style="font-weight:700;font-size:32px;line-height:1.45;color:#264653;margin:0 0 18px;">{{ featured.title }}</h2>
+          <p style="font-size:15px;line-height:1.95;color:#5E574C;margin:0 0 26px;">{{ featured.excerpt }}</p>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#E76F51;">閱讀全文 →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- category strip -->
+    <div style="max-width:1140px;margin:0 auto;padding:44px 48px 8px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;color:#8A8275;text-transform:uppercase;margin-bottom:18px;">Categories</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;">
+        <div onClick="{{ goSurface }}" style="cursor:pointer;background:#fff;border:1px solid rgba(38,70,83,.09);border-radius:12px;padding:24px;border-left:4px solid #2A9D8F;" style-hover="box-shadow:0 12px 30px -16px rgba(38,70,83,.4)">
+          <div style="font-weight:700;font-size:18px;color:#264653;margin-bottom:8px;">表面處理產業新聞</div>
+          <div style="font-size:13px;color:#7A7264;line-height:1.7;">電鍍、塗層、鈍化、陽極處理的最新動態與案例</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#2A9D8F;margin-top:16px;">進入 →</div>
+        </div>
+        <div onClick="{{ goTitanium }}" style="cursor:pointer;background:#fff;border:1px solid rgba(38,70,83,.09);border-radius:12px;padding:24px;border-left:4px solid #E9C46A;" style-hover="box-shadow:0 12px 30px -16px rgba(38,70,83,.4)">
+          <div style="font-weight:700;font-size:18px;color:#264653;margin-bottom:8px;">鈦金屬相關新聞</div>
+          <div style="font-size:13px;color:#7A7264;line-height:1.7;">鈦合金、航太與醫材應用的趨勢觀察</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#E9C46A;margin-top:16px;">進入 →</div>
+        </div>
+        <div onClick="{{ goOther }}" style="cursor:pointer;background:#fff;border:1px solid rgba(38,70,83,.09);border-radius:12px;padding:24px;border-left:4px solid #F4A261;" style-hover="box-shadow:0 12px 30px -16px rgba(38,70,83,.4)">
+          <div style="font-weight:700;font-size:18px;color:#264653;margin-bottom:8px;">其他產業</div>
+          <div style="font-size:13px;color:#7A7264;line-height:1.7;">跨領域材料與製程的延伸筆記</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#A89E8C;margin-top:16px;">待建置</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- more stories -->
+    <div style="max-width:1140px;margin:0 auto;padding:40px 48px 20px;">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.18em;color:#8A8275;text-transform:uppercase;margin-bottom:22px;">Latest</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:28px;">
+        <sc-for list="{{ homeLatest }}" as="a" hint-placeholder-count="3">
+          <div onClick="{{ a.onClick }}" style="cursor:pointer;display:block;">
+            <sc-if value="{{ a.hasImage }}" hint-placeholder-val="{{ false }}">
+              <div style="height:150px;border-radius:10px;background-image:{{ a.bgImage }};background-size:cover;background-position:center;margin-bottom:14px;"></div>
+            </sc-if>
+            <sc-if value="{{ a.noImage }}" hint-placeholder-val="{{ true }}">
+              <div style="height:150px;border-radius:10px;background:repeating-linear-gradient(135deg,#E3E9E6,#E3E9E6 9px,#EDF2F0 9px,#EDF2F0 18px);margin-bottom:14px;"></div>
+            </sc-if>
+            <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#2A9D8F;letter-spacing:.08em;">{{ a.meta }}</span>
+            <div style="font-weight:600;font-size:17px;color:#2B2622;line-height:1.55;margin:8px 0 8px;">{{ a.title }}</div>
+            <div style="font-size:13px;color:#7A7264;line-height:1.7;margin-bottom:10px;">{{ a.excerpt }}</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#A89E8C;">{{ a.date }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- about strip -->
+    <div style="max-width:1140px;margin:48px auto 0;padding:0 48px 56px;">
+      <div style="background:#264653;border-radius:16px;padding:48px 52px;display:grid;grid-template-columns:auto 1fr;gap:44px;align-items:center;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.2em;color:#E9C46A;writing-mode:vertical-rl;text-orientation:mixed;">ABOUT</div>
+        <div>
+          <h3 style="font-weight:700;font-size:24px;color:#FBF6EC;margin:0 0 16px;line-height:1.5;">積沙成塔，建構屬於自己的知識堡壘</h3>
+          <p style="font-size:15px;line-height:2;color:rgba(251,246,236,.78);margin:0;max-width:680px;">實踐一個小小的實驗，將工作中蒐集的金屬產業資訊一點一滴積累。在 AI 輔佐下，一切變成可能——一起學習、一起分享，讓知識交流更快速、更可近。</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </sc-if>
+
+  <!-- ===== SURFACE (placeholder, filled next) ===== -->
+  <sc-if value="{{ isSurface }}" hint-placeholder-val="{{ false }}">
+  <div>
+    <!-- page header -->
+    <div style="background:#264653;padding:52px 48px 44px;">
+      <div style="max-width:1140px;margin:0 auto;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;color:#2A9D8F;margin-bottom:14px;">SURFACE TREATMENT</div>
+        <h1 style="font-weight:700;font-size:36px;color:#FBF6EC;margin:0 0 14px;">表面處理產業新聞</h1>
+        <p style="font-size:15px;line-height:1.9;color:rgba(251,246,236,.72);margin:0;max-width:640px;">彙整電鍍、塗層、鈍化、陽極處理等表面處理領域的最新新聞與案例，可依地區與主題標籤篩選。</p>
+      </div>
+    </div>
+
+    <!-- filters -->
+    <div style="max-width:1140px;margin:0 auto;padding:32px 48px 8px;">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;flex-wrap:wrap;">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A8275;letter-spacing:.1em;width:48px;">地區</span>
+        <div style="display:flex;gap:9px;flex-wrap:wrap;">
+          <sc-for list="{{ regionChips }}" as="chip" hint-placeholder-count="5">
+            <span onClick="{{ chip.onClick }}" style="{{ chip.style }}">{{ chip.label }}</span>
+          </sc-for>
+        </div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:14px;flex-wrap:nowrap;">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A8275;letter-spacing:.1em;width:48px;flex:none;padding-top:6px;">標籤</span>
+        <div style="display:flex;gap:9px;flex-wrap:wrap;max-height:108px;overflow-y:auto;padding-right:4px;">
+          <sc-for list="{{ tagChips }}" as="chip" hint-placeholder-count="5">
+            <span onClick="{{ chip.onClick }}" style="{{ chip.style }}">{{ chip.label }}</span>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <!-- count + notion note -->
+    <div style="max-width:1140px;margin:0 auto;padding:18px 48px 0;display:flex;align-items:center;justify-content:space-between;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A8275;">{{ count }} 篇文章</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#A89E8C;">本頁內容由 Notion 自動同步</span>
+    </div>
+
+    <!-- grid -->
+    <div style="max-width:1140px;margin:0 auto;padding:24px 48px 56px;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;">
+        <sc-for list="{{ articles }}" as="a" hint-placeholder-count="6">
+          <div onClick="{{ a.onClick }}" style="cursor:pointer;background:#fff;border-radius:12px;overflow:hidden;border:1px solid rgba(38,70,83,.08);display:block;" style-hover="box-shadow:0 16px 36px -20px rgba(38,70,83,.45)">
+            <sc-if value="{{ a.hasImage }}" hint-placeholder-val="{{ false }}">
+              <div style="height:150px;background-image:{{ a.bgImage }};background-size:cover;background-position:center;"></div>
+            </sc-if>
+            <sc-if value="{{ a.noImage }}" hint-placeholder-val="{{ true }}">
+              <div style="height:150px;background:repeating-linear-gradient(135deg,#EADFCB,#EADFCB 9px,#F3EADA 9px,#F3EADA 18px);display:flex;align-items:center;justify-content:center;"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#A89E8C;">無封面圖</span></div>
+            </sc-if>
+            <div style="padding:18px 18px 22px;">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:#2A9D8F;">{{ a.meta }}</div>
+              <div style="font-weight:600;font-size:16px;color:#2B2622;line-height:1.55;margin:9px 0 8px;">{{ a.title }}</div>
+              <div style="font-size:13px;color:#7A7264;line-height:1.7;margin-bottom:14px;">{{ a.excerpt }}</div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#A89E8C;">{{ a.date }}</div>
+            </div>
+          </div>
+        </sc-for>
+        <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}"><div style="grid-column:1/-1;padding:56px 0;text-align:center;color:#8A8275;font-size:14px;">沒有符合條件的項目。</div></sc-if>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ===== TITANIUM ===== -->
+  <sc-if value="{{ isTitanium }}" hint-placeholder-val="{{ false }}">
+  <div>
+    <div style="background:#1C3E4A;padding:52px 48px 44px;">
+      <div style="max-width:1140px;margin:0 auto;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;color:#E9C46A;margin-bottom:14px;">TITANIUM</div>
+        <h1 style="font-weight:700;font-size:36px;color:#FBF6EC;margin:0 0 14px;">鈦金屬相關新聞</h1>
+        <p style="font-size:15px;line-height:1.9;color:rgba(251,246,236,.72);margin:0;max-width:640px;">鈦合金、航太、醫材與精密製造的最新趨勢與案例，可依地區與主題標籤篩選。</p>
+      </div>
+    </div>
+
+    <div style="max-width:1140px;margin:0 auto;padding:32px 48px 8px;">
+      <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px;flex-wrap:wrap;">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A8275;letter-spacing:.1em;width:48px;">地區</span>
+        <div style="display:flex;gap:9px;flex-wrap:wrap;">
+          <sc-for list="{{ tiRegionChips }}" as="chip" hint-placeholder-count="4">
+            <span onClick="{{ chip.onClick }}" style="{{ chip.style }}">{{ chip.label }}</span>
+          </sc-for>
+        </div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:14px;flex-wrap:nowrap;">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A8275;letter-spacing:.1em;width:48px;flex:none;padding-top:6px;">標籤</span>
+        <div style="display:flex;gap:9px;flex-wrap:wrap;max-height:108px;overflow-y:auto;padding-right:4px;">
+          <sc-for list="{{ tiTagChips }}" as="chip" hint-placeholder-count="4">
+            <span onClick="{{ chip.onClick }}" style="{{ chip.style }}">{{ chip.label }}</span>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+
+    <div style="max-width:1140px;margin:0 auto;padding:18px 48px 0;display:flex;align-items:center;justify-content:space-between;">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A8275;">{{ tiCount }} 篇文章</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#A89E8C;">本頁內容由 Notion 自動同步</span>
+    </div>
+
+    <div style="max-width:1140px;margin:0 auto;padding:24px 48px 56px;">
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;">
+        <sc-for list="{{ titaniumArticles }}" as="a" hint-placeholder-count="6">
+          <div onClick="{{ a.onClick }}" style="cursor:pointer;background:#fff;border-radius:12px;overflow:hidden;border:1px solid rgba(38,70,83,.08);display:block;" style-hover="box-shadow:0 16px 36px -20px rgba(38,70,83,.45)">
+            <sc-if value="{{ a.hasImage }}" hint-placeholder-val="{{ false }}">
+              <div style="height:150px;background-image:{{ a.bgImage }};background-size:cover;background-position:center;"></div>
+            </sc-if>
+            <sc-if value="{{ a.noImage }}" hint-placeholder-val="{{ true }}">
+              <div style="height:150px;background:repeating-linear-gradient(135deg,#D8E8EA,#D8E8EA 9px,#E5F0F2 9px,#E5F0F2 18px);display:flex;align-items:center;justify-content:center;"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#A89E8C;">無封面圖</span></div>
+            </sc-if>
+            <div style="padding:18px 18px 22px;">
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.08em;color:#1C3E4A;">{{ a.meta }}</div>
+              <div style="font-weight:600;font-size:16px;color:#2B2622;line-height:1.55;margin:9px 0 8px;">{{ a.title }}</div>
+              <div style="font-size:13px;color:#7A7264;line-height:1.7;margin-bottom:14px;">{{ a.excerpt }}</div>
+              <div style="font-family:'JetBrains Mono',monospace;font-size:11px;color:#A89E8C;">{{ a.date }}</div>
+            </div>
+          </div>
+        </sc-for>
+        <sc-if value="{{ tiNoResults }}" hint-placeholder-val="{{ false }}"><div style="grid-column:1/-1;padding:56px 0;text-align:center;color:#8A8275;font-size:14px;">沒有符合條件的項目。</div></sc-if>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ===== OTHER ===== -->
+  <sc-if value="{{ isOther }}" hint-placeholder-val="{{ false }}">
+  <div>
+    <div style="background:#264653;padding:52px 48px 44px;">
+      <div style="max-width:1140px;margin:0 auto;">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;color:#F4A261;margin-bottom:14px;">OTHER INDUSTRIES</div>
+        <h1 style="font-weight:700;font-size:36px;color:#FBF6EC;margin:0 0 14px;">其他產業</h1>
+        <p style="font-size:15px;line-height:1.9;color:rgba(251,246,236,.72);margin:0;max-width:640px;">跨領域材料與製程的延伸筆記與觀察。</p>
+      </div>
+    </div>
+    <div style="max-width:760px;margin:0 auto;padding:80px 48px 96px;text-align:center;">
+      <div style="height:160px;border-radius:16px;background:repeating-linear-gradient(135deg,#EFE9DD,#EFE9DD 12px,#F6F1E7 12px,#F6F1E7 24px);display:flex;align-items:center;justify-content:center;margin-bottom:32px;">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.18em;color:#B5AB98;">COMING SOON</span>
+      </div>
+      <div style="display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.12em;color:#B5651D;background:rgba(244,162,97,.22);padding:6px 14px;border-radius:30px;margin-bottom:20px;">待建置</div>
+      <h2 style="font-weight:700;font-size:26px;color:#264653;margin:0 0 14px;">這個分類即將上線</h2>
+      <p style="font-size:15px;line-height:1.95;color:#5E574C;margin:0 auto;max-width:520px;">其他產業的分享內容正在整理中，後續會陸續補上，敬請期待。</p>
+      <span onClick="{{ goSurface }}" style="cursor:pointer;display:inline-block;margin-top:28px;font-family:'JetBrains Mono',monospace;font-size:13px;color:#E76F51;">← 先看表面處理產業新聞</span>
+    </div>
+  </div>
+  </sc-if>
+
+  <!-- ===== FOOTER ===== -->
+  <div style="background:#1C333C;padding:40px 48px;">
+    <div style="max-width:1140px;margin:0 auto;display:flex;align-items:flex-start;justify-content:space-between;gap:40px;flex-wrap:wrap;">
+      <div>
+        <div style="font-weight:700;font-size:16px;color:#E9C46A;margin-bottom:8px;">Chou's 金屬產業分享園地</div>
+        <div style="font-size:13px;color:rgba(255,255,255,.6);line-height:1.8;max-width:360px;">彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</div>
+      </div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:rgba(255,255,255,.6);line-height:2;">
+        <div>chou751029@gmail.com</div>
+        <div>kchou1029@mail.mirdc.org.tw</div>
+        <div style="margin-top:8px;display:flex;gap:14px;">
+          <a href="https://www.linkedin.com/in/po-hsun-chou-8221b285/" target="_blank" rel="noopener" style="color:rgba(233,196,106,.85);text-decoration:none;">LinkedIn</a>
+          <a href="https://www.facebook.com/kevinchou751029" target="_blank" rel="noopener" style="color:rgba(233,196,106,.85);text-decoration:none;">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1140px;margin:28px auto 0;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);font-family:'JetBrains Mono',monospace;font-size:11px;color:rgba(255,255,255,.4);">© 2026 Chou's 金屬產業分享園地 · 版權所有，翻印必究</div>
+  </div>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:860}}">
+class Component extends DCLogic {
+  state = { page: 'home', region: '全部', tag: '全部', query: '', articleId: null, loaded: !!(window.NEWS_DATA) };
+
+  componentDidMount() {
+    this._onImgErr = (ev) => {
+      const el = ev.target;
+      if (!el || el.tagName !== 'IMG' || el.dataset.fb) return;
+      el.dataset.fb = '1';
+      const box = el.parentElement;
+      if (!box) return;
+      box.style.background = 'repeating-linear-gradient(135deg,#EADFCB,#EADFCB 9px,#F3EADA 9px,#F3EADA 18px)';
+      box.style.display = 'flex';
+      box.style.alignItems = 'center';
+      box.style.justifyContent = 'center';
+      box.innerHTML = '<span style="font-family:\'JetBrains Mono\',monospace;font-size:11px;color:#A89E8C;">無封面圖</span>';
+    };
+    document.addEventListener('error', this._onImgErr, true);
+    if (window.NEWS_DATA) return;
+    this._iv = setInterval(() => {
+      if (window.NEWS_DATA) { clearInterval(this._iv); this.setState({ loaded: true }); }
+    }, 80);
+  }
+  componentWillUnmount() {
+    if (this._iv) clearInterval(this._iv);
+    if (this._onImgErr) document.removeEventListener('error', this._onImgErr, true);
+  }
+
+  renderVals() {
+    const page = this.state.page;
+    const active = '#E9C46A';
+    const idle = 'rgba(251,246,236,.78)';
+    const go = (p) => () => this.setState({ page: p, region: '全部', tag: '全部', query: '', articleId: null });
+    const goArticle = (id) => () => this.setState({ articleId: id, query: '' });
+
+    const fmtDot = (s) => (s || '').replace(/-/g, '.');
+    const fmtLong = (s) => {
+      if (!s) return '';
+      const d = new Date(s + 'T00:00:00');
+      return isNaN(d.getTime()) ? s : d.toLocaleDateString('zh-TW', { year: 'numeric', month: 'long', day: 'numeric' });
+    };
+    const clip = (s) => {
+      const x = (s || '').replace(/\s+/g, ' ').trim();
+      return x.length > 68 ? x.slice(0, 68) + '…' : x;
+    };
+    const toCard = (a) => ({
+      id: a.id,
+      title: a.title || '未命名項目',
+      excerpt: clip(a.summary) || '點擊閱讀原文 →',
+      date: fmtDot(a.date),
+      region: a.region || '未分類',
+      meta: [a.region, ...((a.tags || []).slice(0, 2))].filter(Boolean).join(' · ') || '未分類',
+      bgImage: a.image ? ('url("' + a.image + '")') : 'none',
+      hasImage: !!a.image,
+      noImage: !a.image,
+      onClick: goArticle(a.id),
+    });
+
+    const SAMPLE = [
+      { id: 's1', title: '無氰電鍍製程導入：環保法規驅動的產線轉型', summary: '面對日趨嚴格的廢水排放規範，業者加速以無氰鹼性製程取代傳統含氰鍍液。', region: '台灣', tags: ['電鍍'], image: '', date: '2026-06-12' },
+      { id: 's2', title: 'PVD 塗層延長刀具壽命：精密加工的最新案例', summary: '物理氣相沉積在切削刀具的應用，使壽命與表面硬度顯著提升。', region: '全球', tags: ['塗層'], image: '', date: '2026-06-09' },
+      { id: 's3', title: '六價鉻禁令下，鈍化替代技術的發展路線', summary: '歐盟法規收緊促使三價鉻與無鉻鈍化加速商業化。', region: '歐洲', tags: ['鈍化'], image: '', date: '2026-06-05' },
+    ];
+
+    const DATA = (window.NEWS_DATA && window.NEWS_DATA.length) ? window.NEWS_DATA : SAMPLE;
+    const sorted = [...DATA].sort((a, b) => (a.date < b.date ? 1 : -1));
+
+    const regionSet = [], tagSet = [];
+    sorted.forEach(a => {
+      if (a.region && !regionSet.includes(a.region)) regionSet.push(a.region);
+      (a.tags || []).forEach(t => { if (t && !tagSet.includes(t)) tagSet.push(t); });
+    });
+    regionSet.sort(); tagSet.sort();
+    const regions = ['全部', ...regionSet];
+    const tags = ['全部', ...tagSet];
+
+    const r = this.state.region, t = this.state.tag;
+    const filtered = sorted.filter(a =>
+      (r === '全部' || a.region === r) &&
+      (t === '全部' || (a.tags || []).includes(t))
+    );
+
+    const TI_SAMPLE = [
+      { id: 'ti1', title: '鈦合金在航太結構件的最新應用趨勢', summary: '輕量化需求推動鈦合金在機身構件的導入，兼顧強度與抗腐蝕性。', region: '全球', tags: ['航太'], image: '', date: '2026-06-10' },
+      { id: 'ti2', title: '醫療植入物用鈦合金表面改質技術', summary: '生物相容性鈦合金塗層技術應用於人工關節與牙科植體。', region: '台灣', tags: ['醫材'], image: '', date: '2026-06-05' },
+      { id: 'ti3', title: '鈦合金粉末冶金：積層製造的新材料選項', summary: '3D 列印用鈦合金粉末的品質控制與應用場景擴展。', region: '日本', tags: ['積層製造'], image: '', date: '2026-05-28' },
+    ];
+    const TIDATA = (window.TITANIUM_DATA && window.TITANIUM_DATA.length) ? window.TITANIUM_DATA : TI_SAMPLE;
+    const tiSorted = [...TIDATA].sort((a, b) => (a.date < b.date ? 1 : -1));
+    const tiRegionSet = [], tiTagSet = [];
+    tiSorted.forEach(a => {
+      if (a.region && !tiRegionSet.includes(a.region)) tiRegionSet.push(a.region);
+      (a.tags || []).forEach(t => { if (t && !tiTagSet.includes(t)) tiTagSet.push(t); });
+    });
+    tiRegionSet.sort(); tiTagSet.sort();
+    const tiRegions = ['全部', ...tiRegionSet];
+    const tiTags = ['全部', ...tiTagSet];
+    const tiFiltered = tiSorted.filter(a =>
+      (r === '全部' || a.region === r) &&
+      (t === '全部' || (a.tags || []).includes(t))
+    );
+
+    const chipStyle = (on) => on
+      ? 'cursor:pointer;font-size:13px;padding:6px 14px;border-radius:30px;background:#264653;color:#FBF6EC;border:1px solid #264653;white-space:nowrap;'
+      : 'cursor:pointer;font-size:13px;padding:6px 14px;border-radius:30px;background:#fff;color:#5E574C;border:1px solid rgba(38,70,83,.18);white-space:nowrap;';
+
+    const aid = this.state.articleId;
+    const artData = aid ? (DATA.find(a => a.id === aid) || null) : null;
+    const artTags = artData ? [artData.region, ...((artData.tags || []))].filter(Boolean) : [];
+    const article = artData ? {
+      title: artData.title || '',
+      date: fmtLong(artData.date),
+      bgImage: artData.image ? ('url("' + artData.image + '")') : 'none',
+      hasImage: !!artData.image,
+      summary: artData.summary || '本則暫無摘要，請點擊下方連結閱讀原文。',
+      sourceUrl: artData.sourceUrl || '#',
+    } : { title: '', date: '', bgImage: 'none', hasImage: false, summary: '', sourceUrl: '#' };
+    const goBack = () => this.setState({ articleId: null });
+
+    const q = (this.state.query || '').trim().toLowerCase();
+    const searching = q.length > 0 && !aid;
+    const searchHits = searching ? sorted.filter(a => {
+      const hay = ((a.title || '') + ' ' + (a.summary || '') + ' ' + (a.region || '') + ' ' + ((a.tags || []).join(' '))).toLowerCase();
+      return hay.includes(q);
+    }) : [];
+
+    return {
+      isHome: page === 'home' && !searching && !aid, isSurface: page === 'surface' && !searching && !aid, isTitanium: page === 'titanium' && !searching && !aid, isOther: page === 'other' && !searching && !aid,
+      isSearch: searching && !aid,
+      isArticle: !!aid,
+      article, goBack,
+      artTags: artTags.map(t => ({ label: t })),
+      goHome: go('home'), goSurface: go('surface'), goTitanium: go('titanium'), goOther: go('other'),
+      goBack,
+      query: this.state.query || '',
+      queryText: this.state.query || '',
+      setQuery: (e) => this.setState({ query: e.target.value }),
+      clearSearch: () => this.setState({ query: '' }),
+      searchResults: searchHits.map(toCard),
+      searchCount: searchHits.length,
+      searchNoResults: searching && searchHits.length === 0,
+      c: { home: page === 'home' ? active : idle, surface: page === 'surface' ? active : idle, titanium: page === 'titanium' ? active : idle, other: page === 'other' ? active : idle },
+      featured: toCard(sorted[0] || {}),
+      homeLatest: sorted.slice(1, 4).map(toCard),
+      regionChips: regions.map(x => ({ label: x, style: chipStyle(x === r), onClick: () => this.setState({ region: x }) })),
+      tagChips: tags.map(x => ({ label: x, style: chipStyle(x === t), onClick: () => this.setState({ tag: x }) })),
+      articles: filtered.map(toCard),
+      count: filtered.length,
+      noResults: filtered.length === 0,
+      tiRegionChips: tiRegions.map(x => ({ label: x, style: chipStyle(x === r), onClick: () => this.setState({ region: x }) })),
+      tiTagChips: tiTags.map(x => ({ label: x, style: chipStyle(x === t), onClick: () => this.setState({ tag: x }) })),
+      titaniumArticles: tiFiltered.map(toCard),
+      tiCount: tiFiltered.length,
+      tiNoResults: tiFiltered.length === 0,
+    };
+  }
+}
+</script>
+</body>
+</html>

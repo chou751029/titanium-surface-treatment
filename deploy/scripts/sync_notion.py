@@ -36,13 +36,6 @@ ENV_FILE = ROOT / ".env"
 OUTPUT_FILE         = ROOT / "assets" / "js" / "news-data.js"
 TITANIUM_OUTPUT_FILE = ROOT / "assets" / "js" / "titanium-data.js"
 IMAGE_DIR = ROOT / "assets" / "images" / "synced"
-FEED_FILE = ROOT / "feed.xml"
-
-# 部署網址（用於 RSS feed 的連結）。換網域時改這裡，或用環境變數 SITE_URL 覆寫。
-SITE_URL = os.environ.get("SITE_URL", "https://chou751029.github.io/titanium-surface-treatment/")
-SITE_TITLE = "Chou's 金屬產業分享園地"
-SITE_DESC  = "彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。"
-FEED_MAX_ITEMS = 40
 
 NOTION_VERSION = "2022-06-28"
 REQUEST_DELAY = 0.34  # 避免超過 Notion API 速率限制 (~3 req/s)
@@ -196,20 +189,8 @@ def download_image(url, dest_stem):
 
 
 def extract_image_and_summary(blocks, page_slug):
-    """回傳 (封面圖路徑, 純文字摘要, 結構化內文陣列)。
-    content 每一項是 {"type": ..., "text": ...}，供前端文章頁產生目錄與段落。
-    """
     image_path = ""
     texts = []
-    content = []
-    type_map = {
-        "heading_1": "h",
-        "heading_2": "h",
-        "heading_3": "h",
-        "bulleted_list_item": "bulleted_list_item",
-        "numbered_list_item": "numbered_list_item",
-        "quote": "quote",
-    }
     for block in blocks:
         btype = block["type"]
         if btype == "image" and not image_path:
@@ -222,12 +203,11 @@ def extract_image_and_summary(blocks, page_slug):
             text = rich_text_to_plain(rich_text).strip()
             if text:
                 texts.append(text)
-                content.append({"type": type_map.get(btype, "p"), "text": text})
 
     summary = "\n\n".join(texts)
     if len(summary) > SUMMARY_MAX_LEN:
         summary = summary[:SUMMARY_MAX_LEN].rsplit(" ", 1)[0] + "..."
-    return image_path, summary, content
+    return image_path, summary
 
 
 def build_item(headers, page):
@@ -255,7 +235,7 @@ def build_item(headers, page):
 
     print(f"  抓取頁面內容: {title[:40] or '(無標題)'}")
     blocks = get_page_blocks(headers, page_id)
-    image_path, summary, content = extract_image_and_summary(blocks, slug)
+    image_path, summary = extract_image_and_summary(blocks, slug)
     time.sleep(REQUEST_DELAY)
 
     if not title:
@@ -271,84 +251,16 @@ def build_item(headers, page):
         "image":    image_path,
         "sourceUrl": source_url,
         "summary":  summary,
-        "content":  content,
     }
 
 
-def build_titanium_item(headers, page):
-    """鈦新聞資料庫的欄位解析（與表面處理資料庫不同）。"""
-    props   = page["properties"]
-    page_id = page["id"]
-    slug    = page_id.replace("-", "")
-
-    # 鈦新聞：標題欄位名稱是 "Name"
-    title = rich_text_to_plain(props.get("Name", {}).get("title", []))
-
-    # 鈦新聞：國家是 multi_select，取前兩個合併
-    region_opts = props.get("國家", {}).get("multi_select", [])
-    region = "／".join(o["name"] for o in region_opts[:2]) if region_opts else ""
-
-    # 鈦新聞：標籤來自 Tags + keyword
-    tags = []
-    for prop_name in ("Tags", "keyword"):
-        for option in props.get(prop_name, {}).get("multi_select", []):
-            if option["name"] not in tags:
-                tags.append(option["name"])
-
-    # 鈦新聞：原文連結是 "URL" 欄位
-    source_url = (
-        props.get("URL", {}).get("url")
-        or props.get("URL_2", {}).get("url")
-        or page.get("public_url")
-        or page.get("url")
-        or ""
-    )
-
-    date = page["created_time"][:10]
-
-    # 鈦新聞：先嘗試從「圖片」屬性取圖（property 上傳的圖片）
-    image_path = ""
-    file_prop = props.get("圖片", {}).get("files", [])
-    if file_prop:
-        f = file_prop[0]
-        url = f["file"]["url"] if f["type"] == "file" else f.get("external", {}).get("url", "")
-        if url:
-            image_path = download_image(url, slug)
-
-    # 若屬性欄位無圖，再從頁面 block 找
-    print(f"  抓取頁面內容: {title[:40] or '(無標題)'}")
-    blocks = get_page_blocks(headers, page_id)
-    block_image, summary, content = extract_image_and_summary(blocks, slug)
-    if not image_path:
-        image_path = block_image
-    time.sleep(REQUEST_DELAY)
-
-    if not title:
-        first_line = summary.split("\n", 1)[0].strip()
-        title = first_line[:80] if first_line else "未命名項目"
-
-    return {
-        "id":        slug,
-        "title":     title,
-        "date":      date,
-        "region":    region,
-        "tags":      tags,
-        "image":     image_path,
-        "sourceUrl": source_url,
-        "summary":   summary,
-        "content":   content,
-    }
-
-
-def sync_database(headers, database_id, output_file, label, js_var, build_fn=None):
+def sync_database(headers, database_id, output_file, label, js_var):
     """同步一個 Notion 資料庫，寫出 JS 資料檔。"""
-    if build_fn is None:
-        build_fn = build_item
     print(f"\n=== 同步「{label}」===")
     print(f"資料庫 ID: {database_id}")
     pages = query_database(headers, database_id)
     print(f"共 {len(pages)} 筆，開始抓取每篇內容與圖片…")
-    items = [build_fn(headers, page) for page in pages]
+    items = [build_item(headers, page) for page in pages]
     items_sorted = sorted(items, key=lambda x: x["date"], reverse=True)
 
     header_comment = (
@@ -361,67 +273,6 @@ def sync_database(headers, database_id, output_file, label, js_var, build_fn=Non
     body = json.dumps(items_sorted, ensure_ascii=False, indent=2)
     output_file.write_text(header_comment + body + ";\n", encoding="utf-8")
     print(f"完成，已寫入 {output_file.relative_to(ROOT)}（共 {len(items)} 筆）")
-    return items_sorted
-
-
-# ── RSS feed ──────────────────────────────────────
-
-def _xml_escape(s):
-    s = str(s or "")
-    return (s.replace("&", "&amp;").replace("<", "&lt;")
-             .replace(">", "&gt;").replace('"', "&quot;"))
-
-
-def _clip(s, n):
-    s = re.sub(r"\s+", " ", (s or "")).strip()
-    return s[:n] + "…" if len(s) > n else s
-
-
-def build_feed(all_items):
-    """由全部分類的文章產生 RSS feed.xml。"""
-    from email.utils import format_datetime
-    from datetime import datetime, timezone
-
-    base = SITE_URL.rstrip("/") + "/"
-    items = sorted(all_items, key=lambda x: x.get("date", ""), reverse=True)[:FEED_MAX_ITEMS]
-    parts = []
-    for it in items:
-        link = base + "article.html?id=" + it.get("id", "")
-        try:
-            dt = datetime.strptime(it.get("date", "") + " +0800", "%Y-%m-%d %z")
-        except ValueError:
-            dt = datetime.now(timezone.utc)
-        cats = [it.get("region", "")] + (it.get("tags") or [])
-        cat_xml = "".join(
-            f"    <category>{_xml_escape(c)}</category>\n" for c in cats if c
-        )
-        parts.append(
-            "  <item>\n"
-            f"    <title>{_xml_escape(it.get('title'))}</title>\n"
-            f"    <link>{_xml_escape(link)}</link>\n"
-            f"    <guid isPermaLink=\"false\">{_xml_escape(it.get('id'))}</guid>\n"
-            f"    <pubDate>{format_datetime(dt)}</pubDate>\n"
-            f"{cat_xml}"
-            f"    <description>{_xml_escape(_clip(it.get('summary'), 300))}</description>\n"
-            "  </item>"
-        )
-    from datetime import datetime as _dt, timezone as _tz
-    now = format_datetime(_dt.now(_tz.utc))
-    xml = (
-        '<?xml version="1.0" encoding="UTF-8"?>\n'
-        '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
-        "<channel>\n"
-        f"  <title>{_xml_escape(SITE_TITLE)}</title>\n"
-        f"  <link>{_xml_escape(base)}</link>\n"
-        f'  <atom:link href="{_xml_escape(base + "feed.xml")}" rel="self" type="application/rss+xml" />\n'
-        f"  <description>{_xml_escape(SITE_DESC)}</description>\n"
-        "  <language>zh-Hant</language>\n"
-        f"  <lastBuildDate>{now}</lastBuildDate>\n"
-        + "\n".join(parts) + "\n"
-        "</channel>\n</rss>\n"
-    )
-    FEED_FILE.write_text(xml, encoding="utf-8")
-    print(f"已寫入 RSS feed: {FEED_FILE.relative_to(ROOT)}（共 {len(items)} 筆）")
 
 
 # ── 主程式 ────────────────────────────────────────────────
@@ -448,30 +299,23 @@ def main():
     }
     IMAGE_DIR.mkdir(parents=True, exist_ok=True)
 
-    all_items = []
-
     if surface_db_id:
-        all_items += sync_database(
+        sync_database(
             headers,
             normalize_id(surface_db_id),
             OUTPUT_FILE,
             "表面處理產業新聞/案例資料",
             "window.NEWS_DATA",
-        ) or []
+        )
 
     if titanium_db_id:
-        all_items += sync_database(
+        sync_database(
             headers,
             normalize_id(titanium_db_id),
             TITANIUM_OUTPUT_FILE,
             "鈦金屬相關新聞資料",
             "window.TITANIUM_DATA",
-            build_fn=build_titanium_item,
-        ) or []
-
-    # 產生 RSS feed（結合所有分類的最新文章）
-    if all_items:
-        build_feed(all_items)
+        )
 
     print("\n所有同步完成！")
 
