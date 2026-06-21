@@ -45,6 +45,7 @@ SITE_DESC  = "彙整金屬表面處理與鈦產業的最新新聞、技術趨勢
 FEED_MAX_ITEMS = 40
 
 NOTION_VERSION = "2022-06-28"
+NOTION_DATA_SOURCE_VERSION = "2025-09-03"
 REQUEST_DELAY = 0.34  # 避免超過 Notion API 速率限制 (~3 req/s)
 
 TITLE_PROPERTY      = "名稱"
@@ -95,26 +96,91 @@ def notion_request(method, url, headers, **kwargs):
             wait = float(resp.headers.get("Retry-After", "1"))
             time.sleep(wait)
             continue
+        if not resp.ok:
+            detail = resp.text.strip()
+            if len(detail) > 2000:
+                detail = detail[:2000] + "..."
+            print(
+                f"[Notion API 錯誤] {method} {url} -> {resp.status_code}: {detail}",
+                file=sys.stderr,
+            )
         resp.raise_for_status()
         return resp.json()
     resp.raise_for_status()
 
 
-def query_database(headers, database_id):
+def headers_for_version(headers, version):
+    updated = dict(headers)
+    updated["Notion-Version"] = version
+    return updated
+
+
+def resolve_data_source_id(headers, database_or_data_source_id):
+    """Notion 2025-09-03 起 database 下面可能有 data source；query 要用 data_source_id。"""
+    new_headers = headers_for_version(headers, NOTION_DATA_SOURCE_VERSION)
+    database_url = f"https://api.notion.com/v1/databases/{database_or_data_source_id}"
+
+    try:
+        database = notion_request("GET", database_url, new_headers)
+        data_sources = database.get("data_sources") or []
+        if data_sources:
+            data_source_id = data_sources[0]["id"]
+            print(f"偵測到 Notion data source ID: {data_source_id}")
+            return data_source_id
+    except requests.HTTPError:
+        # 若使用者已直接填入 data_source_id，GET database 會失敗；下面再驗證 data source。
+        pass
+
+    data_source_url = f"https://api.notion.com/v1/data_sources/{database_or_data_source_id}"
+    data_source = notion_request("GET", data_source_url, new_headers)
+    if data_source.get("object") == "data_source":
+        print(f"使用 GitHub secret 中提供的 Notion data source ID: {database_or_data_source_id}")
+        return database_or_data_source_id
+
+    raise RuntimeError(f"無法解析 Notion database/data source ID: {database_or_data_source_id}")
+
+
+def query_data_source(headers, data_source_id):
     results = []
     cursor  = None
-    url = f"https://api.notion.com/v1/databases/{database_id}/query"
+    url = f"https://api.notion.com/v1/data_sources/{data_source_id}/query"
+    query_headers = headers_for_version(headers, NOTION_DATA_SOURCE_VERSION)
     while True:
         payload = {"page_size": 100}
         if cursor:
             payload["start_cursor"] = cursor
-        data = notion_request("POST", url, headers, json=payload)
+        data = notion_request("POST", url, query_headers, json=payload)
         results.extend(data["results"])
         if not data.get("has_more"):
             break
         cursor = data["next_cursor"]
         time.sleep(REQUEST_DELAY)
     return results
+
+
+def query_database(headers, database_id):
+    try:
+        results = []
+        cursor  = None
+        url = f"https://api.notion.com/v1/databases/{database_id}/query"
+        while True:
+            payload = {"page_size": 100}
+            if cursor:
+                payload["start_cursor"] = cursor
+            data = notion_request("POST", url, headers, json=payload)
+            results.extend(data["results"])
+            if not data.get("has_more"):
+                break
+            cursor = data["next_cursor"]
+            time.sleep(REQUEST_DELAY)
+        return results
+    except requests.HTTPError as exc:
+        status = exc.response.status_code if exc.response is not None else None
+        if status != 400:
+            raise
+        print("舊版 database query 回傳 400，改用新版 Notion data source API 重試。")
+        data_source_id = resolve_data_source_id(headers, database_id)
+        return query_data_source(headers, data_source_id)
 
 
 def get_page_blocks(headers, page_id):
