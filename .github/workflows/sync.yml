@@ -1,0 +1,61 @@
+name: Sync Notion Data
+
+on:
+  # Cloudflare Worker 或 GitHub Actions 頁面可手動觸發
+  workflow_dispatch:
+    inputs:
+      source:
+        description: Trigger source
+        required: false
+        default: manual
+      notionEvent:
+        description: Notion webhook event
+        required: false
+        default: page.updated
+  # 每天台灣時間早上 8:00 自動執行
+  schedule:
+    - cron: "0 0 * * *" # UTC 00:00 = 台灣 08:00
+
+permissions:
+  contents: write
+
+concurrency:
+  group: notion-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Notion sync
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          TITANIUM_DATABASE_ID: ${{ secrets.TITANIUM_DATABASE_ID }}
+          SITE_URL: https://chou751029.github.io/titanium-surface-treatment/
+        run: python3 scripts/sync_notion.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/js/news-data.js assets/js/titanium-data.js assets/images/synced feed.xml
+          if git diff --cached --quiet; then
+            echo "No synced content changes."
+            exit 0
+          fi
+          git commit -m "chore: sync Notion data [$(date '+%Y-%m-%d')]"
+          git push
