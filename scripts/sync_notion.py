@@ -115,6 +115,35 @@ def headers_for_version(headers, version):
     return updated
 
 
+def http_error_text(exc):
+    if exc.response is None:
+        return ""
+    return exc.response.text or ""
+
+
+def find_child_database_id(headers, page_id):
+    """使用者若貼到父頁面 ID，嘗試從頁面 blocks 找 inline/child database。"""
+    blocks = get_page_blocks(headers, page_id)
+    child_databases = [block for block in blocks if block.get("type") == "child_database"]
+    if not child_databases:
+        raise RuntimeError(
+            f"Notion ID {page_id} 是頁面，不是資料庫，而且此頁面底下找不到 child_database。"
+        )
+
+    if len(child_databases) > 1:
+        titles = [
+            block.get("child_database", {}).get("title", "(未命名資料庫)")
+            for block in child_databases
+        ]
+        print(f"此頁面含多個 child database，將使用第一個：{titles[0]}；全部候選：{titles}")
+
+    child = child_databases[0]
+    child_id = child["id"]
+    child_title = child.get("child_database", {}).get("title", "(未命名資料庫)")
+    print(f"偵測到頁面底下的 Notion child database：{child_title} ({child_id})")
+    return child_id
+
+
 def resolve_data_source_id(headers, database_or_data_source_id):
     """Notion 2025-09-03 起 database 下面可能有 data source；query 要用 data_source_id。"""
     new_headers = headers_for_version(headers, NOTION_DATA_SOURCE_VERSION)
@@ -127,7 +156,10 @@ def resolve_data_source_id(headers, database_or_data_source_id):
             data_source_id = data_sources[0]["id"]
             print(f"偵測到 Notion data source ID: {data_source_id}")
             return data_source_id
-    except requests.HTTPError:
+    except requests.HTTPError as exc:
+        if "is a page, not a database" in http_error_text(exc):
+            child_database_id = find_child_database_id(headers, database_or_data_source_id)
+            return resolve_data_source_id(headers, child_database_id)
         # 若使用者已直接填入 data_source_id，GET database 會失敗；下面再驗證 data source。
         pass
 
@@ -178,6 +210,10 @@ def query_database(headers, database_id):
         status = exc.response.status_code if exc.response is not None else None
         if status != 400:
             raise
+        if "is a page, not a database" in http_error_text(exc):
+            print("提供的 Notion ID 是頁面，嘗試從頁面底下尋找 child database。")
+            child_database_id = find_child_database_id(headers, database_id)
+            return query_database(headers, child_database_id)
         print("舊版 database query 回傳 400，改用新版 Notion data source API 重試。")
         data_source_id = resolve_data_source_id(headers, database_id)
         return query_data_source(headers, data_source_id)
