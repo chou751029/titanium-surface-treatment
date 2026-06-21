@@ -1,4 +1,6 @@
 const GITHUB_API_VERSION = "2022-11-28";
+const DEFAULT_WORKFLOW = "sync.yml";
+const DEFAULT_REF = "main";
 
 function jsonResponse(body, status = 200) {
   return new Response(JSON.stringify(body, null, 2), {
@@ -17,12 +19,33 @@ function requireEnv(env, name) {
   return value;
 }
 
+function envStatus(env) {
+  return {
+    GH_OWNER: Boolean(env.GH_OWNER),
+    GH_REPO: Boolean(env.GH_REPO),
+    GH_TOKEN: Boolean(env.GH_TOKEN),
+    GH_WORKFLOW: env.GH_WORKFLOW || DEFAULT_WORKFLOW,
+    GH_REF: env.GH_REF || DEFAULT_REF,
+  };
+}
+
+function getNotionEventName(payload) {
+  return (
+    payload?.type ||
+    payload?.event ||
+    payload?.event_type ||
+    payload?.events?.[0]?.type ||
+    "page.updated"
+  );
+}
+
 async function triggerWorkflow(env, eventPayload) {
   const owner = requireEnv(env, "GH_OWNER");
   const repo = requireEnv(env, "GH_REPO");
   const token = requireEnv(env, "GH_TOKEN");
-  const workflow = env.GH_WORKFLOW || "sync.yml";
-  const ref = env.GH_REF || "main";
+  const workflow = env.GH_WORKFLOW || DEFAULT_WORKFLOW;
+  const ref = env.GH_REF || DEFAULT_REF;
+  const notionEvent = getNotionEventName(eventPayload);
 
   const response = await fetch(
     `https://api.github.com/repos/${owner}/${repo}/actions/workflows/${workflow}/dispatches`,
@@ -39,7 +62,7 @@ async function triggerWorkflow(env, eventPayload) {
         ref,
         inputs: {
           source: "notion-webhook",
-          notionEvent: eventPayload?.type || eventPayload?.event || "page.updated",
+          notionEvent,
         },
       }),
     }
@@ -57,6 +80,7 @@ export default {
       return jsonResponse({
         ok: true,
         service: "notion-to-github-pages-worker",
+        env: envStatus(env),
       });
     }
 
@@ -71,9 +95,23 @@ export default {
       payload = {};
     }
 
+    if (payload?.verification_token) {
+      console.log("Notion webhook verification token:", payload.verification_token);
+      return jsonResponse({
+        ok: true,
+        verification_token: payload.verification_token,
+        message: "Copy this verification_token into the Notion webhook verification dialog.",
+      });
+    }
+
     try {
       await triggerWorkflow(env, payload);
-      return jsonResponse({ ok: true, triggered: "sync.yml" });
+      return jsonResponse({
+        ok: true,
+        triggered: env.GH_WORKFLOW || DEFAULT_WORKFLOW,
+        ref: env.GH_REF || DEFAULT_REF,
+        notionEvent: getNotionEventName(payload),
+      });
     } catch (error) {
       return jsonResponse({ ok: false, error: error.message }, 500);
     }
