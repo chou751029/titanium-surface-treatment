@@ -184,6 +184,7 @@
         links += '<a href="' + catHref(c) + '" class="site-nav-link"' + (on ? ' data-on="1"' : '') + '>' + esc(c.label) + '</a>';
       });
       links += '<a href="archive.html" class="site-nav-link"' + (page === 'archive' ? ' data-on="1"' : '') + '>歸檔</a>';
+      links += '<a href="contact.html" class="site-nav-link"' + (page === 'contact' ? ' data-on="1"' : '') + '>聯絡</a>';
 
       header.className = 'site-nav-wrap';
       header.innerHTML =
@@ -721,6 +722,51 @@
   }
 
   /* ══════════════════════════════════════════════════════════
+     聯絡頁
+  ══════════════════════════════════════════════════════════ */
+
+  function initContact() {
+    if (document.body.dataset.page !== 'contact') return;
+    var m = meta();
+    var headerSlot = document.getElementById('page-header-slot');
+    var contactArea = document.getElementById('contact-area');
+
+    if (headerSlot) headerSlot.innerHTML = pageHeader({
+      headerBg: '#264653',
+      eyebrow: 'CONTACT · 聯絡',
+      label: '聯絡我',
+      desc: '歡迎提供新聞內容回饋、產業線索投稿，或討論金屬材料與表面處理相關交流合作。',
+      accent: '#E9C46A'
+    });
+    document.title = '聯絡我 — ' + m.title;
+
+    if (!contactArea) return;
+    var emailCards = (m.emails || []).map(function (email, idx) {
+      var label = idx === 0 ? '主要信箱' : '工作信箱';
+      return '<a class="contact-card" href="mailto:' + esc(email) + '">'
+        + '<span class="contact-card-kicker">' + label + '</span>'
+        + '<span class="contact-card-title">' + esc(email) + '</span>'
+        + '<span class="contact-card-action">寄信聯絡 →</span>'
+        + '</a>';
+    }).join('');
+
+    var socialLinks = (m.social || []).map(function (s) {
+      return '<a class="contact-social-link" href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.label) + '</a>';
+    }).join('');
+
+    contactArea.innerHTML =
+      '<section class="contact-grid">'
+      + '<div class="contact-intro">'
+      + '<div class="section-eyebrow">Open for notes · exchanges</div>'
+      + '<h2>產業資訊、合作交流、內容建議都可以從這裡開始。</h2>'
+      + '<p>如果你手上有表面處理、鈦金屬、金屬材料或製程相關新聞與案例，也歡迎寄來分享。我會在整理資訊時評估是否適合放入網站。</p>'
+      + '<div class="contact-social">' + socialLinks + '</div>'
+      + '</div>'
+      + '<div class="contact-cards">' + emailCards + '</div>'
+      + '</section>';
+  }
+
+  /* ══════════════════════════════════════════════════════════
      啟動：先動態載入各分類資料，再渲染
   ══════════════════════════════════════════════════════════ */
 
@@ -745,6 +791,7 @@
     initSearch();
     initTag();
     initArchive();
+    initContact();
   }
 
   document.addEventListener('DOMContentLoaded', function () {
