@@ -733,36 +733,48 @@
 
     if (headerSlot) headerSlot.innerHTML = pageHeader({
       headerBg: '#264653',
-      eyebrow: 'CONTACT · 聯絡',
-      label: '聯絡我',
-      desc: '歡迎提供新聞內容回饋、產業線索投稿，或討論金屬材料與表面處理相關交流合作。',
-      accent: '#E9C46A'
+      eyebrow: 'CONTACT · 聯絡我',
+      label: '與我聯絡',
+      desc: '對新聞內容有疑問、想提供產業線索，或希望交流合作，都歡迎留言。我會盡快回覆。',
+      accent: '#2A9D8F'
     });
-    document.title = '聯絡我 — ' + m.title;
+    document.title = '與我聯絡 — ' + m.title;
 
     if (!contactArea) return;
-    var emailCards = (m.emails || []).map(function (email, idx) {
-      var label = idx === 0 ? '主要信箱' : '工作信箱';
-      return '<a class="contact-card" href="mailto:' + esc(email) + '">'
-        + '<span class="contact-card-kicker">' + label + '</span>'
-        + '<span class="contact-card-title">' + esc(email) + '</span>'
-        + '<span class="contact-card-action">寄信聯絡 →</span>'
-        + '</a>';
-    }).join('');
-
+    var emails = m.emails || [];
+    var primaryEmail = emails[0] || '';
     var socialLinks = (m.social || []).map(function (s) {
       return '<a class="contact-social-link" href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.label) + '</a>';
+    }).join('');
+    var emailRows = emails.map(function (email, idx) {
+      return '<a class="contact-email-row" href="mailto:' + esc(email) + '">'
+        + '<span class="contact-email-icon">✉</span>'
+        + '<span><span class="contact-email-label">' + (idx === 0 ? '個人信箱' : '工作信箱') + '</span>'
+        + '<span class="contact-email-address">' + esc(email) + '</span></span>'
+        + '</a>';
     }).join('');
 
     contactArea.innerHTML =
       '<section class="contact-grid">'
-      + '<div class="contact-intro">'
-      + '<div class="section-eyebrow">Open for notes · exchanges</div>'
-      + '<h2>產業資訊、合作交流、內容建議都可以從這裡開始。</h2>'
-      + '<p>如果你手上有表面處理、鈦金屬、金屬材料或製程相關新聞與案例，也歡迎寄來分享。我會在整理資訊時評估是否適合放入網站。</p>'
+      + '<aside class="contact-intro">'
+      + '<div class="section-eyebrow">Direct · 其他聯絡方式</div>'
+      + '<p>這是一個工作之餘的小小實驗，將金屬產業資訊一點一滴積累、分享。任何想法都歡迎交流。</p>'
+      + '<div class="contact-email-list">' + emailRows + '</div>'
       + '<div class="contact-social">' + socialLinks + '</div>'
-      + '</div>'
-      + '<div class="contact-cards">' + emailCards + '</div>'
+      + '</aside>'
+      + '<form class="contact-form" action="' + (primaryEmail ? 'mailto:' + esc(primaryEmail) : '#') + '" method="post" enctype="text/plain">'
+      + '<label>姓名 <span>*</span><input name="姓名" type="text" placeholder="您的姓名" required></label>'
+      + '<label>單位 / 公司 <em>（選填）</em><input name="單位 / 公司" type="text" placeholder="您的服務單位或公司"></label>'
+      + '<label>電子信箱 <span>*</span><input name="電子信箱" type="email" placeholder="您的 Email 電子信箱" required></label>'
+      + '<fieldset><legend>聯絡原因 <span>*</span></legend>'
+      + '<label class="contact-radio"><input name="聯絡原因" type="radio" value="對新聞內容的疑問或回饋" required><span>對新聞內容的疑問或回饋</span></label>'
+      + '<label class="contact-radio"><input name="聯絡原因" type="radio" value="提供產業新聞線索 / 投稿"><span>提供產業新聞線索 / 投稿</span></label>'
+      + '<label class="contact-radio"><input name="聯絡原因" type="radio" value="交流、合作或演講邀約"><span>交流、合作或演講邀約</span></label>'
+      + '<label class="contact-radio"><input name="聯絡原因" type="radio" value="其他"><span>其他</span></label>'
+      + '</fieldset>'
+      + '<label>您的訊息 <span>*</span><textarea name="訊息" placeholder="請填寫您的訊息細節" required></textarea></label>'
+      + '<div class="contact-form-foot"><button type="submit">送出訊息 →</button><span>送出將以你的郵件程式寄出</span></div>'
+      + '</form>'
       + '</section>';
   }
 
