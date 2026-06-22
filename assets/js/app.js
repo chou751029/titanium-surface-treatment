@@ -762,7 +762,7 @@
       + '<div class="contact-email-list">' + emailRows + '</div>'
       + '<div class="contact-social">' + socialLinks + '</div>'
       + '</aside>'
-      + '<form class="contact-form" action="' + (primaryEmail ? 'mailto:' + esc(primaryEmail) : '#') + '" method="post" enctype="text/plain">'
+      + '<form class="contact-form">'
       + '<label>姓名 <span>*</span><input name="姓名" type="text" placeholder="您的姓名" required></label>'
       + '<label>單位 / 公司 <em>（選填）</em><input name="單位 / 公司" type="text" placeholder="您的服務單位或公司"></label>'
       + '<label>電子信箱 <span>*</span><input name="電子信箱" type="email" placeholder="您的 Email 電子信箱" required></label>'
@@ -776,6 +776,29 @@
       + '<div class="contact-form-foot"><button type="submit">送出訊息 →</button><span>送出將以你的郵件程式寄出</span></div>'
       + '</form>'
       + '</section>';
+
+    var form = contactArea.querySelector('.contact-form');
+    if (form && primaryEmail) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        var data = new FormData(form);
+        var subject = 'Chou 金屬產業分享園地聯絡訊息';
+        var body = [
+          '姓名：' + (data.get('姓名') || ''),
+          '單位 / 公司：' + (data.get('單位 / 公司') || ''),
+          '電子信箱：' + (data.get('電子信箱') || ''),
+          '聯絡原因：' + (data.get('聯絡原因') || ''),
+          '',
+          '訊息：',
+          data.get('訊息') || ''
+        ].join('\n');
+        window.location.href = 'mailto:' + primaryEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      });
+    }
   }
 
   /* ══════════════════════════════════════════════════════════
