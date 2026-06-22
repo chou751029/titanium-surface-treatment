@@ -762,7 +762,7 @@
       + '<div class="contact-email-list">' + emailRows + '</div>'
       + '<div class="contact-social">' + socialLinks + '</div>'
       + '</aside>'
-      + '<form class="contact-form">'
+      + '<div class="contact-form" role="form">'
       + '<label>姓名 <span>*</span><input name="姓名" type="text" placeholder="您的姓名" required></label>'
       + '<label>單位 / 公司 <em>（選填）</em><input name="單位 / 公司" type="text" placeholder="您的服務單位或公司"></label>'
       + '<label>電子信箱 <span>*</span><input name="電子信箱" type="email" placeholder="您的 Email 電子信箱" required></label>'
@@ -773,28 +773,40 @@
       + '<label class="contact-radio"><input name="聯絡原因" type="radio" value="其他"><span>其他</span></label>'
       + '</fieldset>'
       + '<label>您的訊息 <span>*</span><textarea name="訊息" placeholder="請填寫您的訊息細節" required></textarea></label>'
-      + '<div class="contact-form-foot"><button type="submit">送出訊息 →</button><span>送出將以你的郵件程式寄出</span></div>'
-      + '</form>'
+      + '<div class="contact-form-foot"><button type="button">送出訊息 →</button><span>送出將以你的郵件程式寄出</span></div>'
+      + '</div>'
       + '</section>';
 
     var form = contactArea.querySelector('.contact-form');
-    if (form && primaryEmail) {
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
-        if (!form.checkValidity()) {
-          form.reportValidity();
+    var sendBtn = contactArea.querySelector('.contact-form-foot button');
+    if (form && sendBtn && primaryEmail) {
+      sendBtn.addEventListener('click', function () {
+        var required = form.querySelectorAll('[required]');
+        for (var i = 0; i < required.length; i++) {
+          if (!required[i].checkValidity()) {
+            required[i].reportValidity();
+            return;
+          }
+        }
+        var firstReason = form.querySelector('input[name="聯絡原因"]');
+        if (!form.querySelector('input[name="聯絡原因"]:checked')) {
+          if (firstReason) firstReason.reportValidity();
           return;
         }
-        var data = new FormData(form);
+        function value(name) {
+          var checked = form.querySelector('[name="' + name + '"]:checked');
+          var field = checked || form.querySelector('[name="' + name + '"]');
+          return field ? field.value : '';
+        }
         var subject = 'Chou 金屬產業分享園地聯絡訊息';
         var body = [
-          '姓名：' + (data.get('姓名') || ''),
-          '單位 / 公司：' + (data.get('單位 / 公司') || ''),
-          '電子信箱：' + (data.get('電子信箱') || ''),
-          '聯絡原因：' + (data.get('聯絡原因') || ''),
+          '姓名：' + value('姓名'),
+          '單位 / 公司：' + value('單位 / 公司'),
+          '電子信箱：' + value('電子信箱'),
+          '聯絡原因：' + value('聯絡原因'),
           '',
           '訊息：',
-          data.get('訊息') || ''
+          value('訊息')
         ].join('\n');
         window.location.href = 'mailto:' + primaryEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       });
