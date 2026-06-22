@@ -58,4 +58,5 @@ jobs:
             exit 0
           fi
           git commit -m "chore: sync Notion data [$(date '+%Y-%m-%d')]"
-          git push
+          git pull --rebase origin main
+          git push origin HEAD:main
