@@ -6,7 +6,16 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Mon, 22 Jun 2026 04:47:04 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 22 Jun 2026 06:15:42 +0000</lastBuildDate>
+  <item>
+    <title>Elmo發布用於工業應用的新型運動控制器和伺服驅動器</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3877557fa27980819665c776d3df026b</link>
+    <guid isPermaLink="false">3877557fa27980819665c776d3df026b</guid>
+    <pubDate>Mon, 22 Jun 2026 00:00:00 +0800</pubDate>
+    <category>鈦合金</category>
+    <category>鈦材應用</category>
+    <description>Elmo Motion Control Ltd. 昨日發布了適用於工業、惡劣及極端環境等多種應用的新型伺服驅動器和運動控制器驅動器。這些新產品能夠適應溫度、海拔、水深、濕度、振動等多種嚴苛條件。 「我們的客戶需要的不僅僅是緊湊的尺寸和高功率密度，」Elmo美國銷售總監Elizabeth Victor表示，「功能安全對於許多自動化系統至關重要，它可以減少甚至消除對安全籠的需求。透過將功能安全整合到我們的控制器和伺服驅動器中，我們能夠幫助OEM廠商在其運動子系統的基礎層面上實現安全功能。」 她補充說：“通過我們提供的認證產品，我們還可以幫助簡化必須滿足嚴格功能安全標準的系統的設計和認證。” Elm…</description>
+  </item>
   <item>
     <title>Why Toho Zinc’s Super-TIX 51AF titanium sheets are drawing quiet attention</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3867557fa27980a9aaafe8ceb70ee7ba</link>
@@ -363,16 +372,6 @@
     <category>中國大陸</category>
     <category>整體市場</category>
     <description>2026 年採購展望：三大工業鈦製造商 選擇供應商需要權衡技術專長、生產規模、客製化能力和整體擁有成本。以下分析重點介紹三家成熟的製造商，它們各自擁有獨特的優勢。 1. KOBO先進材料株式會社－集精密製造與客製化於一體的專家 公司簡介及規模： KOBO成立於2018年，位於江蘇蘇州，廠房面積1500平方米，擁有50名員工，年產量200噸。本公司擁有二十餘年的產業經驗，並配備一支由5名工程師組成的專業研發團隊。 KOBO的業務以出口為主，80%的產品銷往歐盟、美國和亞洲市場。 產品及技術組合： KOBO提供各式各樣的產品，包括鈦材料（棒材、板材、捲材、管材、線材）、鈦陽極、鈦電極以及客製CNC…</description>
-  </item>
-  <item>
-    <title>日本工業標準（JIS）修訂（截至2026年3月）</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=32c7557fa27980c08c2cc404393bc2c0</link>
-    <guid isPermaLink="false">32c7557fa27980c08c2cc404393bc2c0</guid>
-    <pubDate>Mon, 23 Mar 2026 00:00:00 +0800</pubDate>
-    <category>日本</category>
-    <category>低碳</category>
-    <category>整體產業</category>
-    <description>① 制定關於塑膠薄膜和其他材料等離子體表面改質設備性能測試方法的JIS 標準（JIS B 9948） 。 塑膠薄膜在我們的日常生活中應用廣泛，但為了在其表面進行黏合或印刷，必須先對其進行預處理，例如使用等離子表面改質設備改變其表面性質。目前，評估表面處理的狀態和程度需要切割樣品，並使樣品與評估設備直接接觸，這帶來了評估耗時以及評估後的樣品無法重複使用等挑戰。 為了應對這些挑戰，我們開發了一種“表面改質程度測量裝置”，用於非接觸式評估塑膠薄膜和其他材料的表面改質處理狀態和程度。現在，透過利用新型市場創造型標準化系統*3，我們制定了新的JIS（日本工業標準），定義了使用此測量裝置測量改質性能的測試…</description>
   </item>
 </channel>
 </rss>

@@ -4,6 +4,129 @@
 //   python3 scripts/sync_notion.py
 window.TITANIUM_DATA = [
   {
+    "id": "3877557fa27980819665c776d3df026b",
+    "title": "Elmo發布用於工業應用的新型運動控制器和伺服驅動器",
+    "date": "2026-06-22",
+    "region": "",
+    "tags": [
+      "鈦合金",
+      "鈦材應用"
+    ],
+    "image": "assets/images/synced/3877557fa27980819665c776d3df026b.jpg",
+    "sourceUrl": "https://www.therobotreport.com/elmo-releases-new-motion-controller-servo-drives-industrial-applications/",
+    "summary": "Elmo Motion Control Ltd. 昨日發布了適用於工業、惡劣及極端環境等多種應用的新型伺服驅動器和運動控制器驅動器。這些新產品能夠適應溫度、海拔、水深、濕度、振動等多種嚴苛條件。\n\n「我們的客戶需要的不僅僅是緊湊的尺寸和高功率密度，」Elmo美國銷售總監Elizabeth Victor表示，「功能安全對於許多自動化系統至關重要，它可以減少甚至消除對安全籠的需求。透過將功能安全整合到我們的控制器和伺服驅動器中，我們能夠幫助OEM廠商在其運動子系統的基礎層面上實現安全功能。」\n\n她補充說：“通過我們提供的認證產品，我們還可以幫助簡化必須滿足嚴格功能安全標準的系統的設計和認證。”\n\nElmo公司表示，其最新的伺服驅動器和運動控制器在功率密度方面樹立了新的標桿，擴展了現有的Platinum產品線，並推出了全新的Titanium產品線。這家總部位於以色列佩塔提克瓦的 公司聲稱，其Titanium產品線實現了更高水準的多軸緊湊性、智慧性和整合性。該公司還表示，在驅動器層面實現的功能大大減少了對安全和硬體佈線的需求。\n\nElmo 為 Automate 帶來了五款全新的 Titanium 產品\n\nElmo Motion Control計劃下週在芝加哥舉行的Automate 2026展會上，於S-3601展位展示其技術，其中包括：\n\n鈦合金 Castanet 伺服驅動器：\n\n鈦合金口琴伺服驅動器：\n\n鈦金大師運動控制器：\n\n鉑金級 Jori 30A/60A 伺服驅動器：\n\nPlatinum Cymbal伺服驅動器：\n\nElmo公司表示，全新的Titanium系列產品憑藉其多軸功能簡化了設計。例如，一台Titanium Castanet伺服驅動器即可取代兩台Elmo Twitter伺服驅動器。最終成品的尺寸幾乎只有兩台Elmo Twitter的一半，工程師只需使用單條總線即可同步x/y軸定位，而無需像以前那樣使用兩條總線。\n\n這些伺服驅動器整合了高性能處理器、氮化鎵 (GaN) 技術和其他先進技術，以提高性能。\n\nhttps://www.therobotreport.com/elmo-releases-new-motion-controller-servo-drives-industrial-applications/\n\nElmo適用於多種機器人型態\n\nElmo Motion Control公司表示，其伺服驅動器可用於任何機器人系統和特殊技術，包括自動導引車（AGV）、自主移動機器人（AMR）、協作機器人和外骨骼。該公司指出，這些系統通常需要多個獨立運作的伺服驅動器來管理馬達的位置、速度和扭矩，從而實現整個系統的同步運動。\n\n埃爾莫補充說，同一個系統可能需要多種伺服驅動器來支援不同的馬達。這包括從驅動整個協作機器人的大型馬達到操作小型機械手的多個小型馬達。\n\n為了幫助工程師實現這一目標，Elmo 表示其伺服驅動器可提供以下功能：\n\n緊湊型伺服電機，在最大限度減少物理佔用空間的同時，實現高功率密度\n\n多達 17 項經認證的功能安全特性\n\n高精度控制，實現電機間精確協調的運動\n\n多軸功能可縮小系統尺寸，簡化設計和同步。\n\n快速交付現成產品，並可根據需要快速客製化\n\n大規模供貨以支持大量生產\n\n「我們提供全面的伺服驅動器產品組合，以滿足客戶特定的驅動和控制需求，」維克多補充道。 “我們的每條產品線都提供一系列功能，以滿足不同的功能、安全性和成本要求。”\n\nElmo 為其伺服驅動器提供屢獲殊榮的 Elmo Application Studio III...",
+    "content": [
+      {
+        "type": "p",
+        "text": "Elmo Motion Control Ltd. 昨日發布了適用於工業、惡劣及極端環境等多種應用的新型伺服驅動器和運動控制器驅動器。這些新產品能夠適應溫度、海拔、水深、濕度、振動等多種嚴苛條件。"
+      },
+      {
+        "type": "p",
+        "text": "「我們的客戶需要的不僅僅是緊湊的尺寸和高功率密度，」Elmo美國銷售總監Elizabeth Victor表示，「功能安全對於許多自動化系統至關重要，它可以減少甚至消除對安全籠的需求。透過將功能安全整合到我們的控制器和伺服驅動器中，我們能夠幫助OEM廠商在其運動子系統的基礎層面上實現安全功能。」"
+      },
+      {
+        "type": "p",
+        "text": "她補充說：“通過我們提供的認證產品，我們還可以幫助簡化必須滿足嚴格功能安全標準的系統的設計和認證。”"
+      },
+      {
+        "type": "p",
+        "text": "Elmo公司表示，其最新的伺服驅動器和運動控制器在功率密度方面樹立了新的標桿，擴展了現有的Platinum產品線，並推出了全新的Titanium產品線。這家總部位於以色列佩塔提克瓦的 公司聲稱，其Titanium產品線實現了更高水準的多軸緊湊性、智慧性和整合性。該公司還表示，在驅動器層面實現的功能大大減少了對安全和硬體佈線的需求。"
+      },
+      {
+        "type": "h",
+        "text": "Elmo 為 Automate 帶來了五款全新的 Titanium 產品"
+      },
+      {
+        "type": "p",
+        "text": "Elmo Motion Control計劃下週在芝加哥舉行的Automate 2026展會上，於S-3601展位展示其技術，其中包括："
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "鈦合金 Castanet 伺服驅動器："
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "鈦合金口琴伺服驅動器："
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "鈦金大師運動控制器："
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "鉑金級 Jori 30A/60A 伺服驅動器："
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "Platinum Cymbal伺服驅動器："
+      },
+      {
+        "type": "p",
+        "text": "Elmo公司表示，全新的Titanium系列產品憑藉其多軸功能簡化了設計。例如，一台Titanium Castanet伺服驅動器即可取代兩台Elmo Twitter伺服驅動器。最終成品的尺寸幾乎只有兩台Elmo Twitter的一半，工程師只需使用單條總線即可同步x/y軸定位，而無需像以前那樣使用兩條總線。"
+      },
+      {
+        "type": "p",
+        "text": "這些伺服驅動器整合了高性能處理器、氮化鎵 (GaN) 技術和其他先進技術，以提高性能。"
+      },
+      {
+        "type": "p",
+        "text": "https://www.therobotreport.com/elmo-releases-new-motion-controller-servo-drives-industrial-applications/"
+      },
+      {
+        "type": "h",
+        "text": "Elmo適用於多種機器人型態"
+      },
+      {
+        "type": "p",
+        "text": "Elmo Motion Control公司表示，其伺服驅動器可用於任何機器人系統和特殊技術，包括自動導引車（AGV）、自主移動機器人（AMR）、協作機器人和外骨骼。該公司指出，這些系統通常需要多個獨立運作的伺服驅動器來管理馬達的位置、速度和扭矩，從而實現整個系統的同步運動。"
+      },
+      {
+        "type": "p",
+        "text": "埃爾莫補充說，同一個系統可能需要多種伺服驅動器來支援不同的馬達。這包括從驅動整個協作機器人的大型馬達到操作小型機械手的多個小型馬達。"
+      },
+      {
+        "type": "p",
+        "text": "為了幫助工程師實現這一目標，Elmo 表示其伺服驅動器可提供以下功能："
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "緊湊型伺服電機，在最大限度減少物理佔用空間的同時，實現高功率密度"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "多達 17 項經認證的功能安全特性"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "高精度控制，實現電機間精確協調的運動"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "多軸功能可縮小系統尺寸，簡化設計和同步。"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "快速交付現成產品，並可根據需要快速客製化"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "大規模供貨以支持大量生產"
+      },
+      {
+        "type": "p",
+        "text": "「我們提供全面的伺服驅動器產品組合，以滿足客戶特定的驅動和控制需求，」維克多補充道。 “我們的每條產品線都提供一系列功能，以滿足不同的功能、安全性和成本要求。”"
+      },
+      {
+        "type": "p",
+        "text": "Elmo 為其伺服驅動器提供屢獲殊榮的 Elmo Application Studio III (EASIII) 和 Composer2 支持，使機器設計人員能夠開發、測試和實施自己的控制演算法。"
+      },
+      {
+        "type": "p",
+        "text": "https://www.youtube.com/watch?v=AZgV3QJc7iI"
+      }
+    ]
+  },
+  {
     "id": "3867557fa27980a9aaafe8ceb70ee7ba",
     "title": "Why Toho Zinc’s Super-TIX 51AF titanium sheets are drawing quiet attention",
     "date": "2026-06-21",
