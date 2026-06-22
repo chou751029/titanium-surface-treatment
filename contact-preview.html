@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡表單設計預覽 - Chou's 金屬產業分享園地</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/chou-style.css">
+  <style>
+    .contact-preview-hero {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 56px 48px 28px;
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 46px;
+      align-items: center;
+    }
+
+    .contact-preview-hero h1 {
+      font-size: 42px;
+      line-height: 1.35;
+      color: #264653;
+      margin: 0 0 18px;
+      letter-spacing: 0;
+    }
+
+    .contact-preview-hero p {
+      font-size: 16px;
+      line-height: 2;
+      color: #5E574C;
+      margin: 0 0 28px;
+      max-width: 680px;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .contact-primary,
+    .contact-secondary,
+    .contact-strip-btn,
+    .contact-submit {
+      border: 0;
+      border-radius: 8px;
+      min-height: 46px;
+      padding: 0 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      transition: transform .16s, box-shadow .16s, background .16s;
+    }
+
+    .contact-primary {
+      background: #E76F51;
+      color: #fff;
+      box-shadow: 0 12px 26px -18px rgba(231,111,81,.9);
+    }
+
+    .contact-secondary {
+      background: #fff;
+      color: #1A6E65;
+      border: 1px solid rgba(38,70,83,.18);
+    }
+
+    .contact-primary:hover,
+    .contact-secondary:hover,
+    .contact-strip-btn:hover,
+    .contact-submit:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 36px -20px rgba(38,70,83,.45);
+    }
+
+    .contact-note-card {
+      background: #fff;
+      border: 1px solid rgba(38,70,83,.09);
+      border-radius: 12px;
+      padding: 28px;
+      box-shadow: 0 16px 36px -22px rgba(38,70,83,.45);
+    }
+
+    .contact-note-card h2 {
+      color: #264653;
+      font-size: 22px;
+      line-height: 1.5;
+      margin: 0 0 12px;
+    }
+
+    .contact-note-card p {
+      color: #7A7264;
+      font-size: 14px;
+      line-height: 1.9;
+      margin: 0 0 20px;
+    }
+
+    .contact-use-list {
+      display: grid;
+      gap: 12px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contact-use-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: #3E3830;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .contact-use-list span {
+      width: 7px;
+      height: 7px;
+      margin-top: 9px;
+      flex: none;
+      border-radius: 50%;
+      background: #2A9D8F;
+    }
+
+    .contact-strip {
+      background: #264653;
+      border-radius: 16px;
+      padding: 42px 46px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .contact-strip h2 {
+      color: #FBF6EC;
+      font-size: 25px;
+      line-height: 1.5;
+      margin: 0 0 10px;
+    }
+
+    .contact-strip p {
+      color: rgba(251,246,236,.78);
+      font-size: 15px;
+      line-height: 1.9;
+      margin: 0;
+      max-width: 720px;
+    }
+
+    .contact-strip-btn {
+      background: #E9C46A;
+      color: #2B2622;
+      white-space: nowrap;
+    }
+
+    .contact-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      display: none;
+      place-items: center;
+      padding: 28px;
+      background: rgba(21,25,27,.62);
+    }
+
+    .contact-modal-backdrop.is-open {
+      display: grid;
+    }
+
+    .contact-modal {
+      width: min(920px, 100%);
+      max-height: min(92vh, 900px);
+      overflow: auto;
+      background: #FCF8F1;
+      border-radius: 18px;
+      box-shadow: 0 34px 90px -38px rgba(24,36,42,.65);
+    }
+
+    .contact-modal-head {
+      background: #264653;
+      color: #FBF6EC;
+      padding: 30px 34px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: start;
+    }
+
+    .contact-modal-head h2 {
+      font-size: 28px;
+      line-height: 1.45;
+      margin: 0 0 8px;
+    }
+
+    .contact-modal-head p {
+      color: rgba(251,246,236,.72);
+      line-height: 1.8;
+      margin: 0;
+      max-width: 650px;
+    }
+
+    .contact-close {
+      width: 38px;
+      height: 38px;
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 50%;
+      background: rgba(255,255,255,.08);
+      color: #fff;
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .contact-form {
+      padding: 34px;
+      display: grid;
+      gap: 26px;
+    }
+
+    .contact-form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .contact-field {
+      display: grid;
+      gap: 9px;
+    }
+
+    .contact-field.full {
+      grid-column: 1 / -1;
+    }
+
+    .contact-field label,
+    .contact-field legend {
+      color: #3E3830;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .contact-required {
+      color: #F16058;
+      margin-left: 4px;
+    }
+
+    .contact-field input,
+    .contact-field textarea {
+      width: 100%;
+      border: 1.5px solid rgba(43,38,34,.58);
+      border-radius: 24px;
+      background: rgba(255,255,255,.35);
+      color: #2B2622;
+      outline: none;
+      padding: 15px 19px;
+      font-size: 16px;
+      transition: border-color .16s, box-shadow .16s, background .16s;
+    }
+
+    .contact-field input::placeholder,
+    .contact-field textarea::placeholder {
+      color: #8D9AA5;
+      font-weight: 600;
+    }
+
+    .contact-field input:focus,
+    .contact-field textarea:focus {
+      border-color: #2A9D8F;
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(42,157,143,.13);
+    }
+
+    .contact-field textarea {
+      min-height: 172px;
+      resize: vertical;
+      border-radius: 22px;
+      line-height: 1.8;
+    }
+
+    .contact-choice-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .contact-choice {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      min-height: 52px;
+      padding: 12px 14px;
+      border: 1px solid rgba(38,70,83,.18);
+      border-radius: 8px;
+      background: rgba(255,255,255,.35);
+      color: #3E3830;
+      line-height: 1.55;
+      cursor: pointer;
+    }
+
+    .contact-choice input {
+      width: 18px;
+      height: 18px;
+      flex: none;
+      margin: 3px 0 0;
+      padding: 0;
+      accent-color: #2A9D8F;
+      box-shadow: none;
+    }
+
+    .contact-form-foot {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-top: 4px;
+      border-top: 1px solid rgba(38,70,83,.1);
+    }
+
+    .contact-form-note {
+      color: #7A7264;
+      font-size: 13px;
+      line-height: 1.7;
+      max-width: 500px;
+      margin: 0;
+    }
+
+    .contact-submit {
+      min-height: 52px;
+      border-radius: 999px;
+      background: #82D8F2;
+      color: #2B2622;
+      font-size: 17px;
+      white-space: nowrap;
+    }
+
+    .contact-mock-alert {
+      display: none;
+      color: #1A6E65;
+      background: rgba(42,157,143,.12);
+      border: 1px solid rgba(42,157,143,.25);
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .contact-mock-alert.is-visible {
+      display: block;
+    }
+
+    @media (max-width: 960px) {
+      .contact-preview-hero {
+        grid-template-columns: 1fr;
+        gap: 26px;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .contact-preview-hero h1 {
+        font-size: 34px;
+      }
+
+      .contact-strip,
+      .contact-form-grid,
+      .contact-choice-list {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-strip {
+        padding: 32px 28px;
+      }
+
+      .contact-field.full {
+        grid-column: auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .site-nav {
+        overflow: hidden;
+      }
+
+      .site-search-form {
+        display: none;
+      }
+
+      .contact-modal-backdrop {
+        padding: 12px;
+      }
+
+      .contact-modal-head,
+      .contact-form {
+        padding: 24px 20px;
+      }
+
+      .contact-modal-head h2 {
+        font-size: 24px;
+      }
+
+      .contact-field input,
+      .contact-field textarea {
+        border-radius: 18px;
+      }
+    }
+  </style>
+</head>
+<body data-page="contact-preview">
+
+  <header class="site-nav-wrap">
+    <nav class="site-nav">
+      <a href="index.html" class="site-logo">
+        <span class="site-logo-title">Chou's 金屬產業分享園地</span>
+        <span class="site-logo-sub">METAL INDUSTRY NOTES</span>
+      </a>
+      <div class="site-nav-right">
+        <div class="site-nav-links">
+          <a href="index.html" class="site-nav-link">首頁</a>
+          <a href="news.html" class="site-nav-link">表面處理產業新聞</a>
+          <a href="titanium.html" class="site-nav-link">鈦金屬相關新聞</a>
+          <a href="other.html" class="site-nav-link">其他產業</a>
+        </div>
+        <form class="site-search-form" action="search.html" method="get">
+          <span class="site-search-icon">⌕</span>
+          <input class="site-search-input" name="q" type="search" placeholder="搜尋全站新聞…" autocomplete="off">
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-preview-hero">
+      <div>
+        <div class="section-eyebrow">Contact Design Preview</div>
+        <h1>把產業交流的入口，放在讀者最容易回應的地方</h1>
+        <p>這是一版「先看設計」的聯絡區塊。正式導入時，可以放在首頁 ABOUT 下方，也可以在導覽列新增「與我聯絡」入口。點擊按鈕後會打開表單，讓讀者留下姓名、單位、電子信箱與想討論的內容。</p>
+        <div class="contact-actions">
+          <button class="contact-primary" type="button" data-open-contact>開啟聯絡表單</button>
+          <a class="contact-secondary" href="#contact-section">查看頁面區塊</a>
+        </div>
+      </div>
+
+      <aside class="contact-note-card">
+        <h2>適合收集的聯絡情境</h2>
+        <p>欄位比一般留言更完整，但仍保持短表單，降低讀者填寫門檻。</p>
+        <ul class="contact-use-list">
+          <li><span></span><div>產業新聞、鈦金屬或表面處理案例交流</div></li>
+          <li><span></span><div>研究單位、廠商或媒體邀約與合作</div></li>
+          <li><span></span><div>資料補充、文章勘誤與主題建議</div></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section" id="contact-section">
+      <div class="contact-strip">
+        <div>
+          <h2>有產業資訊、合作想法或文章建議嗎？</h2>
+          <p>歡迎留下聯絡方式與訊息。我會依照內容判斷是否適合整理成後續文章、案例補充，或進一步交流。</p>
+        </div>
+        <button class="contact-strip-btn" type="button" data-open-contact>填寫表單</button>
+      </div>
+    </section>
+  </main>
+
+  <div class="contact-modal-backdrop" id="contact-modal" aria-hidden="true">
+    <div class="contact-modal" role="dialog" aria-modal="true" aria-labelledby="contact-title">
+      <div class="contact-modal-head">
+        <div>
+          <div class="section-eyebrow" style="color:#E9C46A;margin-bottom:10px;">Contact</div>
+          <h2 id="contact-title">與我聯絡</h2>
+          <p>若你有鈦金屬、表面處理、材料產業資料交流，或希望提出合作與文章建議，請留下以下資訊。</p>
+        </div>
+        <button class="contact-close" type="button" aria-label="關閉聯絡表單" data-close-contact>×</button>
+      </div>
+
+      <form class="contact-form" id="contact-form">
+        <div class="contact-mock-alert" id="contact-mock-alert">這是設計預覽，所以目前不會真的送出。正式導入時可串接 Google Form、Formspree、EmailJS 或後端 API。</div>
+
+        <div class="contact-form-grid">
+          <div class="contact-field">
+            <label for="contact-name">姓名 <span class="contact-required">*</span></label>
+            <input id="contact-name" name="name" type="text" placeholder="您的姓名" required>
+          </div>
+
+          <div class="contact-field">
+            <label for="contact-org">單位 <span class="contact-required">*</span></label>
+            <input id="contact-org" name="organization" type="text" placeholder="公司、學校或研究單位" required>
+          </div>
+
+          <div class="contact-field full">
+            <label for="contact-email">電子信箱 <span class="contact-required">*</span></label>
+            <input id="contact-email" name="email" type="email" placeholder="您的 Email 電子信箱" required>
+          </div>
+
+          <fieldset class="contact-field full" style="border:0;padding:0;margin:0;">
+            <legend>聯絡原因 <span class="contact-required">*</span></legend>
+            <div class="contact-choice-list">
+              <label class="contact-choice"><input type="radio" name="reason" value="industry-news" required>我想交流產業新聞或技術資訊</label>
+              <label class="contact-choice"><input type="radio" name="reason" value="collaboration">我有合作、演講或顧問邀約</label>
+              <label class="contact-choice"><input type="radio" name="reason" value="article">我想提供文章建議或資料補充</label>
+              <label class="contact-choice"><input type="radio" name="reason" value="other">其他想進一步討論的事項</label>
+            </div>
+          </fieldset>
+
+          <div class="contact-field full">
+            <label for="contact-message">您的訊息 <span class="contact-required">*</span></label>
+            <textarea id="contact-message" name="message" placeholder="請填寫您的訊息細節，例如主題、背景、希望交流的方向或可參考的連結。" required></textarea>
+          </div>
+        </div>
+
+        <div class="contact-form-foot">
+          <p class="contact-form-note">欄位設計保留必要資訊即可。正式上線時可再加上隱私說明、驗證機制，或自動寄送確認信。</p>
+          <button class="contact-submit" type="submit">送出訊息</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div>
+        <div class="footer-brand-title">Chou's 金屬產業分享園地</div>
+        <div class="footer-brand-desc">彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</div>
+      </div>
+      <div class="footer-contact">
+        <div>chou751029@gmail.com</div>
+        <div>kchou1029@mail.mirdc.org.tw</div>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/po-hsun-chou-8221b285/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.facebook.com/kevinchou751029" target="_blank" rel="noopener">Facebook</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copy">© 2026 Chou's 金屬產業分享園地 · 版權所有，翻印必究</div>
+  </footer>
+
+  <script>
+    (function () {
+      var modal = document.getElementById('contact-modal');
+      var openButtons = document.querySelectorAll('[data-open-contact]');
+      var closeButton = document.querySelector('[data-close-contact]');
+      var form = document.getElementById('contact-form');
+      var alertBox = document.getElementById('contact-mock-alert');
+
+      function openContact() {
+        modal.classList.add('is-open');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+        window.setTimeout(function () {
+          document.getElementById('contact-name').focus();
+        }, 80);
+      }
+
+      function closeContact() {
+        modal.classList.remove('is-open');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      openButtons.forEach(function (button) {
+        button.addEventListener('click', openContact);
+      });
+
+      closeButton.addEventListener('click', closeContact);
+
+      modal.addEventListener('click', function (event) {
+        if (event.target === modal) closeContact();
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && modal.classList.contains('is-open')) closeContact();
+      });
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        alertBox.classList.add('is-visible');
+        alertBox.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      });
+    }());
+  </script>
+</body>
+</html>
