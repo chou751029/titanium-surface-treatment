@@ -6,7 +6,19 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Wed, 24 Jun 2026 03:32:42 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 25 Jun 2026 01:16:26 +0000</lastBuildDate>
+  <item>
+    <title>設計鈦金屬“TranTixxii”被用於國家指定風景名勝區“觀音院花園”的景觀保護。</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=38a7557fa279807f9dfed02976a87900</link>
+    <guid isPermaLink="false">38a7557fa279807f9dfed02976a87900</guid>
+    <pubDate>Thu, 25 Jun 2026 00:00:00 +0800</pubDate>
+    <category>日本</category>
+    <category>鈦合金</category>
+    <category>藝術鈦製品</category>
+    <category>鈦材應用</category>
+    <category>建築應用</category>
+    <description>日本製鐵株式會社(Nippon Steel)（以下簡稱「日本製鐵」）的裝飾性鈦材「TranTixxii® 」被國家指定風景名勝「觀音院庭園」（地址：鳥取縣鳥取市，以下簡稱「觀音院庭園」）採用，用於延伸迴廊和書院屋內的屋頂材料以及迴廊內的燈罩（本板內的燈罩」）。本次採用是基於對該產品與庭園景觀和諧性、對自然環境的考慮以及長期保持其美觀性的評估。 銅屋頂在傳統建築中應用廣泛，其經年累月形成的獨特美感極具吸引力。然而，近年來環境變化導致銅綠的形成不穩定，最終效果可能無法達到預期，在維護方面需要格外注意。此外，銅屋頂在雨水沖刷時會釋放微量銅離子，有助於抑制池塘和水池中藻類、苔蘚和蚊子幼蟲的生長，但在某…</description>
+  </item>
   <item>
     <title>匯鑽科泰國新廠年底投產 擴大AI、CPO產品布局</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3887557fa27980d39939fa224b08d0b8</link>
@@ -366,14 +378,6 @@
     <category>3D print</category>
     <category>鈦手錶</category>
     <description>鈦金屬一直是製錶業夢寐以求的材料。它比鋼輕，耐腐蝕，對皮膚親膚。但問題在於，鈦金屬加工難度很高。傳統的鈦合金TC4（Ti-6Al-4V）銑削加工對刀具要求很高，且會產生大量的材料浪費。沖壓加工限制了設計的自由度。而鑄造加工又無法達到腕錶零件所需的精度。 HBD 400 的功能 這些腕錶背後的機器是HBD 400。它擁有巨大的成型空間，並支援多達六台雷射同時運行。它採用包括雙向粉末重塗和多雷射掃描在內的先進技術，確保精準的全版印刷。 與傳統方法相比，該系統可將生產週期縮短 50% 以上。它能夠在單一建造週期內同時列印多個組件，從而實現不同零件的並行生產。 採用 LPBF 技術列印的鈦金屬能夠實現…</description>
-  </item>
-  <item>
-    <title>Metal Powder Works receives UK MOD order to support titanium part production</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3367557fa27980d0801fcb5754f4ae2c</link>
-    <guid isPermaLink="false">3367557fa27980d0801fcb5754f4ae2c</guid>
-    <pubDate>Thu, 02 Apr 2026 00:00:00 +0800</pubDate>
-    <category>英國</category>
-    <description>Metal Powder Works receives UK MOD order to support titanium part production （關鍵字：Metal Powder Works、UK MOD、Project TAMPA、鈦部件、粉末生產、增材製造） https://www.metal-am.com/metal-powder-works-receives-uk-mod-order-to-support-titanium-part-production/ 發布時間：2026年3月31日（1 day ago） 摘要：Metal Powder Works獲得英國國防部Proje…</description>
   </item>
 </channel>
 </rss>
