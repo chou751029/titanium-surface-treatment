@@ -185,8 +185,10 @@
         links += '<a href="' + catHref(c) + '" class="site-nav-link"' + (on ? ' data-on="1"' : '') + '>' + esc(c.label) + '</a>';
         mobileLinks += '<a href="' + catHref(c) + '" class="mobile-nav-link"' + (on ? ' data-on="1"' : '') + '><span>' + esc(c.label) + '</span><small>' + esc(c.eyebrow || c.short || '') + '</small></a>';
       });
+      links += '<a href="links.html" class="site-nav-link"' + (page === 'links' ? ' data-on="1"' : '') + '>外部連結</a>';
       links += '<a href="archive.html" class="site-nav-link"' + (page === 'archive' ? ' data-on="1"' : '') + '>歸檔</a>';
       links += '<a href="contact.html" class="site-nav-link"' + (page === 'contact' ? ' data-on="1"' : '') + '>聯絡</a>';
+      mobileLinks += '<a href="links.html" class="mobile-nav-link"' + (page === 'links' ? ' data-on="1"' : '') + '><span>外部連結</span><small>RESOURCES</small></a>';
       mobileLinks += '<a href="archive.html" class="mobile-nav-link"' + (page === 'archive' ? ' data-on="1"' : '') + '><span>歸檔</span><small>ARCHIVE</small></a>';
       mobileLinks += '<a href="contact.html" class="mobile-nav-link"' + (page === 'contact' ? ' data-on="1"' : '') + '><span>聯絡</span><small>CONTACT</small></a>';
 
@@ -769,6 +771,51 @@
   }
 
   /* ══════════════════════════════════════════════════════════
+     外部連結
+  ══════════════════════════════════════════════════════════ */
+
+  var EXTERNAL_LINKS = [
+    {
+      title: 'MII 金屬情報網',
+      url: 'https://mii.mirdc.org.tw/',
+      desc: '金屬產業評析、金屬材料、金屬製品、活動訊息與專業書城等資源入口。',
+      tags: ['產業資訊', '金屬材料', '表面處理'],
+      source: '金屬工業研究發展中心'
+    }
+  ];
+
+  function initLinks() {
+    if (document.body.dataset.page !== 'links') return;
+    var headerSlot = document.getElementById('page-header-slot');
+    var area = document.getElementById('links-area');
+    if (headerSlot) headerSlot.innerHTML = pageHeader({
+      headerBg: '#264653',
+      eyebrow: 'RESOURCES · 外部連結',
+      label: '外部連結',
+      desc: '整理常用的金屬產業資訊、資料庫與參考網站，方便快速前往查閱。',
+      accent: '#E9C46A'
+    });
+    document.title = '外部連結 — ' + (meta().title || '');
+    if (!area) return;
+
+    area.innerHTML = '<div class="section-eyebrow">Resource List · 資源清單</div>'
+      + '<div class="resource-grid">'
+      + EXTERNAL_LINKS.map(function (item) {
+        var tags = (item.tags || []).map(function (t) { return '<span class="resource-tag">' + esc(t) + '</span>'; }).join('');
+        return '<article class="resource-card">'
+          + '<div class="resource-card-main">'
+          + '<div class="resource-card-kicker">' + esc(item.source || 'External Resource') + '</div>'
+          + '<h2 class="resource-card-title">' + esc(item.title) + '</h2>'
+          + '<p class="resource-card-desc">' + esc(item.desc) + '</p>'
+          + '<div class="resource-tags">' + tags + '</div>'
+          + '</div>'
+          + '<a class="resource-card-link" href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer">前往網站 →</a>'
+          + '</article>';
+      }).join('')
+      + '</div>';
+  }
+
+  /* ══════════════════════════════════════════════════════════
      聯絡頁（姓名 / 單位 / 信箱 / 原因 / 訊息 → mailto）
   ══════════════════════════════════════════════════════════ */
 
@@ -908,6 +955,7 @@
     initSearch();
     initTag();
     initArchive();
+    initLinks();
     initContact();
   }
 
