@@ -510,13 +510,14 @@
       + '<div class="article-tags">' + tagsHtml + '</div>'
       + '<h1 class="article-title">' + esc(item.title) + '</h1>'
       + '<div class="article-byline"><span>' + esc(fmtDate(item.date)) + '</span><span class="article-dot">·</span><span>' + readingTime(item) + ' 分鐘閱讀</span>'
-      + (c.short ? '<span class="article-dot">·</span><a class="article-byline-cat" style="color:' + c.accent + ';" href="' + catHref(c) + '">' + esc(c.label) + '</a>' : '') + '</div>'
+      + (c.short ? '<span class="article-dot">·</span><a class="article-byline-cat" style="color:' + c.accent + ';" href="' + catHref(c) + '">' + esc(c.label) + '</a>' : '')
+      + (item.sourceUrl ? '<span class="article-dot">·</span><a class="article-source-badge" href="' + esc(item.sourceUrl) + '" target="_blank" rel="noopener noreferrer">資料出處：閱讀原文 ↗</a>' : '')
+      + '</div>'
       + '<div class="article-layout">'
       + '<div class="article-body">' + bodyHtml + '</div>'
       + tocHtml
       + '</div>'
-      + '<div class="article-source"><a href="' + esc(item.sourceUrl || '#') + '" target="_blank" rel="noopener">閱讀原文 →</a>'
-      + '<button class="article-share" id="article-share" type="button">分享連結</button></div>'
+      + '<div class="article-source"><button class="article-share" id="article-share" type="button">分享連結</button></div>'
       + prevNextHtml(item)
       + relatedHtml(item);
 
@@ -722,95 +723,118 @@
   }
 
   /* ══════════════════════════════════════════════════════════
-     聯絡頁
+     聯絡頁（姓名 / 單位 / 信箱 / 原因 / 訊息 → mailto）
   ══════════════════════════════════════════════════════════ */
+
+  function contactAside() {
+    var m = meta();
+    var emails = m.emails || ['chou751029@gmail.com'];
+    var mails = emails.map(function (e, i) {
+      return '<a class="contact-mail" href="mailto:' + esc(e) + '">'
+        + '<span class="contact-mail-icon">✉</span>'
+        + '<span class="contact-mail-text"><span class="contact-mail-label">' + (i === 0 ? '個人信箱' : '工作信箱') + '</span>'
+        + '<span class="contact-mail-addr">' + esc(e) + '</span></span></a>';
+    }).join('');
+    var social = (m.social || []).map(function (s) {
+      return '<a class="contact-social-btn" href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.label) + '</a>';
+    }).join('');
+    return '<aside class="contact-aside">'
+      + '<div class="section-eyebrow">Direct · 其他聯絡方式</div>'
+      + '<p class="contact-intro">這是一個工作之餘的小小實驗，將金屬產業資訊一點一滴積累、分享。任何想法都歡迎交流。</p>'
+      + '<div class="contact-mails">' + mails + '</div>'
+      + '<div class="contact-socials">' + social + '</div>'
+      + '</aside>';
+  }
 
   function initContact() {
     if (document.body.dataset.page !== 'contact') return;
     var m = meta();
     var headerSlot = document.getElementById('page-header-slot');
-    var contactArea = document.getElementById('contact-area');
+    var area = document.getElementById('contact-area');
+    if (headerSlot) headerSlot.innerHTML = pageHeader({ headerBg: '#264653', eyebrow: 'CONTACT · 聯絡我', label: '與我聯絡', desc: '對新聞內容有疑問、想提供產業線索、或希望交流合作，都歡迎留言。我會盡快回覆。', accent: '#2A9D8F' });
+    document.title = '聯絡我 — ' + (m.title || '');
+    if (!area) return;
 
-    if (headerSlot) headerSlot.innerHTML = pageHeader({
-      headerBg: '#264653',
-      eyebrow: 'CONTACT · 聯絡我',
-      label: '與我聯絡',
-      desc: '對新聞內容有疑問、想提供產業線索，或希望交流合作，都歡迎留言。我會盡快回覆。',
-      accent: '#2A9D8F'
-    });
-    document.title = '與我聯絡 — ' + m.title;
+    var emails = m.emails || ['chou751029@gmail.com'];
+    var REASONS = ['對新聞內容的疑問或回饋', '提供產業新聞線索／投稿', '交流、合作或演講邀約', '其他'];
+    var reason = '';
 
-    if (!contactArea) return;
-    var emails = m.emails || [];
-    var primaryEmail = emails[0] || '';
-    var socialLinks = (m.social || []).map(function (s) {
-      return '<a class="contact-social-link" href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.label) + '</a>';
-    }).join('');
-    var emailRows = emails.map(function (email, idx) {
-      return '<a class="contact-email-row" href="mailto:' + esc(email) + '">'
-        + '<span class="contact-email-icon">✉</span>'
-        + '<span><span class="contact-email-label">' + (idx === 0 ? '個人信箱' : '工作信箱') + '</span>'
-        + '<span class="contact-email-address">' + esc(email) + '</span></span>'
-        + '</a>';
-    }).join('');
-
-    contactArea.innerHTML =
-      '<section class="contact-grid">'
-      + '<aside class="contact-intro">'
-      + '<div class="section-eyebrow">Direct · 其他聯絡方式</div>'
-      + '<p>這是一個工作之餘的小小實驗，將金屬產業資訊一點一滴積累、分享。任何想法都歡迎交流。</p>'
-      + '<div class="contact-email-list">' + emailRows + '</div>'
-      + '<div class="contact-social">' + socialLinks + '</div>'
-      + '</aside>'
-      + '<div class="contact-form" role="form">'
-      + '<label>姓名 <span>*</span><input name="姓名" type="text" placeholder="您的姓名" required></label>'
-      + '<label>單位 / 公司 <em>（選填）</em><input name="單位 / 公司" type="text" placeholder="您的服務單位或公司"></label>'
-      + '<label>電子信箱 <span>*</span><input name="電子信箱" type="email" placeholder="您的 Email 電子信箱" required></label>'
-      + '<fieldset><legend>聯絡原因 <span>*</span></legend>'
-      + '<label class="contact-radio"><input name="聯絡原因" type="radio" value="對新聞內容的疑問或回饋" required><span>對新聞內容的疑問或回饋</span></label>'
-      + '<label class="contact-radio"><input name="聯絡原因" type="radio" value="提供產業新聞線索 / 投稿"><span>提供產業新聞線索 / 投稿</span></label>'
-      + '<label class="contact-radio"><input name="聯絡原因" type="radio" value="交流、合作或演講邀約"><span>交流、合作或演講邀約</span></label>'
-      + '<label class="contact-radio"><input name="聯絡原因" type="radio" value="其他"><span>其他</span></label>'
-      + '</fieldset>'
-      + '<label>您的訊息 <span>*</span><textarea name="訊息" placeholder="請填寫您的訊息細節" required></textarea></label>'
-      + '<div class="contact-form-foot"><button type="button">送出訊息 →</button><span>送出將以你的郵件程式寄出</span></div>'
-      + '</div>'
-      + '</section>';
-
-    var form = contactArea.querySelector('.contact-form');
-    var sendBtn = contactArea.querySelector('.contact-form-foot button');
-    if (form && sendBtn && primaryEmail) {
-      sendBtn.addEventListener('click', function () {
-        var required = form.querySelectorAll('[required]');
-        for (var i = 0; i < required.length; i++) {
-          if (!required[i].checkValidity()) {
-            required[i].reportValidity();
-            return;
-          }
-        }
-        var firstReason = form.querySelector('input[name="聯絡原因"]');
-        if (!form.querySelector('input[name="聯絡原因"]:checked')) {
-          if (firstReason) firstReason.reportValidity();
-          return;
-        }
-        function value(name) {
-          var checked = form.querySelector('[name="' + name + '"]:checked');
-          var field = checked || form.querySelector('[name="' + name + '"]');
-          return field ? field.value : '';
-        }
-        var subject = 'Chou 金屬產業分享園地聯絡訊息';
-        var body = [
-          '姓名：' + value('姓名'),
-          '單位 / 公司：' + value('單位 / 公司'),
-          '電子信箱：' + value('電子信箱'),
-          '聯絡原因：' + value('聯絡原因'),
-          '',
-          '訊息：',
-          value('訊息')
-        ].join('\n');
-        window.location.href = 'mailto:' + primaryEmail + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-      });
+    function field(label, reqOrNote, inner) {
+      var tail = reqOrNote === true ? ' <span class="cf-req">*</span>'
+        : (reqOrNote ? ' <span class="cf-note">' + esc(reqOrNote) + '</span>' : '');
+      return '<div class="cf-field"><label class="cf-label">' + esc(label) + tail + '</label>' + inner + '</div>';
     }
+
+    function renderForm() {
+      area.innerHTML = '<div class="contact-grid">' + contactAside()
+        + '<form class="contact-form" id="cf-form" novalidate>'
+        + field('姓名', true, '<input class="cf-input" id="cf-name" type="text" placeholder="您的姓名">')
+        + field('單位 / 公司', '（選填）', '<input class="cf-input" id="cf-org" type="text" placeholder="您的服務單位或公司">')
+        + field('電子信箱', true, '<input class="cf-input" id="cf-email" type="email" placeholder="您的 Email 電子信箱">')
+        + '<div class="cf-field"><label class="cf-label">聯絡原因 <span class="cf-req">*</span></label><div class="cf-reasons" id="cf-reasons">'
+        + REASONS.map(function (r) {
+            return '<div class="cf-reason" data-reason="' + esc(r) + '"><span class="cf-reason-dot"></span><span class="cf-reason-text">' + esc(r) + '</span></div>';
+          }).join('')
+        + '</div></div>'
+        + '<div class="cf-field"><label class="cf-label">您的訊息 <span class="cf-req">*</span></label><textarea class="cf-textarea" id="cf-message" placeholder="請填寫您的訊息細節"></textarea></div>'
+        + '<div class="cf-error" id="cf-error" hidden></div>'
+        + '<div class="cf-actions"><button type="submit" class="cf-submit">送出訊息 →</button><span class="cf-hint">送出將以你的郵件程式寄出</span></div>'
+        + '</form></div>';
+
+      var reasonEls = area.querySelectorAll('.cf-reason');
+      reasonEls.forEach(function (el) {
+        el.addEventListener('click', function () {
+          reason = el.getAttribute('data-reason');
+          reasonEls.forEach(function (e) { e.classList.toggle('active', e === el); });
+          var rc = document.getElementById('cf-reasons'); if (rc) rc.classList.remove('cf-invalid');
+          hideError();
+        });
+      });
+      ['cf-name', 'cf-email', 'cf-message'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) el.addEventListener('input', function () { el.classList.remove('cf-input-invalid'); hideError(); });
+      });
+      document.getElementById('cf-form').addEventListener('submit', onSubmit);
+    }
+
+    function hideError() { var e = document.getElementById('cf-error'); if (e) e.hidden = true; }
+    function showError(msg) { var e = document.getElementById('cf-error'); if (e) { e.textContent = msg; e.hidden = false; } }
+    function setInvalid(id, bad) { var el = document.getElementById(id); if (el) el.classList.toggle('cf-input-invalid', bad); }
+
+    function onSubmit(ev) {
+      ev.preventDefault();
+      var name = document.getElementById('cf-name').value.trim();
+      var org = document.getElementById('cf-org').value.trim();
+      var email = document.getElementById('cf-email').value.trim();
+      var message = document.getElementById('cf-message').value.trim();
+      var badEmail = email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+      if (!name || !email || !reason || !message) {
+        setInvalid('cf-name', !name); setInvalid('cf-email', !email); setInvalid('cf-message', !message);
+        var rc = document.getElementById('cf-reasons'); if (rc) rc.classList.toggle('cf-invalid', !reason);
+        showError('請填寫所有必填欄位（標示 * 者）。');
+        return;
+      }
+      if (badEmail) { setInvalid('cf-email', true); showError('請填寫正確的電子信箱格式。'); return; }
+
+      var body = '姓名：' + name + '\n單位／公司：' + (org || '（未填）') + '\n聯絡原因：' + reason + '\n\n訊息：\n' + message;
+      try { window.location.href = 'mailto:' + emails[0] + '?subject=' + encodeURIComponent('[網站聯絡] ' + reason) + '&body=' + encodeURIComponent(body); } catch (e) {}
+      showSuccess();
+    }
+
+    function showSuccess() {
+      area.innerHTML = '<div class="contact-grid">' + contactAside()
+        + '<div class="contact-form"><div class="contact-success">'
+        + '<div class="contact-success-icon">✓</div>'
+        + '<h2>已開啟你的郵件程式</h2>'
+        + '<p>內容已自動帶入，確認後直接寄出即可。若沒有自動開啟，請複製內容寄到 ' + esc(emails[0]) + '。</p>'
+        + '<button type="button" class="contact-reset">← 再填一份</button>'
+        + '</div></div></div>';
+      var rb = area.querySelector('.contact-reset');
+      if (rb) rb.addEventListener('click', function () { reason = ''; renderForm(); });
+    }
+
+    renderForm();
   }
 
   /* ══════════════════════════════════════════════════════════
