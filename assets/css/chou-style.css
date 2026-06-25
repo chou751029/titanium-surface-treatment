@@ -78,6 +78,30 @@ mark { background: rgba(233,196,106,.5); color: inherit; border-radius: 2px; pad
 .site-search-input::placeholder { color: rgba(251,246,236,.5); }
 .theme-toggle { flex: none; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,.22); background: rgba(255,255,255,.08); color: var(--nav-text-strong); font-size: 15px; line-height: 1; display: flex; align-items: center; justify-content: center; transition: background .15s; }
 .theme-toggle:hover { background: rgba(255,255,255,.18); }
+.menu-toggle { display: none; flex: none; width: 38px; height: 38px; border: 1px solid rgba(255,255,255,.22); border-radius: 10px; background: rgba(255,255,255,.08); padding: 9px; align-items: center; justify-content: center; flex-direction: column; gap: 5px; }
+.menu-toggle span { width: 18px; height: 2px; border-radius: 2px; background: var(--gold); display: block; transition: transform .2s, opacity .2s; }
+.mobile-nav-overlay { position: fixed; inset: 0; z-index: 80; background: rgba(17,23,26,.48); opacity: 0; pointer-events: none; transition: opacity .2s; }
+.mobile-nav-panel { position: fixed; top: 0; right: 0; bottom: 0; z-index: 90; width: min(86vw, 360px); background: var(--surface); color: var(--text); box-shadow: -24px 0 48px -32px rgba(0,0,0,.55); transform: translateX(100%); transition: transform .24s ease; padding: 24px; overflow-y: auto; }
+.mobile-nav-open { overflow: hidden; }
+.mobile-nav-open .mobile-nav-overlay { opacity: 1; pointer-events: auto; }
+.mobile-nav-open .mobile-nav-panel { transform: translateX(0); }
+.mobile-nav-open .menu-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.mobile-nav-open .menu-toggle span:nth-child(2) { opacity: 0; }
+.mobile-nav-open .menu-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.mobile-nav-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; margin-bottom: 22px; }
+.mobile-nav-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: .18em; color: var(--accent); margin-bottom: 8px; }
+.mobile-nav-title { font-weight: 700; font-size: 24px; color: var(--heading); }
+.mobile-nav-close { width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--border-2); background: var(--surface-2); color: var(--muted); font-size: 26px; line-height: 1; display: flex; align-items: center; justify-content: center; }
+.mobile-nav-search { display: flex; align-items: center; gap: 10px; border: 1px solid var(--border-2); background: var(--bg); border-radius: 12px; padding: 12px 14px; margin-bottom: 22px; }
+.mobile-nav-search span { color: var(--accent); font-size: 15px; }
+.mobile-nav-search input { flex: 1; min-width: 0; border: none; outline: none; background: transparent; color: var(--text); font: inherit; font-size: 15px; }
+.mobile-nav-search input::placeholder { color: var(--faint); }
+.mobile-nav-links { display: flex; flex-direction: column; gap: 10px; }
+.mobile-nav-link { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 12px; border: 1px solid transparent; color: var(--text); background: transparent; }
+.mobile-nav-link span { font-weight: 700; font-size: 17px; line-height: 1.35; }
+.mobile-nav-link small { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .12em; color: var(--faint); }
+.mobile-nav-link[data-on] { background: rgba(42,157,143,.1); border-color: rgba(42,157,143,.24); color: var(--accent-ink); }
+.mobile-nav-link:hover { background: var(--surface-2); }
 
 /* ── Page header (dark) ───────────────────────────────── */
 .page-header { padding: 52px 48px 44px; }
@@ -335,7 +359,11 @@ a.pn-box:hover { box-shadow: var(--shadow-soft); transform: translateY(-2px); }
 @media (max-width: 640px) {
   .cards-grid { grid-template-columns: 1fr; }
   .cat-grid { grid-template-columns: 1fr; }
+  .site-nav { padding: 12px 18px; }
+  .site-logo-title { font-size: 16px; }
   .site-nav-links { display: none; }
+  .site-search-form { display: none; }
+  .menu-toggle { display: flex; }
   .about-strip { grid-template-columns: 1fr; padding: 32px 28px; }
   .about-eyebrow { writing-mode: horizontal-tb; }
   .article-prevnext { grid-template-columns: 1fr; }

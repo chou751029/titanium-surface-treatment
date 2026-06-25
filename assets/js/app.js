@@ -179,12 +179,16 @@
     var header = document.getElementById('site-header');
     if (header) {
       var links = '<a href="index.html" class="site-nav-link"' + (page === 'home' ? ' data-on="1"' : '') + '>首頁</a>';
+      var mobileLinks = '<a href="index.html" class="mobile-nav-link"' + (page === 'home' ? ' data-on="1"' : '') + '><span>首頁</span><small>HOME</small></a>';
       cats().forEach(function (c) {
         var on = (page === 'category' && activeCat === c.key);
         links += '<a href="' + catHref(c) + '" class="site-nav-link"' + (on ? ' data-on="1"' : '') + '>' + esc(c.label) + '</a>';
+        mobileLinks += '<a href="' + catHref(c) + '" class="mobile-nav-link"' + (on ? ' data-on="1"' : '') + '><span>' + esc(c.label) + '</span><small>' + esc(c.eyebrow || c.short || '') + '</small></a>';
       });
       links += '<a href="archive.html" class="site-nav-link"' + (page === 'archive' ? ' data-on="1"' : '') + '>歸檔</a>';
       links += '<a href="contact.html" class="site-nav-link"' + (page === 'contact' ? ' data-on="1"' : '') + '>聯絡</a>';
+      mobileLinks += '<a href="archive.html" class="mobile-nav-link"' + (page === 'archive' ? ' data-on="1"' : '') + '><span>歸檔</span><small>ARCHIVE</small></a>';
+      mobileLinks += '<a href="contact.html" class="mobile-nav-link"' + (page === 'contact' ? ' data-on="1"' : '') + '><span>聯絡</span><small>CONTACT</small></a>';
 
       header.className = 'site-nav-wrap';
       header.innerHTML =
@@ -194,7 +198,14 @@
         + '<div class="site-nav-links">' + links + '</div>'
         + '<form class="site-search-form" action="search.html" method="get"><span class="site-search-icon">⌕</span><input class="site-search-input" name="q" type="search" placeholder="搜尋全站新聞…" autocomplete="off" value="' + esc(qs('q') || '') + '"></form>'
         + '<button class="theme-toggle" id="theme-toggle" type="button" aria-label="切換深色模式"></button>'
-        + '</div></nav>';
+        + '<button class="menu-toggle" id="menu-toggle" type="button" aria-label="開啟選單" aria-controls="mobile-nav" aria-expanded="false"><span></span><span></span><span></span></button>'
+        + '</div></nav>'
+        + '<div class="mobile-nav-overlay" id="mobile-nav-overlay" hidden></div>'
+        + '<aside class="mobile-nav-panel" id="mobile-nav" aria-hidden="true">'
+        + '<div class="mobile-nav-head"><div><div class="mobile-nav-eyebrow">MENU</div><div class="mobile-nav-title">瀏覽網站</div></div><button class="mobile-nav-close" id="mobile-nav-close" type="button" aria-label="關閉選單">×</button></div>'
+        + '<form class="mobile-nav-search" action="search.html" method="get"><span>⌕</span><input name="q" type="search" placeholder="搜尋全站新聞…" autocomplete="off" value="' + esc(qs('q') || '') + '"></form>'
+        + '<div class="mobile-nav-links">' + mobileLinks + '</div>'
+        + '</aside>';
     }
 
     var footer = document.getElementById('site-footer');
@@ -212,6 +223,41 @@
     }
 
     initThemeToggle();
+    initMobileNav();
+  }
+
+  function initMobileNav() {
+    var toggle = document.getElementById('menu-toggle');
+    var panel = document.getElementById('mobile-nav');
+    var overlay = document.getElementById('mobile-nav-overlay');
+    var closeBtn = document.getElementById('mobile-nav-close');
+    if (!toggle || !panel || !overlay) return;
+
+    function setOpen(open) {
+      document.body.classList.toggle('mobile-nav-open', open);
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute('aria-label', open ? '關閉選單' : '開啟選單');
+      panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+      overlay.hidden = !open;
+      if (open) {
+        var first = panel.querySelector('a, button, input');
+        if (first) first.focus();
+      } else {
+        toggle.focus();
+      }
+    }
+
+    toggle.addEventListener('click', function () {
+      setOpen(!document.body.classList.contains('mobile-nav-open'));
+    });
+    overlay.addEventListener('click', function () { setOpen(false); });
+    if (closeBtn) closeBtn.addEventListener('click', function () { setOpen(false); });
+    panel.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () { setOpen(false); });
+    });
+    document.addEventListener('keydown', function (ev) {
+      if (ev.key === 'Escape' && document.body.classList.contains('mobile-nav-open')) setOpen(false);
+    });
   }
 
   function initThemeToggle() {
