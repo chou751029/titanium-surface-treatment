@@ -6,7 +6,17 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Fri, 26 Jun 2026 03:36:39 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 26 Jun 2026 16:41:46 +0000</lastBuildDate>
+  <item>
+    <title>稀土改質可生物降解鋅合金具有高強度和增強的成骨作用(From Nature Communication期刊)</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=38b7557fa279805fb1f6f094a81e54e3</link>
+    <guid isPermaLink="false">38b7557fa279805fb1f6f094a81e54e3</guid>
+    <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
+    <category>中國大陸</category>
+    <category>鈦合金</category>
+    <category>生物醫學</category>
+    <description>將微量稀土元素（RE）引入Zn-Li-Mn體係可以彌補這一不足。透過形成REZn&lt;sub&gt; 11-13 &lt;/sub&gt;金屬間化合物相，我們建構了一種雙峰晶粒結構，將抗拉強度提升至772 MPa，彎曲強度提升至1207 MPa，接近醫用級鈦合金（Ti-6Al-4V）的水平，同時保持了生物降解性。至關重要的是，這些相起到「電位緩衝」電極的作用，確保均勻降解和可控的鋅離子釋放。這種優化的離子濃度活化了Rap1訊號通路，使骨再生能力比鈦合金植入物提高了兩倍。這種Zn-Li-Mn-Y合金兼具超高的機械強度和強大的生物活性，為下一代承重植入物提供了一個優異的平台，為永久性金屬固定提供了一種可降解的替代方案。</description>
+  </item>
   <item>
     <title>設計鈦金屬“TranTixxii”被用於國家指定風景名勝區“觀音院花園”的景觀保護。</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=38a7557fa279807f9dfed02976a87900</link>
@@ -368,16 +378,6 @@
     <category>鈍化技術</category>
     <category>無PFAS</category>
     <description></description>
-  </item>
-  <item>
-    <title>HBD and CN Precision Technology prove metal AM is ready for watchmaking-鈦金屬、雷射粉末床熔融工藝，以及從文件到成品表的完整一體化生產流程</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=33a7557fa279802fa9a3f4db29679677</link>
-    <guid isPermaLink="false">33a7557fa279802fa9a3f4db29679677</guid>
-    <pubDate>Mon, 06 Apr 2026 00:00:00 +0800</pubDate>
-    <category>鈦合金</category>
-    <category>3D print</category>
-    <category>鈦手錶</category>
-    <description>鈦金屬一直是製錶業夢寐以求的材料。它比鋼輕，耐腐蝕，對皮膚親膚。但問題在於，鈦金屬加工難度很高。傳統的鈦合金TC4（Ti-6Al-4V）銑削加工對刀具要求很高，且會產生大量的材料浪費。沖壓加工限制了設計的自由度。而鑄造加工又無法達到腕錶零件所需的精度。 HBD 400 的功能 這些腕錶背後的機器是HBD 400。它擁有巨大的成型空間，並支援多達六台雷射同時運行。它採用包括雙向粉末重塗和多雷射掃描在內的先進技術，確保精準的全版印刷。 與傳統方法相比，該系統可將生產週期縮短 50% 以上。它能夠在單一建造週期內同時列印多個組件，從而實現不同零件的並行生產。 採用 LPBF 技術列印的鈦金屬能夠實現…</description>
   </item>
 </channel>
 </rss>
