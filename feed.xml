@@ -6,7 +6,15 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Sun, 28 Jun 2026 03:44:32 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 28 Jun 2026 17:02:17 +0000</lastBuildDate>
+  <item>
+    <title>薩克森高分子材料公司（Saxonia Galvanik）新的選擇性金屬電鍍廠開始運營</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=38d7557fa279804ca31ed9cd4ff173f5</link>
+    <guid isPermaLink="false">38d7557fa279804ca31ed9cd4ff173f5</guid>
+    <pubDate>Sun, 28 Jun 2026 00:00:00 +0800</pubDate>
+    <category>德國</category>
+    <description>薩克森電鍍公司持續發展壯大，並已投產一座新的金屬電鍍廠。此電鍍製程採用選擇性電鍍技術，可顯著降低電鍍成本、縮短生產週期並減少人工成本。 在德國汽車零件產業近期投資意願低迷、裁員甚至破產頻傳的經濟環境下，薩克森電鍍（Saxonia Galvanik）逆勢擴張，新建了一座金屬電鍍廠。憑藉這座創新設施，該公司順應時代潮流：它不僅透過極短的生產週期和低廉的人工成本顯著降低了塗層成本，更重要的是，還節省了昂貴的原材料和能源。塗層採用選擇性應用，即僅對客戶指定的特定區域進行電鍍－最多可使用三種不同的金屬。例如，部件的一部分鍍銀，另一部分鍍錫。此外，也可以進行鎳底鍍。永續性也是材料選擇的首要考慮因素；錫和銀…</description>
+  </item>
   <item>
     <title>稀土改質可生物降解鋅合金具有高強度和增強的成骨作用(From Nature Communication期刊)</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=38b7557fa279805fb1f6f094a81e54e3</link>
@@ -366,18 +374,6 @@
     <category>鈦合金</category>
     <category>鈦粉</category>
     <description>6K Additive 的獲獎重點在於將鎳、鈦、鎢和 C103 廢舊零件轉化為高價值粉末（圖片由 6K Additive 提供） 位於美國麻薩諸塞州北安多弗的6K Additive公司（隸屬於6K集團）已獲得美國國防後勤局（DLA）價值195萬美元的第二階段合約。這項為期18個月的「戰略價值回收」計畫旨在將美國特定軍事倉庫中的鎳、鈦、鎢和鈮廢料轉化為高價值金屬粉末，用於增材製造和國防戰備。 該獎項旨在透過利用先前6K增材製造DLA獎項中開發的基準流程，最大限度地提高報廢零件和高需求、高價值金屬合金的價值。具體而言，第三階段的工作範圍（SOW）預計將重點放在DLA處置服務部、海軍和空軍生命週期管…</description>
-  </item>
-  <item>
-    <title>Chemetall Launches Chromium-Free Gardolene D for Passivation of Copper Foils</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=33c7557fa27980508b0bf37827c81297</link>
-    <guid isPermaLink="false">33c7557fa27980508b0bf37827c81297</guid>
-    <pubDate>Wed, 08 Apr 2026 00:00:00 +0800</pubDate>
-    <category>德國</category>
-    <category>無鉻</category>
-    <category>無氟</category>
-    <category>鈍化技術</category>
-    <category>無PFAS</category>
-    <description></description>
   </item>
 </channel>
 </rss>
