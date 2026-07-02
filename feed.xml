@@ -6,7 +6,17 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Wed, 01 Jul 2026 03:46:32 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 02 Jul 2026 01:15:15 +0000</lastBuildDate>
+  <item>
+    <title>延長化學鍍鎳浴壽命的新方法</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3917557fa279800e8e73db967f0e76d7</link>
+    <guid isPermaLink="false">3917557fa279800e8e73db967f0e76d7</guid>
+    <pubDate>Thu, 02 Jul 2026 00:00:00 +0800</pubDate>
+    <category>美國</category>
+    <category>電鍍</category>
+    <category>化學鍍鎳</category>
+    <description>化學鍍鎳 (EN) 鍍液已有限地使用了幾十年。傳統上，任何特定的 EN 鍍液都專為一種特定的電鍍類型而設計和使用，例如低磷、中磷或高磷鍍層。該鍍液在其整個使用壽命期間（通常為 4 至 6 次金屬週轉 (MTO)，最多可達 12 次）都用於單一類型的電鍍，以生產具有該類型鍍層性能穩定的均勻合金。一旦達到其使用壽命終點，該鍍液將被丟棄，並配製新的用於相同用途的鍍液。 然而，如今現代EN化學和創新設計的進步使得透過重新利用EN浴槽，將其從一種EN類型重新用於另一種EN類型，從而實現EN浴槽的更大用途。 從高磷到中磷 延長電鍍槽使用壽命的例子是將高磷電鍍槽更換為中磷電鍍槽。高磷電鍍槽能為食品加工、石油…</description>
+  </item>
   <item>
     <title>薩克森高分子材料公司（Saxonia Galvanik）新的選擇性金屬電鍍廠開始運營</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=38d7557fa279804ca31ed9cd4ff173f5</link>
@@ -364,16 +374,6 @@
     <guid isPermaLink="false">33e7557fa27980588e7dfb723812f636</guid>
     <pubDate>Fri, 10 Apr 2026 00:00:00 +0800</pubDate>
     <description></description>
-  </item>
-  <item>
-    <title>6K Additive wins $1.95M nickel, titanium, tungsten and niobium recycling contract</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=33e7557fa27980759335f1ba24ab324b</link>
-    <guid isPermaLink="false">33e7557fa27980759335f1ba24ab324b</guid>
-    <pubDate>Fri, 10 Apr 2026 00:00:00 +0800</pubDate>
-    <category>美國</category>
-    <category>鈦合金</category>
-    <category>鈦粉</category>
-    <description>6K Additive 的獲獎重點在於將鎳、鈦、鎢和 C103 廢舊零件轉化為高價值粉末（圖片由 6K Additive 提供） 位於美國麻薩諸塞州北安多弗的6K Additive公司（隸屬於6K集團）已獲得美國國防後勤局（DLA）價值195萬美元的第二階段合約。這項為期18個月的「戰略價值回收」計畫旨在將美國特定軍事倉庫中的鎳、鈦、鎢和鈮廢料轉化為高價值金屬粉末，用於增材製造和國防戰備。 該獎項旨在透過利用先前6K增材製造DLA獎項中開發的基準流程，最大限度地提高報廢零件和高需求、高價值金屬合金的價值。具體而言，第三階段的工作範圍（SOW）預計將重點放在DLA處置服務部、海軍和空軍生命週期管…</description>
   </item>
 </channel>
 </rss>
