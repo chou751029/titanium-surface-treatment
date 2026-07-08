@@ -7259,7 +7259,7 @@ window.TITANIUM_DATA = [
     "tags": [
       "人形機器人"
     ],
-    "image": "",
+    "image": "assets/images/synced/21f7557fa27980bcbf93c43f5069a606.jpg",
     "sourceUrl": "https://tw.news.yahoo.com/%E7%BE%A9%E5%A4%A7%E5%88%A9%E6%9C%89%E7%9C%9F%E5%AF%A6%E7%89%88%E9%8B%BC%E9%90%B5%E4%BA%BA-%E5%99%B4%E6%B0%A3%E5%8B%95%E5%8A%9B%E6%A9%9F%E5%99%A8%E4%BA%BA-%E9%A3%9B%E8%B5%B7%E4%BE%86-075300829.html",
     "summary": "",
     "content": []
