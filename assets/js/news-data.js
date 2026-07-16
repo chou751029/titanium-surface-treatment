@@ -5315,7 +5315,7 @@ window.NEWS_DATA = [
     "date": "2025-09-10",
     "region": "日本",
     "tags": [],
-    "image": "assets/images/synced/26a7557fa279815d99dee1d164ef016e.png",
+    "image": "",
     "sourceUrl": "https://www.machinist.co.jp/2025/08/22632/",
     "summary": "",
     "content": []
