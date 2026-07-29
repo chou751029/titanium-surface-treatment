@@ -4,6 +4,19 @@
 //   python3 scripts/sync_notion.py
 window.TITANIUM_DATA = [
   {
+    "id": "3ac7557fa27980e1bbd3fb461d152fab",
+    "title": "GEFERTEC推出專為鈦合金零件設計的arcTitan WAAM系統",
+    "date": "2026-07-29",
+    "region": "德國",
+    "tags": [
+      "鈦合金"
+    ],
+    "image": "assets/images/synced/3ac7557fa27980e1bbd3fb461d152fab.jpg",
+    "sourceUrl": "https://www.tctmagazine.com/gefertec-launches-waam-system-for-additive-manufacturing-of-titanium-parts/",
+    "summary": "",
+    "content": []
+  },
+  {
     "id": "3a67557fa27980c79392f163d6d8c9cd",
     "title": "Project Blue 鈦廢料：重要的航空航太原料",
     "date": "2026-07-23",
