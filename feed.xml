@@ -6,7 +6,17 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Thu, 30 Jul 2026 02:16:05 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 30 Jul 2026 17:20:54 +0000</lastBuildDate>
+  <item>
+    <title>SAFRAN AERO BOOSTERS 和 BMT AEROSPACE 將為 F135 引擎 3D 列印大型鈦合金零件</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ad7557fa279800899a6c066163f7d68</link>
+    <guid isPermaLink="false">3ad7557fa279800899a6c066163f7d68</guid>
+    <pubDate>Thu, 30 Jul 2026 00:00:00 +0800</pubDate>
+    <category>比利時</category>
+    <category>3D print</category>
+    <category>鈦合金</category>
+    <description>賽峰航空助推器公司與普惠公司簽署了一項協議。圖片由賽峰航空助推器公司提供。 總部位於比利時的賽峰航空助推器公司與普惠公司簽署協議，將為F-35「閃電II」戰鬥機的F135引擎提供大型、高度複雜的零件，並負責這些零件的認證和交付。該協議於2026年7月22日在範堡羅國際航展上正式簽署，比利時國防部長西奧·弗蘭肯和瓦隆大區主席阿德里安·多利蒙出席了簽約儀式。 這項工作將與位於弗蘭德斯的BMT Aerospace公司合作完成，該公司是賽峰航空助推器公司在該項目中的長期合作夥伴。兩家公司在航空航太增材製造領域均展現出強大的實力，賽峰將該計畫視為大規模驗證該技術的重要一步，同時也將比利時定位為美國航空航…</description>
+  </item>
   <item>
     <title>GEFERTEC推出專為鈦合金零件設計的arcTitan WAAM系統</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ac7557fa27980e1bbd3fb461d152fab</link>
@@ -375,15 +385,6 @@
     <pubDate>Mon, 11 May 2026 00:00:00 +0800</pubDate>
     <category>鈦合金</category>
     <description></description>
-  </item>
-  <item>
-    <title>Norsk Titanium擴大與Hittech的合作，以支援人工智慧驅動的半導體產業成長至2027年。</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=35c7557fa2798008b6ede3dce664258b</link>
-    <guid isPermaLink="false">35c7557fa2798008b6ede3dce664258b</guid>
-    <pubDate>Sun, 10 May 2026 00:00:00 +0800</pubDate>
-    <category>鈦合金</category>
-    <category>半導體濺鍍靶材</category>
-    <description>2026 年 5 月 7 日– Norsk Titanium AS（Euronext Growth Oslo：NTI，OTCQX：NORSF）和 Hittech 今天宣布擴大其半導體合作，這標誌著 Norsk Titanium 從其核心航空航天和國防市場向高增長工業領域戰略增長邁出了重要一步。 透過將挪威鈦業公司專有的快速等離子沉積® (RPD®) 技術與 Hittech 公司的精密工程和工業化專長相結合，兩家公司正在整合各自的工業平台，以打造無縫、可擴展且具有商業吸引力的製造模式。這種整合方案旨在最大限度地提高產能利用率，並滿足領先的半導體設備原始設備製造商 (OEM) 不斷增長的需求，包括…</description>
   </item>
 </channel>
 </rss>
