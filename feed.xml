@@ -6,7 +6,18 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Thu, 30 Jul 2026 17:20:54 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 30 Jul 2026 17:38:04 +0000</lastBuildDate>
+  <item>
+    <title>隨著小型化進程的推進，表面處理的要求日益嚴格，Surf Industries 將為您解讀高純度時代下的防腐蝕措施。</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ad7557fa27980088387fb4348c4a70b</link>
+    <guid isPermaLink="false">3ad7557fa27980088387fb4348c4a70b</guid>
+    <pubDate>Thu, 30 Jul 2026 00:00:00 +0800</pubDate>
+    <category>日本</category>
+    <category>工業應用</category>
+    <category>半導體</category>
+    <category>高純度</category>
+    <description>Surf Industries Co., Ltd. 將分享基於行業趨勢的見解，探討半導體行業「小型化和高純度」的發展及其對錶面處理技術日益增長的需求。隨著半導體尺寸的縮小，薄膜沉積、蝕刻和清洗過程中使用的特殊氣體和化學品對純度的要求也越來越高，即使是微量雜質也必須嚴格控制。因此，對於處理這些材料的管道、腔室和化學儲存槽等設備而言，具有更高耐化學性和防腐蝕性的表面處理至關重要。 Surf Industries Co., Ltd. 憑藉其在厚膜氟樹脂烘烤襯裡方面的獨特優勢，為應對這一挑戰做出了貢獻。與傳統的 500 μm 厚度相比，此技術可達到高達 1500 μm 的薄膜厚度。</description>
+  </item>
   <item>
     <title>SAFRAN AERO BOOSTERS 和 BMT AEROSPACE 將為 F135 引擎 3D 列印大型鈦合金零件</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ad7557fa279800899a6c066163f7d68</link>
@@ -377,14 +388,6 @@
     <pubDate>Mon, 11 May 2026 00:00:00 +0800</pubDate>
     <category>整體市場</category>
     <description>東邦鈦業公佈截至2026年3月31日的財年非合併業績下滑，淨銷售額下降5.4%至825億日元，淨利下降44.6%至30億日元，每股收益降至42.33日元。業績下滑主要歸因於供應鏈庫存調整導致飛機用海綿鈦銷量下降，以及鈦銷量減少和價格調整，部分抵消了催化劑和超細鎳粉需求的回升。 營業利潤和普通收入都大幅下滑，儘管部分業務板塊需求復甦，但獲利能力仍面臨壓力，這也凸顯了公司受航空航太市場週期性需求和鈦市場價格波動的影響。業績顯示，東邦鈦業的經營環境更加嚴峻，即使某些特種產品線出現復甦跡象，也將對利潤率和股東回報產生影響。</description>
-  </item>
-  <item>
-    <title>利用電脈衝(EPT)處理提高冷軋鈦板成形性：電塑性效應的實驗研究</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=35d7557fa27980699c14dfe6283d31ab</link>
-    <guid isPermaLink="false">35d7557fa27980699c14dfe6283d31ab</guid>
-    <pubDate>Mon, 11 May 2026 00:00:00 +0800</pubDate>
-    <category>鈦合金</category>
-    <description></description>
   </item>
 </channel>
 </rss>

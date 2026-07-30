@@ -4,6 +4,26 @@
 //   python3 scripts/sync_notion.py
 window.NEWS_DATA = [
   {
+    "id": "3ad7557fa27980088387fb4348c4a70b",
+    "title": "隨著小型化進程的推進，表面處理的要求日益嚴格，Surf Industries 將為您解讀高純度時代下的防腐蝕措施。",
+    "date": "2026-07-30",
+    "region": "日本",
+    "tags": [
+      "工業應用",
+      "半導體",
+      "高純度"
+    ],
+    "image": "assets/images/synced/3ad7557fa27980088387fb4348c4a70b.jpg",
+    "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000001.000187493.html",
+    "summary": "Surf Industries Co., Ltd. 將分享基於行業趨勢的見解，探討半導體行業「小型化和高純度」的發展及其對錶面處理技術日益增長的需求。隨著半導體尺寸的縮小，薄膜沉積、蝕刻和清洗過程中使用的特殊氣體和化學品對純度的要求也越來越高，即使是微量雜質也必須嚴格控制。因此，對於處理這些材料的管道、腔室和化學儲存槽等設備而言，具有更高耐化學性和防腐蝕性的表面處理至關重要。 Surf Industries Co., Ltd. 憑藉其在厚膜氟樹脂烘烤襯裡方面的獨特優勢，為應對這一挑戰做出了貢獻。與傳統的 500 μm 厚度相比，此技術可達到高達 1500 μm 的薄膜厚度。",
+    "content": [
+      {
+        "type": "p",
+        "text": "Surf Industries Co., Ltd. 將分享基於行業趨勢的見解，探討半導體行業「小型化和高純度」的發展及其對錶面處理技術日益增長的需求。隨著半導體尺寸的縮小，薄膜沉積、蝕刻和清洗過程中使用的特殊氣體和化學品對純度的要求也越來越高，即使是微量雜質也必須嚴格控制。因此，對於處理這些材料的管道、腔室和化學儲存槽等設備而言，具有更高耐化學性和防腐蝕性的表面處理至關重要。 Surf Industries Co., Ltd. 憑藉其在厚膜氟樹脂烘烤襯裡方面的獨特優勢，為應對這一挑戰做出了貢獻。與傳統的 500 μm 厚度相比，此技術可達到高達 1500 μm 的薄膜厚度。"
+      }
+    ]
+  },
+  {
     "id": "3aa7557fa2798082ba20e4cd3a220a9e",
     "title": "Circular Materials receives wastewater metals recovery funding",
     "date": "2026-07-27",
