@@ -6,7 +6,17 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Mon, 03 Aug 2026 02:43:46 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 03 Aug 2026 08:01:04 +0000</lastBuildDate>
+  <item>
+    <title>你下一輛車裡隱藏的金屬：鈦在主流汽車中的貢獻</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3b17557fa279805cae93f22c311fcd29</link>
+    <guid isPermaLink="false">3b17557fa279805cae93f22c311fcd29</guid>
+    <pubDate>Mon, 03 Aug 2026 00:00:00 +0800</pubDate>
+    <category>鈦合金</category>
+    <category>3D print</category>
+    <category>汽車零組件</category>
+    <description>📄 文章重點摘要 市場快速成長：根據 Maximize Market Research 報告，鈦金屬市場價值預計於 2032 年達到 479.6 億美元。 從航太走入主流汽車：鈦金屬過去主要用於航太與頂級超級跑車，如今各大汽車品牌正逐步將其引入一般乘用車領域。 極佳的輕量化與節能優勢： 關鍵部件應用廣泛： 高度耐用與安全性：具有高熔點（耐高溫）、強抗腐蝕與防鏽能力（表面自然形成氧化層），能延長部件壽命、降低維護成本並保障碰撞安全。 💡 鈦金屬汽車產業趨勢與 Insights 1. 3D 列印（積層製造）打破成本壁壘 傳統鈦合金原料採購與加工成本高昂。車廠現今結合 3D 列印技術（如使用 5 級…</description>
+  </item>
   <item>
     <title>隨著小型化進程的推進，表面處理的要求日益嚴格，Surf Industries 將為您解讀高純度時代下的防腐蝕措施。</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ad7557fa27980088387fb4348c4a70b</link>
@@ -380,14 +390,6 @@
     <pubDate>Thu, 14 May 2026 00:00:00 +0800</pubDate>
     <category>中國大陸</category>
     <description></description>
-  </item>
-  <item>
-    <title>Toho Titanium Profit Slumps as Aerospace Titanium Sales Weaken(東邦鈦業利潤下滑，因航空航太鈦銷售疲軟)</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=35d7557fa279807a83a3fb70bf89a195</link>
-    <guid isPermaLink="false">35d7557fa279807a83a3fb70bf89a195</guid>
-    <pubDate>Mon, 11 May 2026 00:00:00 +0800</pubDate>
-    <category>整體市場</category>
-    <description>東邦鈦業公佈截至2026年3月31日的財年非合併業績下滑，淨銷售額下降5.4%至825億日元，淨利下降44.6%至30億日元，每股收益降至42.33日元。業績下滑主要歸因於供應鏈庫存調整導致飛機用海綿鈦銷量下降，以及鈦銷量減少和價格調整，部分抵消了催化劑和超細鎳粉需求的回升。 營業利潤和普通收入都大幅下滑，儘管部分業務板塊需求復甦，但獲利能力仍面臨壓力，這也凸顯了公司受航空航太市場週期性需求和鈦市場價格波動的影響。業績顯示，東邦鈦業的經營環境更加嚴峻，即使某些特種產品線出現復甦跡象，也將對利潤率和股東回報產生影響。</description>
   </item>
 </channel>
 </rss>
