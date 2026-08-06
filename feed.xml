@@ -6,7 +6,19 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Thu, 06 Aug 2026 02:29:14 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 06 Aug 2026 05:55:39 +0000</lastBuildDate>
+  <item>
+    <title>飛行未來：先進技術在航空航太製造中的作用 The future of flight: Advanced technology’s role in aerospace manufacturing</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3b47557fa279807aaaf2e4bac783828c</link>
+    <guid isPermaLink="false">3b47557fa279807aaaf2e4bac783828c</guid>
+    <pubDate>Thu, 06 Aug 2026 00:00:00 +0800</pubDate>
+    <category>英國</category>
+    <category>3D print</category>
+    <category>鈦合金</category>
+    <category>複合材料</category>
+    <category>航太應用</category>
+    <description>精確性至關重要 航空航太製造歷來對標準要求極高，而對更輕、更節能飛機的追求更強化了這些要求。先進合金、陶瓷基複合材料和鈦合金零件是現代設計的主流。這些材料雖然具有卓越的強度重量比，但也帶來了巨大的加工難度。 傳統的品質控制方法通常依賴測量技術或抽樣方法，這可能會降低生產效率並增加成本。而雷尼紹在計量領域的專業技術——特別是其坐標測量機 (CMM) 測頭系統、製程測量和校準工具——幫助製造商彌合了設計與生產之間的差距。 透過將計量技術直接嵌入加工流程，製造商可以即時監控和調整零件，而無需等到下游才發現缺陷。這種閉環方法可以減少廢品，縮短交貨週期，並確保渦輪盤或燃油系統殼體等高價值部件的一致性。對…</description>
+  </item>
   <item>
     <title>你下一輛車裡隱藏的金屬：鈦在主流汽車中的貢獻</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3b17557fa279805cae93f22c311fcd29</link>
@@ -382,14 +394,6 @@
     <category>鈦合金</category>
     <category>生物醫學</category>
     <description>1. 卓越的加工性能 (Machinability) 這是這份資料強調的「新標準」。 直接成品加工： 過去的鈦零件通常需要經過繁瑣的「資格認證切削」(qualification machining) 步驟。而這份資料提到的產品可以直接進行最終加工，大幅簡化流程。 近淨形技術 (Near-net shapes)： 提供精密的近淨形狀和小直徑選擇，減少了材料的浪費（Scrap）與加工步驟，提高了良率並降低成本。 2. 更高的製造精度與一致性 端到端控制： 該公司標榜從原材料採購到內部加工、品質檢測均有完整控制。 嚴格公差： 生產規格符合業界領先的嚴格公差（industry-leading tigh…</description>
-  </item>
-  <item>
-    <title>Fe3O4增強鈦基複合材料的強度-延展性協同效應</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3607557fa279805391fbe06d4c69ac71</link>
-    <guid isPermaLink="false">3607557fa279805391fbe06d4c69ac71</guid>
-    <pubDate>Thu, 14 May 2026 00:00:00 +0800</pubDate>
-    <category>中國大陸</category>
-    <description></description>
   </item>
 </channel>
 </rss>
