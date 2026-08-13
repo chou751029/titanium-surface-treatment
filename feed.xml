@@ -6,7 +6,18 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Thu, 13 Aug 2026 01:53:04 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 13 Aug 2026 16:32:56 +0000</lastBuildDate>
+  <item>
+    <title>ACM Research的Ultra ECP ap-p水平面板電鍍工具獲得客戶的首份生產訂單和評估訂單。推動大尺寸水平電鍍技術邁向量產，並鞏固ACM在先進封裝領域的地位</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3bb7557fa27980f9be72fc6ebb4a97a5</link>
+    <guid isPermaLink="false">3bb7557fa27980f9be72fc6ebb4a97a5</guid>
+    <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
+    <category>美國</category>
+    <category>電鍍</category>
+    <category>半導體</category>
+    <category>PCB</category>
+    <description>Ultra ECP ap-p 是全球首款面向大型面板市場的商用水平面板級銅沉積系統，支援柱狀、凸點和重分佈層 (RDL) 製程中的電鍍步驟。這些訂單擴大了 Ultra ECP ap-p 的市場覆蓋範圍，有助於 ACM 全球客戶群的擴張，並進一步鞏固 ACM 在面板級先進封裝設備市場的地位。 「隨著先進封裝技術向更高整合度和更大面板尺寸發展，對電鍍均勻性、製程穩定性和生產效率的要求也日益提高，因此我們開發了Ultra ECP ap-p電鍍平台，」ACM總裁兼執行長David Wang博士表示。 「我們對這些訂單所體現的客戶回饋感到鼓舞，並將繼續致力於推進面板級電鍍技術的發展，支援客戶的認證和批量…</description>
+  </item>
   <item>
     <title>i2Cool推出i2Coating CorroCool，將無電冷卻與工業級防腐蝕保護結合</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ba7557fa27980a4b82ec5272345b9ec</link>
@@ -390,16 +401,6 @@
     <category>德國</category>
     <category>鈦合金</category>
     <description></description>
-  </item>
-  <item>
-    <title>汽車保形塗裝市場發展、趨勢、需求、成長分析及預測（2026-2035年）</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3657557fa27980bf8803e11ecf677fad</link>
-    <guid isPermaLink="false">3657557fa27980bf8803e11ecf677fad</guid>
-    <pubDate>Tue, 19 May 2026 00:00:00 +0800</pubDate>
-    <category>全球</category>
-    <category>coating</category>
-    <category>汽車業/電動車</category>
-    <description>根據 SDKI Analytics 的分析，汽車保形塗料市場預計到 2025 年將達到約 39 億美元，到 2035 年將達到約 72 億美元。預計該市場在預測期內將以約 6.4% 的複合年增長率成長。 根據 SDKI Analytics 的研究和分析，由於電動車 (EV)、混合動力車 (HV) 和高壓架構的快速發展，汽車保形塗層市場預計將顯著成長。保形塗層應用於電池、車用充電器和高壓線路系統，需要強大的防潮、防震、防熱應力和防化學腐蝕性能。 各國政府的支持措施，例如印度政府的“FAME印度計劃（第二階段）”和“PM E-DRIVE計劃”，為電動汽車購買和充電基礎設施提供補貼，正在提振對保形塗…</description>
   </item>
 </channel>
 </rss>
