@@ -6,7 +6,16 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Sun, 16 Aug 2026 01:15:07 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 16 Aug 2026 16:41:18 +0000</lastBuildDate>
+  <item>
+    <title>超音波表面滾壓製程對新型Ti65鈦合金耐磨性和耐腐蝕性的影響</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3be7557fa279805abec6cb5cdde20643</link>
+    <guid isPermaLink="false">3be7557fa279805abec6cb5cdde20643</guid>
+    <pubDate>Sun, 16 Aug 2026 00:00:00 +0800</pubDate>
+    <category>鈦合金</category>
+    <category>超音波表面滾壓(ultrasonic surface rolling process)</category>
+    <description>摘要 鈦合金因其優異的機械性能在航空航太領域至關重要，然而，其在嚴苛服役環境下的性能往往受限於耐磨性和耐腐蝕性不足。本研究探討了利用超音波表面滾壓製程（USRP）增強新型Ti65高溫鈦合金表面完整性的方法，該合金採用雷射定向能量沉積技術製備。系統地評估了USRP處理壓力對錶面粗糙度、微觀結構演變、電化學行為和摩擦學性能的影響。結果表明，USRP能夠有效消除初始表面缺陷，並以壓力依賴的方式顯著降低表面粗糙度。 在處理後的表面上形成了一個厚度約為19.6 μm的晶粒細化層，平均晶粒尺寸從9.63 μm減小到2.73 μm（減小了71.65%），同時高角度晶界比例和位錯密度顯著增加。因此，經USRP…</description>
+  </item>
   <item>
     <title>ACM Research的Ultra ECP ap-p水平面板電鍍工具獲得客戶的首份生產訂單和評估訂單。推動大尺寸水平電鍍技術邁向量產，並鞏固ACM在先進封裝領域的地位</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3bb7557fa27980f9be72fc6ebb4a97a5</link>
@@ -392,15 +401,6 @@
     <pubDate>Thu, 21 May 2026 00:00:00 +0800</pubDate>
     <category>台灣</category>
     <description>當前的AI應用在產業界受到前所未有的關注，然而，回歸營運的底層邏輯，若沒有盤點流程、讓資訊透明，AI再強也無法成為企業轉型的萬靈丹。製造業唯有重回「精實管理」，才能梳理出真實痛點、找到企業轉型的核心關鍵。為協助產業築底、逐步養成轉型實力，由經濟部產業發展署主辦、表面處理同業公會共同推動的「數位管理共好加值計畫」——產業高階營運管理學堂，6月3日於台中開課。 接班不只是職位交接，更是經營理念的傳承與創新 現場湧入全台表面處理與精密製造業的指標企業，最令人矚目的是，與會成員中高達半數為企業一把手與核心接班梯隊，展現二代強烈的變革企圖心。 表面處理工業同業公會理事長吳美香於致詞時指出，表面處理與精密…</description>
-  </item>
-  <item>
-    <title>雷射直接電鍍可縮短「厚」金屬塗層的加工週期並降低成本</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3677557fa27980d29fb1f9da1aafdb5c</link>
-    <guid isPermaLink="false">3677557fa27980d29fb1f9da1aafdb5c</guid>
-    <pubDate>Thu, 21 May 2026 00:00:00 +0800</pubDate>
-    <category>德國</category>
-    <category>鈦合金</category>
-    <description></description>
   </item>
 </channel>
 </rss>
