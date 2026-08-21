@@ -6,7 +6,18 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Fri, 21 Aug 2026 01:17:40 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 21 Aug 2026 17:47:04 +0000</lastBuildDate>
+  <item>
+    <title>PyroGenesis電漿霧化技術可製備超純鈦粉，用於製造複雜的3D列印合金。</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3c37557fa27980da940ee35ebab745ca</link>
+    <guid isPermaLink="false">3c37557fa27980da940ee35ebab745ca</guid>
+    <pubDate>Fri, 21 Aug 2026 00:00:00 +0800</pubDate>
+    <category>美國</category>
+    <category>鈦合金</category>
+    <category>3D print</category>
+    <category>鈦粉</category>
+    <description>美國一家大型應用研究實驗室首次向 PyroGenesis 公司訂購了採用等離子體霧化技術生產的鈦粉。 PyroGenesis公司並未透露該設施的具體名稱或協議金額。據悉，該公司所進行的研究得到了美國國防部和NASA的資助。它是規模最大的應用研究實驗室之一，支援多個先進技術領域的研究工作。 PyroGenesis公司將供應用於電子束熔煉（EBM）的粗粒Ti64鈦粉。該技術可用於生產航空航天和生物醫學領域的複雜金屬零件。 此外，PyroGenesis公司已完成《國防聯邦採購條例補充條款》（DFARS）的合規要求，此次訂單正是在此背景下下達的。這些條款包含適用於某些美國國防承包商的安全標準。 由於研…</description>
+  </item>
   <item>
     <title>超音波表面滾壓製程對新型Ti65鈦合金耐磨性和耐腐蝕性的影響</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3be7557fa279805abec6cb5cdde20643</link>
@@ -393,14 +404,6 @@
     <category>3D print</category>
     <category>自行車應用</category>
     <description>Bastion Crossroad 的核心在於其精巧的車架結構，該結構融合了碳纖維和鈦合金兩種材料。單一 Crossroad 車架的製造需要超過 130 個工時。車架管材採用高強度碳纖維製成，而連接件（即所謂的套筒）則採用 3D 列印鈦合金。根據 Bastion 介紹，這種混合結構兼具兩種材料的優勢：一方面，它擁有高剛性和高效的動力傳輸；另一方面，它兼具舒適性和耐用性。此外，車架的其他部件，例如後叉鉤爪和座管頭，也採用了鈦合金材質，進一步凸顯了其高科技特性。 科技與獨特性的完美結合 Bastion Crossroad 並非普通的 0815 運動裝備。它完全在墨爾本製造，每個細節都精益求精。每個…</description>
-  </item>
-  <item>
-    <title>AI 長出雙手！表面處理產業解鎖「數位幕僚」 重塑製造競爭力</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3677557fa2798061865dce0282a2cf1d</link>
-    <guid isPermaLink="false">3677557fa2798061865dce0282a2cf1d</guid>
-    <pubDate>Thu, 21 May 2026 00:00:00 +0800</pubDate>
-    <category>台灣</category>
-    <description>當前的AI應用在產業界受到前所未有的關注，然而，回歸營運的底層邏輯，若沒有盤點流程、讓資訊透明，AI再強也無法成為企業轉型的萬靈丹。製造業唯有重回「精實管理」，才能梳理出真實痛點、找到企業轉型的核心關鍵。為協助產業築底、逐步養成轉型實力，由經濟部產業發展署主辦、表面處理同業公會共同推動的「數位管理共好加值計畫」——產業高階營運管理學堂，6月3日於台中開課。 接班不只是職位交接，更是經營理念的傳承與創新 現場湧入全台表面處理與精密製造業的指標企業，最令人矚目的是，與會成員中高達半數為企業一把手與核心接班梯隊，展現二代強烈的變革企圖心。 表面處理工業同業公會理事長吳美香於致詞時指出，表面處理與精密…</description>
   </item>
 </channel>
 </rss>
