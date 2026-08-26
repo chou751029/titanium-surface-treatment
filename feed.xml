@@ -6,7 +6,16 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Tue, 25 Aug 2026 01:16:21 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 26 Aug 2026 01:24:02 +0000</lastBuildDate>
+  <item>
+    <title>SAGA Metals完成了拉布拉多雷達關鍵礦產專案的礦產資源估算鑽探計劃</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3c87557fa27980d18b6bffa587868996</link>
+    <guid isPermaLink="false">3c87557fa27980d18b6bffa587868996</guid>
+    <pubDate>Wed, 26 Aug 2026 00:00:00 +0800</pubDate>
+    <category>加拿大</category>
+    <category>鈦礦/海綿鈦</category>
+    <description>項目及計劃亮點 Trapper 礦區的首次 MRE 鑽探計劃已完成，總鑽探深度達 22,432 米，是該公司歷史上規模最大的鑽探計劃。 鑽探工作在 Trapper North、Trapper Transition 和 Trapper South 三個區域進行了大約八個月。 100% 的鑽孔都發現了氧化物礦化，顯示存在一個大型的、含礦的層狀鎂鐵質侵入體，其中含有釩鈦磁鐵礦 (VTM) 和鈦鐵礦礦化。 完成了 85 (85) 個鑽孔（R-0008 至 R-0092），其中有許多重要的氧化物截獲，這些氧化物由半塊狀氧化物和韻律狀氧化物層組成，厚度從100 公尺到 300 公尺不等。 迄今為止，MRE…</description>
+  </item>
   <item>
     <title>PyroGenesis電漿霧化技術可製備超純鈦粉，用於製造複雜的3D列印合金。</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3c37557fa27980da940ee35ebab745ca</link>
@@ -395,15 +404,6 @@
     <category>高爾夫球</category>
     <category>無人機</category>
     <description>鉅明總經理蔡昌均受訪坦言，高爾夫球代工是一個成熟產業，「沒有明顯衰退，但，也未出現爆發性成長」，因此，本業需求平穩的情況下，公司必須尋找新的成長來源，啟動粉末冶金、與精密機械加工兩大領域。 蔡昌均表示，越南粉末冶金廠採分期投資，由於當地建廠程序涉及工廠操作許可與環保審查，整體完工時間，較原規畫多出2個季度，但，第一期已完成建廠，並可正式生產，目前產線已陸續打樣，預計第二季開始出貨。 他說，越南廠主要生產高爾夫球零配件，同時也鎖定自行車產業外移越南後的新增需求，積極爭取國內外品牌在越南的供應鏈訂單。 他指出，精密加工的產地位於高雄和發產業園區，新廠導入四軸、4.5軸、五軸等高階加工設備，可支援鋁…</description>
-  </item>
-  <item>
-    <title>Carbon meets 3D titanium printing on the Bastion Crossroad</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=36b7557fa27980a293b6e84ce72eff9d</link>
-    <guid isPermaLink="false">36b7557fa27980a293b6e84ce72eff9d</guid>
-    <pubDate>Mon, 25 May 2026 00:00:00 +0800</pubDate>
-    <category>3D print</category>
-    <category>自行車應用</category>
-    <description>Bastion Crossroad 的核心在於其精巧的車架結構，該結構融合了碳纖維和鈦合金兩種材料。單一 Crossroad 車架的製造需要超過 130 個工時。車架管材採用高強度碳纖維製成，而連接件（即所謂的套筒）則採用 3D 列印鈦合金。根據 Bastion 介紹，這種混合結構兼具兩種材料的優勢：一方面，它擁有高剛性和高效的動力傳輸；另一方面，它兼具舒適性和耐用性。此外，車架的其他部件，例如後叉鉤爪和座管頭，也採用了鈦合金材質，進一步凸顯了其高科技特性。 科技與獨特性的完美結合 Bastion Crossroad 並非普通的 0815 運動裝備。它完全在墨爾本製造，每個細節都精益求精。每個…</description>
   </item>
 </channel>
 </rss>

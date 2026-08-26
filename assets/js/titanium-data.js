@@ -4,6 +4,64 @@
 //   python3 scripts/sync_notion.py
 window.TITANIUM_DATA = [
   {
+    "id": "3c87557fa27980d18b6bffa587868996",
+    "title": "SAGA Metals完成了拉布拉多雷達關鍵礦產專案的礦產資源估算鑽探計劃",
+    "date": "2026-08-26",
+    "region": "加拿大",
+    "tags": [
+      "鈦礦/海綿鈦"
+    ],
+    "image": "assets/images/synced/3c87557fa27980d18b6bffa587868996.jpg",
+    "sourceUrl": "https://kevinchoufind.notion.site/SAGA-Metals-3c87557fa27980d18b6bffa587868996",
+    "summary": "項目及計劃亮點\n\nTrapper 礦區的首次 MRE 鑽探計劃已完成，總鑽探深度達 22,432 米，是該公司歷史上規模最大的鑽探計劃。\n\n鑽探工作在 Trapper North、Trapper Transition 和 Trapper South 三個區域進行了大約八個月。\n\n100% 的鑽孔都發現了氧化物礦化，顯示存在一個大型的、含礦的層狀鎂鐵質侵入體，其中含有釩鈦磁鐵礦 (VTM) 和鈦鐵礦礦化。\n\n完成了 85 (85) 個鑽孔（R-0008 至 R-0092），其中有許多重要的氧化物截獲，這些氧化物由半塊狀氧化物和韻律狀氧化物層組成，厚度從100 公尺到 300 公尺不等。\n\n迄今為止，MRE 鑽探已獲得多個厚氧化物鑽孔岩芯分析結果，截距範圍為70-163 米，其中Fe2O3、TiO2 和 V2O5 的品位通常高於45-58% 。\n\n雷達工程涵蓋面積達29 平方公里的礦體 ，其中包含 Trapper、Falcon 和 Hawkeye 礦化帶，這些礦化帶在相當大的真實寬度範圍內持續產出高品位的鈦、釩和鐵。\n\n為支援三維地質和資源建模，已完成定向岩心、詳細岩性測井、氧化物層理測量和構造解釋（包括褶皺幾何形狀和翼部連續性）。\n\n採用 Temas 專有的 RCL 技術進行的桌上型規模測試證實，鈦的回收率高達 90.8%，釩的回收率高達 97.4%，鐵的回收率高達 91.5%。\n\n基礎設施包括公路交通、深水港、附近的水力發電廠和區域機場。\n\nSAGA 已委託GeoGlobal LLC完成獨立的 NI 43-101 礦產資源估算和技術報告。",
+    "content": [
+      {
+        "type": "p",
+        "text": "項目及計劃亮點"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "Trapper 礦區的首次 MRE 鑽探計劃已完成，總鑽探深度達 22,432 米，是該公司歷史上規模最大的鑽探計劃。"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "鑽探工作在 Trapper North、Trapper Transition 和 Trapper South 三個區域進行了大約八個月。"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "100% 的鑽孔都發現了氧化物礦化，顯示存在一個大型的、含礦的層狀鎂鐵質侵入體，其中含有釩鈦磁鐵礦 (VTM) 和鈦鐵礦礦化。"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "完成了 85 (85) 個鑽孔（R-0008 至 R-0092），其中有許多重要的氧化物截獲，這些氧化物由半塊狀氧化物和韻律狀氧化物層組成，厚度從100 公尺到 300 公尺不等。"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "迄今為止，MRE 鑽探已獲得多個厚氧化物鑽孔岩芯分析結果，截距範圍為70-163 米，其中Fe2O3、TiO2 和 V2O5 的品位通常高於45-58% 。"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "雷達工程涵蓋面積達29 平方公里的礦體 ，其中包含 Trapper、Falcon 和 Hawkeye 礦化帶，這些礦化帶在相當大的真實寬度範圍內持續產出高品位的鈦、釩和鐵。"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "為支援三維地質和資源建模，已完成定向岩心、詳細岩性測井、氧化物層理測量和構造解釋（包括褶皺幾何形狀和翼部連續性）。"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "採用 Temas 專有的 RCL 技術進行的桌上型規模測試證實，鈦的回收率高達 90.8%，釩的回收率高達 97.4%，鐵的回收率高達 91.5%。"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "基礎設施包括公路交通、深水港、附近的水力發電廠和區域機場。"
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "SAGA 已委託GeoGlobal LLC完成獨立的 NI 43-101 礦產資源估算和技術報告。"
+      }
+    ]
+  },
+  {
     "id": "3c37557fa27980da940ee35ebab745ca",
     "title": "PyroGenesis電漿霧化技術可製備超純鈦粉，用於製造複雜的3D列印合金。",
     "date": "2026-08-21",
