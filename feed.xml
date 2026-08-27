@@ -6,7 +6,17 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Wed, 26 Aug 2026 17:25:37 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 27 Aug 2026 01:11:01 +0000</lastBuildDate>
+  <item>
+    <title>透過積層製造技術進行成分結構設計，可以製備出可硬化的鈦合金。</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3c97557fa2798093b91eda4cb8cd77c9</link>
+    <guid isPermaLink="false">3c97557fa2798093b91eda4cb8cd77c9</guid>
+    <pubDate>Thu, 27 Aug 2026 00:00:00 +0800</pubDate>
+    <category>中國大陸</category>
+    <category>3D print</category>
+    <category>鈦合金</category>
+    <description>鈦合金（Ti合金）通常應變硬化能力有限（通常&lt;250 MPa），這限制了其在要求苛刻的結構應用中的廣泛應用。本研究報告了一種具有超高應變硬化能力的鈦合金，這得益於其獨特的三維成分結構。該結構是透過積層製造（AM）原位合金化技術，使用鉬（Mo）和Ti-6Al-4V（Ti64）粉末的混合物製備而成。具體而言，三維互連的成分波在成型部件中形成了三個不同的微觀結構區域：低鉬區域的α′馬氏體、中鉬區域的亞穩β相和高鉬區域的穩定β相。每個區域分別活化了獨特的變形機制－去孿晶/再孿晶、應力誘導馬氏體相變和多系統滑移－這些機制共同作用，協同增強了應變硬化能力。不同區域間的機械性質差異會產生非均勻的形變誘導應力…</description>
+  </item>
   <item>
     <title>2026年氟硼酸鎂生產廠專案報告（DPR）：建造成本、投資、設備、可行性研究及商業計劃</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3c87557fa27980e69dbcd64f66ed17c3</link>
@@ -398,17 +408,6 @@
     <category>鈦合金</category>
     <category>扣件</category>
     <description>近日，鞍鋼集團攀鋼集團有限公司取得重大技術突破－首次成功研發出1,500MPa級超高強韌鈦合金，成為國內首家具備此產品試生產能力的企業。 隨著我國航空裝備向高載重、長航時、適配極端工況方向發展，航空緊固件用鈦合金的性能要求愈發嚴格。這類材料不僅需滿足超高強度（抗拉強度≥1300MPa）、高塑性（斷後延伸率≥8%）的硬性指標，也對高疲勞穩定性提出了極高要求。長期以來，國內高端航空扣件所需的超高強鈦合金仍依賴進口，核心材料未能實現自主可控已成為限制我國航空強國建設的關鍵瓶頸。 攀鋼集團研究院有限公司瞄準此產業痛點，聚焦技術難點進行系列技術攻關，自主研發超高強韌鈦合金體系，突破多元素鈦合金鑄錠均質化…</description>
-  </item>
-  <item>
-    <title>Norsk Titanium 成為世界第一家線材積層製造獲得Nadcap認證的公司</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3727557fa27980cdb1e8fcdbedafedce</link>
-    <guid isPermaLink="false">3727557fa27980cdb1e8fcdbedafedce</guid>
-    <pubDate>Mon, 01 Jun 2026 00:00:00 +0800</pubDate>
-    <category>美國</category>
-    <category>鈦合金</category>
-    <category>航太應用</category>
-    <category>3D print</category>
-    <description>Norsk Titanium 成為全球首家獲得 PRI | Performance Review Institute Nadcap 線材增材製造認證的公司，採用我們的快速等離子體沉積®（RPD®）技術，現已在紐約普萊茨堡的美國工廠獲得認證。 Nadcap 是航空航太產業中最受公認的關鍵流程認證標準之一，涵蓋航空、國防及太空領域。取得此認證是對我們技術與製造方法的重大肯定。 ✔我們的 Wire-AM 製程依據航太產業標準進行獨立驗證 ✔兩個生產設施間經過驗證的製程控制與重複性 ✔關鍵元件的認證——從設備能力到操作員認證及品質系統 ✔為客戶資格認證與供應商核准提供更堅實的基礎 這是擴大生產級增材製…</description>
   </item>
 </channel>
 </rss>
