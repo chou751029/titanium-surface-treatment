@@ -6,7 +6,17 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Fri, 28 Aug 2026 09:38:41 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 28 Aug 2026 16:29:06 +0000</lastBuildDate>
+  <item>
+    <title>3D列印鈦植入物與骨骼的剛度精準匹配</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ca7557fa279809283ded3faf604bf97</link>
+    <guid isPermaLink="false">3ca7557fa279809283ded3faf604bf97</guid>
+    <pubDate>Fri, 28 Aug 2026 00:00:00 +0800</pubDate>
+    <category>3D print</category>
+    <category>鈦合金</category>
+    <category>生物醫學</category>
+    <description></description>
+  </item>
   <item>
     <title>透過積層製造技術進行成分結構設計，可以製備出可硬化的鈦合金。</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3c97557fa2798093b91eda4cb8cd77c9</link>
@@ -398,16 +408,6 @@
     <category>航太應用</category>
     <category>雷射粉床熔融(PBF-LB)</category>
     <description></description>
-  </item>
-  <item>
-    <title>攀鋼1500MPa級超高強韌鈦合金研發成功</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3737557fa2798017938dcfea77d4329a</link>
-    <guid isPermaLink="false">3737557fa2798017938dcfea77d4329a</guid>
-    <pubDate>Tue, 02 Jun 2026 00:00:00 +0800</pubDate>
-    <category>中國大陸</category>
-    <category>鈦合金</category>
-    <category>扣件</category>
-    <description>近日，鞍鋼集團攀鋼集團有限公司取得重大技術突破－首次成功研發出1,500MPa級超高強韌鈦合金，成為國內首家具備此產品試生產能力的企業。 隨著我國航空裝備向高載重、長航時、適配極端工況方向發展，航空緊固件用鈦合金的性能要求愈發嚴格。這類材料不僅需滿足超高強度（抗拉強度≥1300MPa）、高塑性（斷後延伸率≥8%）的硬性指標，也對高疲勞穩定性提出了極高要求。長期以來，國內高端航空扣件所需的超高強鈦合金仍依賴進口，核心材料未能實現自主可控已成為限制我國航空強國建設的關鍵瓶頸。 攀鋼集團研究院有限公司瞄準此產業痛點，聚焦技術難點進行系列技術攻關，自主研發超高強韌鈦合金體系，突破多元素鈦合金鑄錠均質化…</description>
   </item>
 </channel>
 </rss>

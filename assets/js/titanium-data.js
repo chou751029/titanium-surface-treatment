@@ -4,6 +4,21 @@
 //   python3 scripts/sync_notion.py
 window.TITANIUM_DATA = [
   {
+    "id": "3ca7557fa279809283ded3faf604bf97",
+    "title": "3D列印鈦植入物與骨骼的剛度精準匹配",
+    "date": "2026-08-28",
+    "region": "",
+    "tags": [
+      "3D print",
+      "鈦合金",
+      "生物醫學"
+    ],
+    "image": "assets/images/synced/3ca7557fa279809283ded3faf604bf97.jpg",
+    "sourceUrl": "https://kevinchoufind.notion.site/3D-3ca7557fa279809283ded3faf604bf97",
+    "summary": "",
+    "content": []
+  },
+  {
     "id": "3c97557fa2798093b91eda4cb8cd77c9",
     "title": "透過積層製造技術進行成分結構設計，可以製備出可硬化的鈦合金。",
     "date": "2026-08-27",
