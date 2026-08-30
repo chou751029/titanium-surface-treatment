@@ -6,7 +6,15 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Sun, 30 Aug 2026 03:42:48 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 30 Aug 2026 16:40:07 +0000</lastBuildDate>
+  <item>
+    <title>Ultrafast Laser Thins Gold to Strengthen Flip-Chip Solder Joints</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3cc7557fa27980dab2cac2a542c2d113</link>
+    <guid isPermaLink="false">3cc7557fa27980dab2cac2a542c2d113</guid>
+    <pubDate>Sun, 30 Aug 2026 00:00:00 +0800</pubDate>
+    <category>中國</category>
+    <description></description>
+  </item>
   <item>
     <title>3D列印鈦植入物與骨骼的剛度精準匹配</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ca7557fa279809283ded3faf604bf97</link>
@@ -397,17 +405,6 @@
     <category>廢鈦回收</category>
     <category>航太應用</category>
     <description>航空航太工業的鈦回收和金屬屑回收 使用Finex Separator™，製造商可以有效地分離鈦屑，將長而捲曲的鈦屑與細小的切屑、斷裂的嵌件以及螺絲或螺栓等異物分離。與緊密的切屑不同，捲曲的鈦屑在篩網上的行為截然不同。它傾向於移動並在篩網上形成小團塊，而更小、更密集的顆粒則會穿過篩網或沉澱到分離區的下部。透過優化振動幅度、篩網尺寸和篩板角度，我們的分離設備可確保精確分離金屬顆粒，從而獲得更清潔的金屬流並最大限度地減少污染。 這些分離原理也適用於太空探索。月壤（俗稱月土）含有細小的金屬顆粒，必須與粗糙的磨蝕性粉塵分離，才能用於未來的任務和研究。用於航空航天金屬屑回收的振動分離技術未來或許可以應用於…</description>
-  </item>
-  <item>
-    <title>雷射粉末床熔融GRX-810合金的疲勞性能：後處理的影響</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3747557fa279807bbab8e5e65bb9d675</link>
-    <guid isPermaLink="false">3747557fa279807bbab8e5e65bb9d675</guid>
-    <pubDate>Wed, 03 Jun 2026 00:00:00 +0800</pubDate>
-    <category>美國</category>
-    <category>鈦合金</category>
-    <category>航太應用</category>
-    <category>雷射粉床熔融(PBF-LB)</category>
-    <description></description>
   </item>
 </channel>
 </rss>

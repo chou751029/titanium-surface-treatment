@@ -4,6 +4,17 @@
 //   python3 scripts/sync_notion.py
 window.NEWS_DATA = [
   {
+    "id": "3cc7557fa27980dab2cac2a542c2d113",
+    "title": "Ultrafast Laser Thins Gold to Strengthen Flip-Chip Solder Joints",
+    "date": "2026-08-30",
+    "region": "中國",
+    "tags": [],
+    "image": "assets/images/synced/3cc7557fa27980dab2cac2a542c2d113.jpg",
+    "sourceUrl": "https://bioengineer.org/ultrafast-laser-thins-gold-to-strengthen-flip-chip-solder-joints/",
+    "summary": "",
+    "content": []
+  },
+  {
     "id": "3c87557fa27980e69dbcd64f66ed17c3",
     "title": "2026年氟硼酸鎂生產廠專案報告（DPR）：建造成本、投資、設備、可行性研究及商業計劃",
     "date": "2026-08-26",
