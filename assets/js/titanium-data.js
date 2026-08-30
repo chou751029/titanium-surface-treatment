@@ -3900,7 +3900,7 @@ window.TITANIUM_DATA = [
     "date": "2026-02-12",
     "region": "",
     "tags": [],
-    "image": "",
+    "image": "assets/images/synced/3057557fa27980f29f97c8a3ed95ccac.png",
     "sourceUrl": "https://kevinchoufind.notion.site/Global-Aerospace-Titanium-Market-to-Reach-USD-6-68-Billion-by-2032-on-Aircraft-Production-Surge-3057557fa27980f29f97c8a3ed95ccac",
     "summary": "根據 Fortune Business Insights 的報告，由於飛機產量增加、國防投資上升，以及航太平台日益採用輕量化與高性能材料， 2026 年航太鈦金屬市場正見證強勁增長。全球航太鈦金屬市場規模在 2024 年估值為 37.0 億美元，預計將從 2025 年的 39.4 億美元增長至 2032 年的 66.8 億美元，預測期內的複合年增長率（CAGR）為 7.8%。",
     "content": [
