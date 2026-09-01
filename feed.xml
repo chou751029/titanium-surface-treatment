@@ -6,7 +6,34 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Mon, 31 Aug 2026 03:44:46 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 01 Sep 2026 17:28:50 +0000</lastBuildDate>
+  <item>
+    <title>Makoh公司採用濕式噴砂技術，實現了半導體製造設備的真空幫浦清洗自動化。</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ce7557fa2798029b1ced77802e46e5a</link>
+    <guid isPermaLink="false">3ce7557fa2798029b1ced77802e46e5a</guid>
+    <pubDate>Tue, 01 Sep 2026 00:00:00 +0800</pubDate>
+    <category>日本</category>
+    <category>coating</category>
+    <category>半導體</category>
+    <category>真空幫浦清洗</category>
+    <description>濕式噴砂設備專業製造商 Makoh Co., Ltd.（總部：新潟縣長岡市；社長：淺井義久；以下簡稱“公司”）於 8 月 3 日推出了採用濕式噴砂方法的“SSB-K”清潔設備。 該裝置是為維護目的而開發的，專門用於半導體製造設備中安裝的真空泵的殼體和轉子。 支援人工智慧半導體的真空幫浦維護概念圖。 ■背景 隨著生成式人工智慧的普及，全球對資料中心半導體（例如CPU、GPU和HBM）的需求不斷增長。為此，半導體製造設備的引進也在加速，而真空幫浦的重要性也日益凸顯，它們為薄膜沉積和蝕刻等真空環境下的製造流程提供支援。 真空幫浦會在設備內部產生真空，由於它們也會吸走薄膜沉積材料和蝕刻產物，因此會在設…</description>
+  </item>
+  <item>
+    <title>IperionX公司獲得第二份美國陸軍任務訂單，將加速美國鈦工業規模生產。</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ce7557fa2798010a54efa39e2cdf26e</link>
+    <guid isPermaLink="false">3ce7557fa2798010a54efa39e2cdf26e</guid>
+    <pubDate>Tue, 01 Sep 2026 00:00:00 +0800</pubDate>
+    <category>美國</category>
+    <category>整體市場</category>
+    <category>鈦材應用</category>
+    <category>鈦粉</category>
+    <category>3D print</category>
+    <category>鈦氫</category>
+    <category>廢鈦回收</category>
+    <category>HSPT Hydrogen Sintering and Phase Transformation氫燒結與相變技術</category>
+    <category>HAMR(氫輔助熱燒結與相變技術)</category>
+    <description>美國陸軍已根據小型企業創新研究（SBIR）第三階段無限期交付、無限量（IDIQ）合約，用於國防第 2 號國防任務的第 2 號國產軟件（IDIQ）合約。 IperionX 的 SBIR 第三階段無限期交付/無限期數量 (IDIQ) 合約允許符合條件的美國政府機構下達總額上限為 9900 萬美元的專案特定訂單（詳情請參閱 2025 年 6 月 5 日發布的新聞稿「IperionX 獲得美國國防部 SBIR 合約，金額高達 9900 萬美元）。任務訂單 1 和 2 的總金額約為 1,980 萬美元，IDIQ 合約上限下剩餘 7,920 萬美元。 任務訂單 W911QX26FA097 為固定價格合同，…</description>
+  </item>
   <item>
     <title>Ultrafast Laser Thins Gold to Strengthen Flip-Chip Solder Joints</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3cc7557fa27980dab2cac2a542c2d113</link>
@@ -385,26 +412,6 @@
     <category>鈦絲</category>
     <category>鈦氈</category>
     <description>根據QY Research最新發布的題為《全球高孔隙率鈦氈市場洞察－產業份額、銷售預測及需求展望（2026-2032）》的研究報告，該報告評估了影響高孔隙率鈦氈市場發展軌蹟的各種因素。報告指出，受快速的技術進步、不斷增長的行業需求以及跨多個領域的應用拓展的推動，全球高孔隙率鈦氈市場正呈現強勁的增長勢頭。該報告對2026年至2032年的市場規模、份額、成長趨勢、競爭格局和未來展望進行了全面分析。 2025年全球高孔隙率鈦氈市場規模為3.14億美元，預計到2032年將達到5.34億美元，在2026-2032年預測期內複合年增長率（CAGR）為8.0%。 Key Players Covered in…</description>
-  </item>
-  <item>
-    <title>美國國家標準與技術研究院（NIST）利用雷射在3D列印中攪拌金屬合金</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=37a7557fa279807286d2c6a0774285f2</link>
-    <guid isPermaLink="false">37a7557fa279807286d2c6a0774285f2</guid>
-    <pubDate>Tue, 09 Jun 2026 00:00:00 +0800</pubDate>
-    <category>美國</category>
-    <category>3D print</category>
-    <category>鈦合金</category>
-    <category>雷射粉床熔融(PBF-LB)</category>
-    <description>高熵合金必須混合到原子級別，」美國國家標準與技術研究院（NIST）物理學家範章（音譯）說道，他是該計畫的共同負責人。 “要按照這樣的比例混合金屬，需要付出額外的努力。” 在實驗中，研究人員將一種名為RHEA-19的高密度高熵合金與一種輕質鈦合金結合。這種材料組合被認為具有挑戰性，因為這些成分通常很難很好地混合。新的雷射路徑旨在利用機械方式在短暫的液態階段混合熔融材料，而無需在印表機中添加額外的硬體。 「商用3D列印軟體無法創造這些圖案，」何揚解釋。 “雷射路徑的自訂功能非常有限，所以我們不得不從頭開始編寫軟體。” 該製程在阿貢國家實驗室先進光子源利用同步輻射X射線進行了測試。研究人員使用X射線…</description>
-  </item>
-  <item>
-    <title>利用篩分設備優化航空航太廢棄物回收</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3797557fa27980e2acbecc098d8064fb</link>
-    <guid isPermaLink="false">3797557fa27980e2acbecc098d8064fb</guid>
-    <pubDate>Mon, 08 Jun 2026 00:00:00 +0800</pubDate>
-    <category>廢鈦回收</category>
-    <category>航太應用</category>
-    <description>航空航太工業的鈦回收和金屬屑回收 使用Finex Separator™，製造商可以有效地分離鈦屑，將長而捲曲的鈦屑與細小的切屑、斷裂的嵌件以及螺絲或螺栓等異物分離。與緊密的切屑不同，捲曲的鈦屑在篩網上的行為截然不同。它傾向於移動並在篩網上形成小團塊，而更小、更密集的顆粒則會穿過篩網或沉澱到分離區的下部。透過優化振動幅度、篩網尺寸和篩板角度，我們的分離設備可確保精確分離金屬顆粒，從而獲得更清潔的金屬流並最大限度地減少污染。 這些分離原理也適用於太空探索。月壤（俗稱月土）含有細小的金屬顆粒，必須與粗糙的磨蝕性粉塵分離，才能用於未來的任務和研究。用於航空航天金屬屑回收的振動分離技術未來或許可以應用於…</description>
   </item>
 </channel>
 </rss>
