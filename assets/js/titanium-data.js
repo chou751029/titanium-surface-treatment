@@ -4,6 +4,26 @@
 //   python3 scripts/sync_notion.py
 window.TITANIUM_DATA = [
   {
+    "id": "3cf7557fa279809ebde1e6bd2e35000a",
+    "title": "Sheffield titanium plant installs major VAR furnace",
+    "date": "2026-09-02",
+    "region": "英國",
+    "tags": [
+      "鈦材應用",
+      "鈦鑄造",
+      "鈦合金"
+    ],
+    "image": "assets/images/synced/3cf7557fa279809ebde1e6bd2e35000a.png",
+    "sourceUrl": "https://www.theengineer.co.uk/content/news/uk-s-largest-vacuum-arc-remelting-furnace-gets-ready-for-action",
+    "summary": "Castings Technology has installed a new vacuum arc remelting furnace at its £18 million Sheffield factory, adding a major piece of production equipment to an expansion designed to increase UK capacity for high-integrity titanium castings. The multi-million-pound furnace has been lifted into position at the company’s new 196,000 sq ft facility and is described as the largest unit of its type in commercial use in the UK and one of the largest glob…",
+    "content": [
+      {
+        "type": "p",
+        "text": "Castings Technology has installed a new vacuum arc remelting furnace at its £18 million Sheffield factory, adding a major piece of production equipment to an expansion designed to increase UK capacity for high-integrity titanium castings. The multi-million-pound furnace has been lifted into position at the company’s new 196,000 sq ft facility and is described as the largest unit of its type in commercial use in the UK and one of the largest glob…"
+      }
+    ]
+  },
+  {
     "id": "3ce7557fa2798010a54efa39e2cdf26e",
     "title": "IperionX公司獲得第二份美國陸軍任務訂單，將加速美國鈦工業規模生產。",
     "date": "2026-09-01",
@@ -9463,7 +9483,7 @@ window.TITANIUM_DATA = [
     "tags": [
       "鈦礦/海綿鈦"
     ],
-    "image": "",
+    "image": "assets/images/synced/1fb7557fa279800d929eff12473be2ce.jpg",
     "sourceUrl": "https://kevinchoufind.notion.site/JRC-1fb7557fa279800d929eff12473be2ce",
     "summary": "JRC 的一份新報告探討了鈦金屬的供應鏈以及如何透過提高循環性來減少進口。\n\n© antomatveev, stock.adobe.com\n鈦金屬對歐盟的航空航天和國防工業至關重要，並用於綠色和數位轉型的多項關鍵技術，例如發電、IT 設備（智慧型手機、平板電腦和筆記型電腦）或衛星。然而，由於鈦金屬產品嚴重依賴進口，歐盟目前面臨重大挑戰。 \n這種依賴性使歐盟面臨供應鏈中斷的潛在風險，尤其是在全球貿易保護主義抬頭、供應商數量有限以及俄羅斯對烏克蘭戰爭等全球緊張局勢盛行的背景下。 \n由 JRC高級研究中心 (CAS)協調發布的一份新的JRC 科學政策報告分析了當前形勢，並提出了幾項政策選擇，例如加強國際夥伴關係、促進循環性或將部分生產帶回歐盟。這些措施有助於確保永續的鈦生態系統，增強歐盟的開放戰略自主權，甚至使內部鈦產業的就業率翻倍。  \n鈦的戰略意義 \n歐盟是鈦的主要消費國，預計未來幾年鈦的使用量只會增加。然而，歐洲國內生產鈦金屬的能力非常有限，使其成為淨進口國，這意味著其鈦進口量大於出口量。 \n鈦產品（錠、棒、板、管）佔進口量最大，進出口總量比例為6:1；未鍛造鈦（主要用於製造鍛造產品的海綿）的比例為 10:1。 \n目前，歐盟三分之二的鈦需求與民用航空應用有關，這些領域提供了超過 40 萬個就業崗位，佔歐盟 GDP 的 2% 以上；其餘則分佈在航空航太領域以外的應用領域，如化學技術、汽車、機器人、國防或增材製造（即 3D 列印）。  \n地緣政治與供應鏈挑戰 \n歐盟對進口的依賴，加上俄羅斯在烏克蘭的戰爭等地緣政治動盪，以及航空航太和國防工業需求的預期成長，凸顯了減少對外依賴的迫切性。此外，全球鈦生產商數量仍然非常有限，這使得歐盟更難以實現供應商多元化。  \n全球鈦資源集中在幾個關鍵地區，包括中國、日本、俄羅斯和哈薩克。其中，日本主要生產鍛造鈦，中國缺乏高品位鈦材出口。 \n儘管歐盟成功彌補了俄羅斯入侵烏克蘭後俄羅斯和烏克蘭鈦供應的損失，但鈦供應鏈的風險仍然存在，俄羅斯作為世界上最大的航空級鈦生產國，在全球航空航天業中仍然具有重要影響力。  \n閉環 \nJRC專家表示，提高鈦使用的循環性有助於解決歐盟對外部國家的依賴。循環經濟也為減少鈦對環境的影響和對原材料的依賴提供了機會，並有助於減少鈦進口。  \n閉環的關鍵一步可能是保留航空鈦廢料並回收利用，而不是將其退還給非歐盟供應商。將這些廢料重新輸送到歐洲工廠，同時支持國內生產基礎設施，可以使歐盟鈦產業的就業人數翻倍，同時增加顯著的經濟價值。 \n政策建議 \n在其新的《政策科學》報告中，聯合研究委員會根據歐盟目前在脫碳、降低風險、回流和關鍵原材料短缺方面的優先事項提出了政策建議。這些支持最近和即將出台的政策和指導方針，例如《關鍵原材料（CRM）法案》、《淨零工業法案》、《綠色協議工業計劃》、《設想中的清潔工業協議》、《報廢電子電氣設備指令》審查或德拉吉報告。 \n這些旨在確保永續鈦生態系統的歐盟政策建議包括： \n• 鈦加工回流：在歐盟內部建立中游生產能力將減少進口依賴。 \n• 提高退役飛機鈦的回收率：從退役飛機中回收鈦是可行的，但獲利能力、法規和技術限制等挑戰限制了其大規模實施。推動生態設計實踐和簡化材料認證流程有助於克服這些障礙 \n• 加強國際夥伴關係：與哈薩克等鈦生產商的合作可以實現採購多樣化，同時鼓勵開採和加工的可持續實踐。 \n•...",
     "content": [
