@@ -6,7 +6,7 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Tue, 08 Sep 2026 01:07:43 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 08 Sep 2026 02:45:21 +0000</lastBuildDate>
   <item>
     <title>三井礦業冶煉株式會社已開始銷售一種利用其稀有金屬溶液材料系列「iconos」的金屬材料滲碳降解抑制塗層</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3d57557fa2798010bf91e13807e99b0c</link>
@@ -24,6 +24,18 @@
     <category>美國</category>
     <category>電鍍</category>
     <description>Accu-Labs 概述了低成本的鹼度、油負荷和表面張力測試，使商店能夠以基於狀態的維護來取代固定的清潔計劃。 本次演講將探討一系列簡單有效的分析技術，這些技術無需昂貴的儀器設備，即可幫助使用者即時監測和優化清洗機的性能。透過應用這些方法，塗裝人員可以延長清洗液的使用壽命，降低廢液處理成本，減少補料和營運費用，並在缺陷出現之前就加以預防。讀者將獲得在車間實施這些技術的實用技巧，從而在無需資本投入的情況下，確保產品品質穩定並顯著節省成本。 案例導入成效（高產量貴金屬電鍍廠）： • 化學品藥劑支出降低 38%。 • 廢水與廢液處理成本降低 27%。 • 顯著減少鍍層附著力失效，消除非預期停機並提高…</description>
+  </item>
+  <item>
+    <title>即使水流穿過，3D列印的鈦晶格也能漂浮在水面上。</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3d57557fa27980a3baf5e7b6580883aa</link>
+    <guid isPermaLink="false">3d57557fa27980a3baf5e7b6580883aa</guid>
+    <pubDate>Tue, 08 Sep 2026 00:00:00 +0800</pubDate>
+    <category>澳洲</category>
+    <category>3D print</category>
+    <category>鈦合金</category>
+    <category>海洋應用</category>
+    <category>晶格結構</category>
+    <description>2026年9月，以皇家墨爾本理工大學增材製造中心為核心的國際研究團隊在《先進材料》（Advanced Materials ）期刊上發表了一項設計方案，克服了上述限制。這種複合材料僅以閉孔聚氨酯泡棉填充空心鈦合金支柱的內部，而晶格的外部空間則保持開放，海水可以自由流過。論文題為《突破水面：浮力金屬-聚合物開孔混合晶格超材料》（DOI：10.1002/adma.74641）。研究團隊將此成果視為浮力金屬混合開孔晶格超材料的示範。 如圖所示，在低密度範圍內，鈦-聚氨酯複合晶格的單位密度屈服強度明顯優於現有材料。 然而，其10.3 MPa的絕對屈服強度值本身遠小於塊體金屬材料（例如，標準Ti-6Al-…</description>
   </item>
   <item>
     <title>Sheffield titanium plant installs major VAR furnace</title>
@@ -404,15 +416,6 @@
     <category>鈦合金</category>
     <category>航太應用</category>
     <description>【SMM鈦快訊】西部金屬材料公司於6月15日宣布，其鈮合金產能已大幅提升80%，達到每年90噸，這得益於其鈮合金產品成功通過了NASA和SpaceX的標準認證。作為中國商業發射領域的主要供應商，該公司訂單已排滿至2027年第三季。同時，二期擴建工程－新增4,000噸先進鈦合金錠產能－預計8月投產。屆時，公司總產能將提升至12,000噸，有效提升其在國防及航空航太領域鈦合金供應能力。</description>
-  </item>
-  <item>
-    <title>Elmo發布用於工業應用的新型運動控制器和伺服驅動器</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3877557fa27980819665c776d3df026b</link>
-    <guid isPermaLink="false">3877557fa27980819665c776d3df026b</guid>
-    <pubDate>Mon, 22 Jun 2026 00:00:00 +0800</pubDate>
-    <category>鈦合金</category>
-    <category>鈦材應用</category>
-    <description>Elmo Motion Control Ltd. 昨日發布了適用於工業、惡劣及極端環境等多種應用的新型伺服驅動器和運動控制器驅動器。這些新產品能夠適應溫度、海拔、水深、濕度、振動等多種嚴苛條件。 「我們的客戶需要的不僅僅是緊湊的尺寸和高功率密度，」Elmo美國銷售總監Elizabeth Victor表示，「功能安全對於許多自動化系統至關重要，它可以減少甚至消除對安全籠的需求。透過將功能安全整合到我們的控制器和伺服驅動器中，我們能夠幫助OEM廠商在其運動子系統的基礎層面上實現安全功能。」 她補充說：“通過我們提供的認證產品，我們還可以幫助簡化必須滿足嚴格功能安全標準的系統的設計和認證。” Elm…</description>
   </item>
 </channel>
 </rss>
