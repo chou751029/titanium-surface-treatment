@@ -4,6 +4,28 @@
 //   python3 scripts/sync_notion.py
 window.NEWS_DATA = [
   {
+    "id": "3d57557fa2798010bf91e13807e99b0c",
+    "title": "三井金属、iconos™を活用した金属材向け浸炭劣化抑制コーティングを販売開始",
+    "date": "2026-09-08",
+    "region": "日本",
+    "tags": [],
+    "image": "",
+    "sourceUrl": "https://www.nikkei.com/article/DGXZRSP712242_X00C26A9000000/",
+    "summary": "",
+    "content": []
+  },
+  {
+    "id": "3d57557fa27980f7821ac10bef78d78d",
+    "title": "Maximizing Cleaner Performance Through Practical Analytics / Products Finishing ",
+    "date": "2026-09-08",
+    "region": "",
+    "tags": [],
+    "image": "",
+    "sourceUrl": "https://www.pfonline.com/",
+    "summary": "",
+    "content": []
+  },
+  {
     "id": "3ce7557fa2798029b1ced77802e46e5a",
     "title": "Makoh公司採用濕式噴砂技術，實現了半導體製造設備的真空幫浦清洗自動化。",
     "date": "2026-09-01",
