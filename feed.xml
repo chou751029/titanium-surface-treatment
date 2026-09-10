@@ -6,7 +6,40 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Thu, 10 Sep 2026 03:13:24 +0000</lastBuildDate>
+  <lastBuildDate>Thu, 10 Sep 2026 17:30:45 +0000</lastBuildDate>
+  <item>
+    <title>通用電氣航空航太公司將收購大型精密鑄造零組件製造商CPP(Consolidated Precision Products)公司</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3d77557fa2798089ac35f299076c4426</link>
+    <guid isPermaLink="false">3d77557fa2798089ac35f299076c4426</guid>
+    <pubDate>Thu, 10 Sep 2026 00:00:00 +0800</pubDate>
+    <category>鈦鑄造</category>
+    <description>GE Aerospace已同意從私人投資公司華平投資和伯克希爾合夥公司手中收購 Consolidated Precision Products (CPP)，後者是一家大型精密鑄件製造商。 CPP公司總部位於俄亥俄州克利夫蘭市，主要為商業航空航太和國防領域提供精密鑄件和子組件。該公司成立於1991年，是全球最大的熔模鑄造和精密砂型鑄造生產商之一。 CPP 使用高溫合金、鈦、鋁、鎂和鋼製造用於商用和軍用飛機、武器系統、公務機和支線噴射機、直升機和工業燃氣渦輪機的複雜鑄件。 該公司在全球20多個工廠擁有約6,600名員工。通用電氣航空航太公司一直是CPP的客戶，合作超過15年。 通用電氣航空航太公司…</description>
+  </item>
+  <item>
+    <title>從253克到201克：Samsung打造全球最輕摺疊機背後的工程技術</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3d77557fa2798028be79d5148b627a5f</link>
+    <guid isPermaLink="false">3d77557fa2798028be79d5148b627a5f</guid>
+    <pubDate>Thu, 10 Sep 2026 00:00:00 +0800</pubDate>
+    <category>3D print</category>
+    <category>鈦合金</category>
+    <category>鈦材應用</category>
+    <category>手機應用</category>
+    <category>3C應用</category>
+    <category>鈦絲</category>
+    <description>歷經數代演進，三星持續提升螢幕層結構、超薄金屬精密加工，以及鉸鏈等摺疊裝置的核心技術。 Flex Titanium就是其中一個代表性的例子。 Galaxy Z Fold8與Galaxy Z Fold8 Ultra的螢幕皆採用Flex Titanium 技術，搭載專為摺疊螢幕結構所設計的鈦合金薄膜（Titanium Alloy Film）。 這層薄膜厚度僅有數十微米，約為人類頭髮寬度的三分之一。其材料與結構相互配合，即使在如此極致的厚度下依然維持優異效能。 而用於支撐顯示螢幕的金屬板，則面臨不同的挑戰。 部分金屬板經精密加工後，厚度約僅0.2毫米，最薄處更達0.15毫米。在這個厚度等級下，單純將…</description>
+  </item>
+  <item>
+    <title>蘋果發表新款 iPhone Duo，採用量產 3D 列印鉸鏈蓋</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3d77557fa279806da571d0c249d541eb</link>
+    <guid isPermaLink="false">3d77557fa279806da571d0c249d541eb</guid>
+    <pubDate>Thu, 10 Sep 2026 00:00:00 +0800</pubDate>
+    <category>美國</category>
+    <category>3D print</category>
+    <category>鈦合金</category>
+    <category>手機應用</category>
+    <category>鈦金屬塗層</category>
+    <description>蘋果公司於9月9日發布了iPhone Duo，這是其首款可折疊iPhone，展開後也是該公司迄今為止最薄的iPhone。這款設備配備一塊7.6英寸的內屏，採用奈米紋理表面處理，專為遊戲、多任務處理和視頻播放而設計；外屏尺寸為5.4英寸，在折疊狀態下可覆蓋iPhone 18 Pro屏幕面積的90%。兩塊螢幕的縱橫比相同，因此內容可以在兩塊螢幕之間無縫縮放，無需裁剪。蘋果為這款手機配備了A20 Pro晶片、客製化的均熱板以及分別位於機身兩部分的雙電池架構。 如果沒有鉸鏈，所有這些折疊功能都無法實現，這也引出了蘋果在製造過程中面臨的挑戰。機身外殼採用 5 級鈦金屬，並經過鏡面拋光處理；鉸鏈蓋本身則採…</description>
+  </item>
   <item>
     <title>三井礦業冶煉株式會社已開始銷售一種利用其稀有金屬溶液材料系列「iconos」的金屬材料滲碳降解抑制塗層</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3d57557fa2798010bf91e13807e99b0c</link>
@@ -384,38 +417,6 @@
     <category>鈦合金</category>
     <category>生物醫學</category>
     <description>將微量稀土元素（RE）引入Zn-Li-Mn體係可以彌補這一不足。透過形成REZn&lt;sub&gt; 11-13 &lt;/sub&gt;金屬間化合物相，我們建構了一種雙峰晶粒結構，將抗拉強度提升至772 MPa，彎曲強度提升至1207 MPa，接近醫用級鈦合金（Ti-6Al-4V）的水平，同時保持了生物降解性。至關重要的是，這些相起到「電位緩衝」電極的作用，確保均勻降解和可控的鋅離子釋放。這種優化的離子濃度活化了Rap1訊號通路，使骨再生能力比鈦合金植入物提高了兩倍。這種Zn-Li-Mn-Y合金兼具超高的機械強度和強大的生物活性，為下一代承重植入物提供了一個優異的平台，為永久性金屬固定提供了一種可降解的替代方案。</description>
-  </item>
-  <item>
-    <title>設計鈦金屬“TranTixxii”被用於國家指定風景名勝區“觀音院花園”的景觀保護。</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=38a7557fa279807f9dfed02976a87900</link>
-    <guid isPermaLink="false">38a7557fa279807f9dfed02976a87900</guid>
-    <pubDate>Thu, 25 Jun 2026 00:00:00 +0800</pubDate>
-    <category>日本</category>
-    <category>鈦合金</category>
-    <category>藝術鈦製品</category>
-    <category>鈦材應用</category>
-    <category>建築應用</category>
-    <description>日本製鐵株式會社(Nippon Steel)（以下簡稱「日本製鐵」）的裝飾性鈦材「TranTixxii® 」被國家指定風景名勝「觀音院庭園」（地址：鳥取縣鳥取市，以下簡稱「觀音院庭園」）採用，用於延伸迴廊和書院屋內的屋頂材料以及迴廊內的燈罩（本板內的燈罩」）。本次採用是基於對該產品與庭園景觀和諧性、對自然環境的考慮以及長期保持其美觀性的評估。 銅屋頂在傳統建築中應用廣泛，其經年累月形成的獨特美感極具吸引力。然而，近年來環境變化導致銅綠的形成不穩定，最終效果可能無法達到預期，在維護方面需要格外注意。此外，銅屋頂在雨水沖刷時會釋放微量銅離子，有助於抑制池塘和水池中藻類、苔蘚和蚊子幼蟲的生長，但在某…</description>
-  </item>
-  <item>
-    <title>匯鑽科泰國新廠年底投產 擴大AI、CPO產品布局</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3887557fa27980d39939fa224b08d0b8</link>
-    <guid isPermaLink="false">3887557fa27980d39939fa224b08d0b8</guid>
-    <pubDate>Tue, 23 Jun 2026 00:00:00 +0800</pubDate>
-    <category>台灣</category>
-    <category>電鍍</category>
-    <category>電子零組件</category>
-    <description>（中央社記者潘智義台北15日電）專業表面處理廠匯鑽科技董事長花鐳哲今天表示，中國廠持續擴充產能，但為符合美系客戶非紅供應鏈需求，泰國舊廠光模組新產線7月投產，新廠今年底投產；越南廠也在今年3月成立。 匯鑽科技今天舉行媒體交流會，花鐳哲指出，為國際大廠提供消費性電子產品表面處理業務占營收比重逾7成，但布局AI液冷散熱、新世代共封裝光學模組（CPO）及AI資料中心專用高容量硬碟（Nearline HDD）等前瞻性產業，將打造多元高毛利產品組合。 花鐳哲說，光模組表面處理客戶需求量大增，除要求泰國舊廠先擴新產線，於今年7月投產，設計月產能40萬至50萬件；他表示，未來泰國光模組表面處理新廠生產規模將…</description>
-  </item>
-  <item>
-    <title>西部金屬材料公司鈮合金產能提升80%，擴大航太鈦產量</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3877557fa27980c7a414e2337e863d9c</link>
-    <guid isPermaLink="false">3877557fa27980c7a414e2337e863d9c</guid>
-    <pubDate>Mon, 22 Jun 2026 00:00:00 +0800</pubDate>
-    <category>中國大陸</category>
-    <category>鈦合金</category>
-    <category>航太應用</category>
-    <description>【SMM鈦快訊】西部金屬材料公司於6月15日宣布，其鈮合金產能已大幅提升80%，達到每年90噸，這得益於其鈮合金產品成功通過了NASA和SpaceX的標準認證。作為中國商業發射領域的主要供應商，該公司訂單已排滿至2027年第三季。同時，二期擴建工程－新增4,000噸先進鈦合金錠產能－預計8月投產。屆時，公司總產能將提升至12,000噸，有效提升其在國防及航空航太領域鈦合金供應能力。</description>
   </item>
 </channel>
 </rss>
