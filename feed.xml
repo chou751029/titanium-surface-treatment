@@ -6,7 +6,18 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Sat, 12 Sep 2026 03:16:11 +0000</lastBuildDate>
+  <lastBuildDate>Sun, 13 Sep 2026 03:17:11 +0000</lastBuildDate>
+  <item>
+    <title>PTC工業公司：Aerolloy獲得空中巴士鈦鑄件合約</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3d97557fa27980c4b70ef4de9b0678ce</link>
+    <guid isPermaLink="false">3d97557fa27980c4b70ef4de9b0678ce</guid>
+    <pubDate>Sat, 12 Sep 2026 00:00:00 +0800</pubDate>
+    <category>印度</category>
+    <category>航太應用</category>
+    <category>鈦材應用</category>
+    <category>鈦鑄造</category>
+    <description>印度PTC工業有限公司正進一步鞏固其在國際航空航太領域的地位。根據ET Manufacturing報道，其全資子公司Aerolloy Technologies Limited已與空中巴士公司簽署合同，負責為A320neo、A330neo和A350飛機項目開發、認證並供應鈦鑄件。 該協議初期涵蓋相關零件的研發、認證和產業化。一旦空中巴士設定的認證里程碑順利達成，Aerelloy預計將開始大量生產。 鑄造業尤其關注該項目背後高度整合的價值鏈。 Aerolloy計劃透過涵蓋鈦原料生產、精密鑄造、機械加工、檢驗和品質保證的端到端流程來製造零件。其目標是提供完全加工、可直接安裝的航空航天零件。</description>
+  </item>
   <item>
     <title>尤里卡公司(Eureka)在泰伊礦的五個新礦點採集了「高品位」鈦樣品</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3d87557fa2798065a920d71053e7c4a5</link>
@@ -408,14 +419,6 @@
     <category>電鍍</category>
     <category>化學鍍鎳</category>
     <description>化學鍍鎳 (EN) 鍍液已有限地使用了幾十年。傳統上，任何特定的 EN 鍍液都專為一種特定的電鍍類型而設計和使用，例如低磷、中磷或高磷鍍層。該鍍液在其整個使用壽命期間（通常為 4 至 6 次金屬週轉 (MTO)，最多可達 12 次）都用於單一類型的電鍍，以生產具有該類型鍍層性能穩定的均勻合金。一旦達到其使用壽命終點，該鍍液將被丟棄，並配製新的用於相同用途的鍍液。 然而，如今現代EN化學和創新設計的進步使得透過重新利用EN浴槽，將其從一種EN類型重新用於另一種EN類型，從而實現EN浴槽的更大用途。 從高磷到中磷 延長電鍍槽使用壽命的例子是將高磷電鍍槽更換為中磷電鍍槽。高磷電鍍槽能為食品加工、石油…</description>
-  </item>
-  <item>
-    <title>薩克森高分子材料公司（Saxonia Galvanik）新的選擇性金屬電鍍廠開始運營</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=38d7557fa279804ca31ed9cd4ff173f5</link>
-    <guid isPermaLink="false">38d7557fa279804ca31ed9cd4ff173f5</guid>
-    <pubDate>Sun, 28 Jun 2026 00:00:00 +0800</pubDate>
-    <category>德國</category>
-    <description>薩克森電鍍公司持續發展壯大，並已投產一座新的金屬電鍍廠。此電鍍製程採用選擇性電鍍技術，可顯著降低電鍍成本、縮短生產週期並減少人工成本。 在德國汽車零件產業近期投資意願低迷、裁員甚至破產頻傳的經濟環境下，薩克森電鍍（Saxonia Galvanik）逆勢擴張，新建了一座金屬電鍍廠。憑藉這座創新設施，該公司順應時代潮流：它不僅透過極短的生產週期和低廉的人工成本顯著降低了塗層成本，更重要的是，還節省了昂貴的原材料和能源。塗層採用選擇性應用，即僅對客戶指定的特定區域進行電鍍－最多可使用三種不同的金屬。例如，部件的一部分鍍銀，另一部分鍍錫。此外，也可以進行鎳底鍍。永續性也是材料選擇的首要考慮因素；錫和銀…</description>
   </item>
 </channel>
 </rss>
