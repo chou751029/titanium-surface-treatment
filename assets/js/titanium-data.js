@@ -4,6 +4,57 @@
 //   python3 scripts/sync_notion.py
 window.TITANIUM_DATA = [
   {
+    "id": "3dc7557fa2798050a460e7a2f67831f6",
+    "title": "McLaren Minerals Drilling Confirms Broad High-Grade Titanium Sands",
+    "date": "2026-09-15",
+    "region": "澳洲",
+    "tags": [
+      "鈦礦/海綿鈦"
+    ],
+    "image": "assets/images/synced/3dc7557fa2798050a460e7a2f67831f6.jpg",
+    "sourceUrl": "https://kevinchoufind.notion.site/McLaren-Minerals-Drilling-Confirms-Broad-High-Grade-Titanium-Sands-3dc7557fa2798050a460e7a2f67831f6",
+    "summary": "麥克拉倫礦業公司在其麥克拉倫鈦礦計畫最新開展的 61 個鑽孔鑽探計畫中，從地表算起 21.2 公尺範圍內，重礦物平均品位為 4.57%，其中 24 公尺厚的礦段重礦物品位為 7.54%，突顯存在大範圍、高品位的含鈦礦品。McLaren Minerals’ latest 61-hole drilling program at its McLaren Titanium Project delivered an average grade of 4.57% heavy minerals over 21.2m from surface, with standout intercepts such as 24m at 7.54% HM highlighting broad, high-grade titanium-bearing mineralisation.\n\n新的化驗結果超過了現有的 2025 年礦產資源品位，並且與 2026 年早些時候的鑽探結果一起，加強了 McLaren 的地質模型和即將進行的資源更新，為礦山規劃提供了支持，並有可能改善該項目的經濟和戰略地位。The new assay results exceed the grade of the existing 2025 Mineral Resource and, together with earlier 2026 drilling, strengthen McLaren’s geological model and upcoming resource update, supporting mine planning and potentially improving the project’s economic and strategic position.\n\n關於 Allup Silica Ltd. 的更多信息\n\n麥克拉倫礦業有限公司是一家澳洲礦業公司，專注於開發其全資擁有的位於西澳大利亞的麥克拉倫鈦礦專案。該項目以富含鈦礦物的重礦物砂為目標，使該公司在服務工業和顏料市場的礦砂領域中佔有一席之地。",
+    "content": [
+      {
+        "type": "bulleted_list_item",
+        "text": "麥克拉倫礦業公司在其麥克拉倫鈦礦計畫最新開展的 61 個鑽孔鑽探計畫中，從地表算起 21.2 公尺範圍內，重礦物平均品位為 4.57%，其中 24 公尺厚的礦段重礦物品位為 7.54%，突顯存在大範圍、高品位的含鈦礦品。McLaren Minerals’ latest 61-hole drilling program at its McLaren Titanium Project delivered an average grade of 4.57% heavy minerals over 21.2m from surface, with standout intercepts such as 24m at 7.54% HM highlighting broad, high-grade titanium-bearing mineralisation."
+      },
+      {
+        "type": "bulleted_list_item",
+        "text": "新的化驗結果超過了現有的 2025 年礦產資源品位，並且與 2026 年早些時候的鑽探結果一起，加強了 McLaren 的地質模型和即將進行的資源更新，為礦山規劃提供了支持，並有可能改善該項目的經濟和戰略地位。The new assay results exceed the grade of the existing 2025 Mineral Resource and, together with earlier 2026 drilling, strengthen McLaren’s geological model and upcoming resource update, supporting mine planning and potentially improving the project’s economic and strategic position."
+      },
+      {
+        "type": "p",
+        "text": "關於 Allup Silica Ltd. 的更多信息"
+      },
+      {
+        "type": "p",
+        "text": "麥克拉倫礦業有限公司是一家澳洲礦業公司，專注於開發其全資擁有的位於西澳大利亞的麥克拉倫鈦礦專案。該項目以富含鈦礦物的重礦物砂為目標，使該公司在服務工業和顏料市場的礦砂領域中佔有一席之地。"
+      }
+    ]
+  },
+  {
+    "id": "3dc7557fa27980fd9968d357c28219fe",
+    "title": "Skyrora Completes 6 Hot-Firing Tests of 3.5kN Engine, Showcasing Titanium-Coated 3D Printing Advancements",
+    "date": "2026-09-15",
+    "region": "英國",
+    "tags": [
+      "3D print",
+      "航太應用",
+      "鈦金屬塗層",
+      "定向能量沉積 (DED)"
+    ],
+    "image": "",
+    "sourceUrl": "https://kevinchoufind.notion.site/Skyrora-Completes-6-Hot-Firing-Tests-of-3-5kN-Engine-Showcasing-Titanium-Coated-3D-Printing-Advance-3dc7557fa27980fd9968d357c28219fe",
+    "summary": "【SMM鈦閃擊】根據ADS Advance報道，英國航空航太公司Skyrora已完成其3.5kN低軌道發動機的六次熱點火試驗，試驗前後的X射線檢測均證實發動機未受損。該引擎的部分部件採用自主研發的混合DED 3D列印機製造，透過沉積鈦塗層而非鎳基合金，實現了約44%的減重。此舉驗證了鈦塗層零件在實際熱循環中的結構可靠性，並表明增材製造正在推動航空航太領域鈦材料形態和含量結構的革新。預計商業航空航太將成為鈦需求成長最快的領域之一。",
+    "content": [
+      {
+        "type": "p",
+        "text": "【SMM鈦閃擊】根據ADS Advance報道，英國航空航太公司Skyrora已完成其3.5kN低軌道發動機的六次熱點火試驗，試驗前後的X射線檢測均證實發動機未受損。該引擎的部分部件採用自主研發的混合DED 3D列印機製造，透過沉積鈦塗層而非鎳基合金，實現了約44%的減重。此舉驗證了鈦塗層零件在實際熱循環中的結構可靠性，並表明增材製造正在推動航空航太領域鈦材料形態和含量結構的革新。預計商業航空航太將成為鈦需求成長最快的領域之一。"
+      }
+    ]
+  },
+  {
     "id": "3d97557fa27980c4b70ef4de9b0678ce",
     "title": "PTC工業公司：Aerolloy獲得空中巴士鈦鑄件合約",
     "date": "2026-09-12",
