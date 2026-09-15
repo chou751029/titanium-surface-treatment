@@ -4,17 +4,6 @@
 //   python3 scripts/sync_notion.py
 window.NEWS_DATA = [
   {
-    "id": "3dc7557fa27980dbb8aff50bf9a046e0",
-    "title": "Auto 和 Fuji Precision 推出全新專用生產線，用於增強螺母表面處理",
-    "date": "2026-09-15",
-    "region": "日本",
-    "tags": [],
-    "image": "",
-    "sourceUrl": "https://www.nikkan.co.jp/articles/view/791993",
-    "summary": "",
-    "content": []
-  },
-  {
     "id": "3db7557fa279801fac7bcaf3ca92b53d",
     "title": "World Oxalic Acid Powder Market 2026 Analysis and Forecast to 2035 受電子垃圾回收需求推動，草酸粉市場將加速成長，預計2035年將達到成長水準",
     "date": "2026-09-14",
