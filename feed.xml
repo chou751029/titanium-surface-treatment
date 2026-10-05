@@ -6,7 +6,17 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Mon, 05 Oct 2026 04:09:22 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 05 Oct 2026 16:42:16 +0000</lastBuildDate>
+  <item>
+    <title>利用雷射中和 PFAS 的新技術，降解率可達 99.999% 以上</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3f07557fa2798046925ec928cb42b55b</link>
+    <guid isPermaLink="false">3f07557fa2798046925ec928cb42b55b</guid>
+    <pubDate>Mon, 05 Oct 2026 00:00:00 +0800</pubDate>
+    <category>日本</category>
+    <category>PSAF去除</category>
+    <category>無PFAS</category>
+    <description>古河電氣株式會社和龍騎工程株式會社利用高功率光纖雷射器開發出一種能夠有效分解「永恆化學物質」PFAS的關鍵技術 表面迅速加熱至 1100°C 以上。 PFAS 廣泛用於工業和消費品中，但由於它們難以分解且會在環境中長期存在，因此有時被稱為“永恆化學物質”，它們因土壤/地下水污染和在人體內積累而造成的健康風險已成為一個國際問題。 在日本，正在採取措施應對 PFAS 問題，例如從 2026 年 4 月起，將 PFOS（全氟辛烷磺酸）和 PFOA（全氟辛酸）這兩種 PFAS 添加到自來水水質標準中。隨著這些措施的推進，也需要對用於去除 PFAS 的吸附劑和其他材料進行適當的處理和解毒。 因此，古河電…</description>
+  </item>
   <item>
     <title>高效表面處理：電漿清洗和防腐蝕</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3eb7557fa2798067bab2e963a96dcd4e</link>
@@ -413,16 +423,6 @@
     <category>廢水處理</category>
     <category>環保</category>
     <description>這家總部位於義大利的公司提供從工業廢水中回收可銷售金屬的技術。 總部位於義大利帕多瓦的 Circular Materials 公司表示，已獲得 1,180 萬歐元（1,340 萬美元）的融資，以支持其擴大從工業廢水流中回收可銷售金屬的製程規模。 該公司表示，未來股權簡單協議 (SAFE) 融資來自一群歐洲投資者，包括 CDP Venture Capital、歐洲創新理事會基金、EIT RawMaterials、360 Capital、Corbites 和 Lumar Srl。 Circular Materials 也感謝 BonelliErede 提供的法律協助。 該公司表示，這筆資金將支持其…</description>
-  </item>
-  <item>
-    <title>Project Blue 鈦廢料：重要的航空航太原料</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3a67557fa27980c79392f163d6d8c9cd</link>
-    <guid isPermaLink="false">3a67557fa27980c79392f163d6d8c9cd</guid>
-    <pubDate>Thu, 23 Jul 2026 00:00:00 +0800</pubDate>
-    <category>美國</category>
-    <category>廢鈦回收</category>
-    <category>航太應用</category>
-    <description>✈️ 鈦廢料：重要的航空航太原料 由於美國和歐洲國內海綿鈦產量有限，廢料已成為美國及歐盟鈦熔煉廠的重要原料。 隨著航空生產量增加，原廠製造商越來越重視循環性及確保可靠合格材料來源。 在我們最新的航空航太與國防線上研討會片段中，我們探討廢料在鈦供應鏈中日益重要的角色，以及它對產業未來材料需求的意義。</description>
   </item>
 </channel>
 </rss>
