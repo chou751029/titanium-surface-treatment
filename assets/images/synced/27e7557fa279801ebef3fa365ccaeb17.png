@@ -110,7 +110,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 /*# sourceURL=global-styles-inline-css */
 </style>
 
-<link rel='stylesheet' id='contact-form-7-css' href='https://www.ctiweb.co.jp/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.7' media='all' />
+<link rel='stylesheet' id='contact-form-7-css' href='https://www.ctiweb.co.jp/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.2.2' media='all' />
 <link rel='stylesheet' id='print-css' href='https://www.ctiweb.co.jp/wp-content/themes/rediver/assets/css/print-style.min.css?ver=0.7.0' media='print' />
 <link rel='stylesheet' id='diver-single-style-css' href='https://www.ctiweb.co.jp/wp-content/themes/rediver/assets/css/single.min.css?ver=0.7.0' media='all' />
 <link rel='stylesheet' id='child-style-css' href='https://www.ctiweb.co.jp/wp-content/themes/rediver-child/style.css?ver=7.1.3' media='all' />
@@ -129,6 +129,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://ajax.googleapis.com">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://www.google.com">
 <style id="diver-global-css">:root{--rd--s--radius:2px;--rd--s--shadow:3px 5px 8px 0px rgb(18 63 82 / 4%), 0 0 0 1px rgb(0 0 0 / 4%);--rd--container--gap:32px;--rd--l--large:1172px;--rd--l--middle:860px;--rd--l--wide:90vw;--rd--l--sidebar:280px;--rd--l--max:min(90%,90vw);--rd--content--max:min(var(--rd--l--max),var(--rd--l--large));--rd--content--max-padding:calc((min(100%,100vw) - var(--rd--content--max)) / 2);--rd--pb--ar:16/9;--rd--font:"Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", sans-serif;--rd--c--classic:200 200 200;--rd--c--information:46 89 170;--rd--c--success:89 229 122;--rd--c--warning:255 193 7;--rd--c--error:255 35 35;--rd--c--bad:68 119 191;--rd--c--good:244 145 115;--rd--c--text:0 0 0;--rd--c--background:244 247 255;--rd--c--secondary:20 53 94;--rd--c--secondary-on:255 255 255;--rd--c--primary:255 255 255;--rd--c--primary-on:51 51 51;--rd--c--link:34 113 177;--rd--c--accent:6 82 201;}</style>
 <script>
 
@@ -181,7 +182,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 </style>
 <link rel='stylesheet' id='dbp/style-css' href='https://www.ctiweb.co.jp/wp-content/plugins/diver-blocks/build/style-index.css?ver=0.3.9' media='all' />
 <style id="dbp/style-inline-css">
-.dbp-id-981fa5ad.dbp-frame{height:400px;position:relative;}.dbp-id-484bd256{position:relative;}.dbp-id-5bb44e63 table > *{border-style:none;border-width:0px;}.dbp-id-e539ae82.dbp-frame{height:280px;}.dbp-id-00c6100c.dbp-slide-images{position:relative;}
+.dbp-id-981fa5ad.dbp-frame{height:400px;position:relative;}.dbp-id-5af626bf{position:relative;}.dbp-id-36ce925b table > *{border-style:none;border-width:0px;}.dbp-id-e539ae82.dbp-frame{height:280px;}.dbp-id-00c6100c.dbp-slide-images{position:relative;}
 /*# sourceURL=dbp%2Fstyle-inline-css */
 </style>
 
@@ -440,13 +441,13 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 <div data-post-id="654" class="insert-page insert-page-654 ">
 <div class="wp-block-dbp-section alignfull has-diver-secondary-on-color has-vivid-cyan-blue-to-vivid-purple-gradient-background has-text-color has-background has-link-color dbp-section wp-elements-1" style="margin-top:0;margin-bottom:0;--block--size-gap:0"><div class="dbp-section__inner has-content-gap l-inner-wide padding-block:70" style="padding-top:var(--wp--preset--spacing--20);padding-right:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--20)">
-<h2 id="toc-id-1-1" class="wp-block-heading is-style-dbp-simple dbp-heading is-design-plane" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-size:clamp(0.984em, 0.984rem + ((1vw - 0.2em) * 0.897), 1.5em);">■コンバーテック最新号　2026年9月号</h2>
+<h2 id="toc-id-1-1" class="wp-block-heading is-style-dbp-simple dbp-heading is-design-plane" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;font-size:clamp(0.984em, 0.984rem + ((1vw - 0.2em) * 0.897), 1.5em);">■コンバーテック最新号　2026年10月号</h2>
 
 
 
 <div class="wp-block-dbp-column l-grid has-gap:30 dbp-column dbp-id-21522c59">
 <div class="wp-block-dbp-column-item dbp-column-item is-vertical is-content-justification-center is-layout-flex wp-container-dbp-column-item-is-layout-e6eb4ad0 wp-block-dbp-column-item-is-layout-flex">
-<figure class="wp-block-image size-full dbp-id-484bd256 is-position-none" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><img decoding="async" width="149" height="211" data-src="https://www.ctiweb.co.jp/wp-content/uploads/2026/09/2609.jpg" alt="" class="wp-image-34192 lazyload" /></figure>
+<figure class="wp-block-image size-full dbp-id-5af626bf is-position-none" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><img decoding="async" width="149" height="211" data-src="https://www.ctiweb.co.jp/wp-content/uploads/2026/10/2610.jpg" alt="" class="wp-image-34689 lazyload" /></figure>
 
 
 
@@ -457,14 +458,14 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 <div class="wp-block-dbp-column-item dbp-column-item is-layout-flow wp-block-dbp-column-item-is-layout-flow">
 <div class="wp-block-dbp-frame l-frame-inner is-design-normal is-frame-style-default has-bgcolor scroll dbp-frame dbp-id-e539ae82" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;--dbp-frame--color--background:#ffffff;--dbp-frame--color--border:#ffffff;--dbp-frame--size--border:0px;--block--size-gap:0"><div class="dbp-frame-title" style="--rd-icon--fill:1"><mark style="color:#000000;background-color:rgba(0, 0, 0, 0)" class="dbp-e-color"><strong><strong>目次</strong></strong></mark></div><div class="dbp-frame-content has-content-gap" style="--diver--bg-pattern--color:#ffffff;padding-top:0;padding-right:0;padding-bottom:0;padding-left:var(--wp--preset--spacing--20)">
-<figure class="wp-block-table is-style-regular has-small-font-size core-table dbp-id-5bb44e63" style="line-height:1.2"><table class="has-fixed-layout" style="border-style:none;border-width:0px"><tbody><tr><td><strong>編集部取材記事</strong><br>★元年：使用済みLiBからグラフェンを製造。市販価格の1/10で提供へ<br>★OLFA-TEX：0.1mm厚の薄刃生かす「回転抵抗ホルダー」。新鮮な刃先保ち、スリット品質が向上<br>★ワコール：メルトブローで立体物を作る「Melooop」でBASFと自動車部品を開発<br>★NEDO：退役民間航空機のCFRPからリサイクルCFを。CFRP内装部品や二次構造部品へ適用目指す<br>★リファインバースグループ：軟質系廃プラ、牛乳パック由来PEフィルムの再生へ。リサイクルPO事業、2拠点でスタート<br>★ゼブラ・テクノロジーズ・ジャパン：Zebraの業務用モバイルコンピューター戦略。現場に特化した“AI for the Frontline”<br>★リケンテクノス 2026年3月期業績：連結売上高は2.5％増の1313億7700万円。ROSは8.7％、いずれも過去最高<br>★日本3Dプリンター、Farsoon Technologies：量産時代を見据えた金属3Dプリンター、日本市場に新たな選択肢<br>★日本フレキソ技術協会：テーマはGreen（環境対応）とAutomation（生産性向上）。フレキソ・ジャパン2026、11月5日・6日開催<br>★竹田印刷：オフセットで製造可能な「消しゴムで削れるスクラッチ印刷技術」確立<br>★ケミトックス：山梨県北杜市に新たなLiB試験拠点を開設、性能評価と安全性試験をワンストップで支援<br>★機能性フィルム研究会・中島 但新会長：「新しいフィルムをつくる場」を次の世代へ。250会員を目標に若手・異業種が集う研究会を目指す<br>★ヘンケルジャパン：ポルシェと挑むABB FIAフォーミュラE。LOCTITEの接着技術で勝利を支える<br>★竹尾：祝と礼、素材・加工・表現から紙を見つめ直す。「TAKEO PAPER SHOW 50」、10月開催<br><br> <br><strong>特集：ウェブハンドリング～制御方式から仕上げまで</strong><br> <br>ST-ServoSPLを活用したバックテンション制御－停止時の弛み防止と省スペース化を実現するウェブ搬送ソリューション－<br>バンガードシステムズ　池本 定信<br> <br>機能性フィルム・金属箔・特殊紙を高精度に巻取可能なFRPコア<br>栗本鐵工所　後藤 稔<br> <br>自動搬送・装着ロボットの今後と自動化トータルソリューションブランドの立ち上げ<br>甲南設計工業　白木 欣哉<br> <br>赤外線ヒータ加熱による「樹脂成形品エッジ処理システム」の開発<br>メトロ電気工業　倉田 征治<br> <br>外輪回転式・OSゴムストレートロールの開発と次世代ウェブハンドリングへの展望<br>大阪染織機械　山本 哲士<br> <br>レーザー乾燥技術の量産化に向けた技術開発動向<br>武蔵ワイヤード　外山 達志<br> <br> <br><strong>連載</strong><br> <br>コンバーティング放浪記<br>第42回　搬送・ニップ工程のトラブル対策<br>（シワ・蛇行・エッジカール）<br>Roll To Roll研究会　浜本 伸夫<br> <br>コンバーティングとシートフォーミング<br>XXVI．設計技術各論（2）成形品構成②<br>シートフォーミング テクノロジー　伊神 秀生<br> <br>スピンオフ シートフォーミング<br>エピソード25　トラップ<br>シートフォーミング テクノロジー　伊神 秀生<br> <br>加飾技術を取り巻く環境と動向<br>第9回　アフターマーケットにおけるカーラッピングの歴史と現在の動向<br>デザインラボ　苅谷 伊<br> <br>「コーティングのコーチング？」塗布技術よもやま解説<br>第25話　今回はドライラミネートにまつわるお話<br>小川 正太郎<br> <br>スズキの視点～ニュースから読み解くバッテリーの今～<br>第13回　「『燃えにくい』バッテリーってどんなもの？」<br>スズキ・マテリアル・テクノロジー・アンド・コンサルティング　鈴木 孝典<br> <br>接着・粘着よもやま話<br>第2回　接着剤の種類と接着・粘着の違い<br>ベータテック　三久保 聡<br> <br>NEW印刷WOW！<br>第15回　素材の魅力を引き出すレーザー加工の可能性<br>DI Palette 東京本部<br> <br>世界のプラスチック材料メーカー：その事業展開と環境政策<br>第8回<br>マツダ包装技術W&amp;R／東洋紡パッケージング・プラン・サービス　松田 修成<br> <br> <br><strong>寄稿</strong><br> <br>電子線（EB）硬化型接着剤の開発－省エネルギー、加工性、包材性能を同時に実現する次世代ラミネーション技術－<br>三井化学　青木 航、東レ　辻 祐一<br> <br>局所排気・ラボライン需要高まるコンパクト触媒式脱臭システムの可能性<br>TESSHA　林 健太郎<br> <br>コンバーティング産業におけるTD-NMRを活用した粉体の濡れ性および分散体の評価（後編）<br>マジェリカ・ジャパン／東北大学　池田 純子<br> <br>日本市場により適したインキ調色機『ORION Colourblend Compact＜一斗缶タイプ原材料24-13＞』<br>オリオン商事　千明 直也<br> <br> <br>Tidbits</td></tr></tbody></table></figure>
+<figure class="wp-block-table is-style-regular has-small-font-size core-table dbp-id-36ce925b" style="line-height:1.2"><table class="has-fixed-layout" style="border-style:none;border-width:0px"><tbody><tr><td><strong>編集部取材記事</strong><br>★ONO coating社長、ONO plus会長　村上研介氏：MONAコーポレーションのフィルムコーティング事業を承継。コンバーティング業界再編の可能性<br>★新タック化成：光学フィルム製造、自社製品や受託加工を自在に。無溶剤UVコーターが引き合い増<br>★日本シーム：粉砕から脱墨、脱水回収までのトータルフィルムリサイクルラインを提案<br>★大阪公立大学：色付きプラの「ダウンサイクル」に解決策。高密度シリカ粉末を使った着色システム<br>★デクセリアルズ：自動化技術との融合で生産性約2倍・生産能力約1.5倍を実現するACF新工場竣工<br>★タイガー魔法瓶：ガスバリア性など機能を付与した樹脂で実現、透明なアルゴン断熱ボトル<br>★プチプチ　安永圭佑社長：「プチプチ」が企業ブランドに。社会価値への拡大でプラ資源循環の社会実装を目指す<br>★ハイデルベルグ・ジャパン デジタルデイ2026：印刷と後加工のデジタル融合が何をもたらすか。シュミット・フェール社のビジネスに学ぶ<br>★日本印刷産業連合会「2026年9月印刷の月」講演会・記念式典・懇親会：印刷産業は社会を支えるインフラ、取引適正化のさらなる推進も<br>★Futamura UK／Bio4life：家庭でコンポスト化可能な果物用ラベルでブレークスルー、EUのPPWR要件満たす<br>★アトム：国産ヒューマノイドAIロボ、NSKとアクチュエーターの検証を開始、フィジカルAIデータの収集拠点もオープン<br>★CONVERTING FESTA Vol.4：「人と技術をつなぐ」コンバーティングフェスタ。OPV、半導体材料など話題の講演実施、懇親深まる<br>★Hitachi Social Innovation Forum 2026 JAPAN：高機能材料の研究開発から量産までを効率化。日立ハイテクの「PROACCELA」<br>★シュナイダーエレクトリック：1MW級のAIデータセンター見据え、電力・冷却と支援体制を強化<br>★非木材グリーン協会・第34回非木材セミナー：環境表示は分かりやすく具体的に。OPTを木質系高層建築の構造材へ<br>★日本HP：クラウド×大判複合機で建築・建設業界の図面業務を効率化、QRコードやAIも活用<br><br> <br><strong>特集：ラミネーション</strong><br> <br>ラミネート接着剤、「貼る」と「剥がす」の新たな進化<br>ロックペイント　沼田 睦章、江田 靖<br> <br>押出ラミネーションで広がるイージーピール樹脂－食品包装で培った剥離制御技術と半導体キャリアテープへの展開－<br>三菱ケミカル　稲垣 舞、石井 香菜子<br> <br>「ユメリット」の開発動向－さらなる高機能化に向けて－<br>宇部丸善ポリエチレン　安光 雅彦<br> <br>接着前処理に利用できる大気圧プラズマユニット「Tough Plasma」<br>FUJI　柳原 一輝<br> <br>高周波ウェルダーの歴史と動向<br>山本ビニター　山本 泰司、田川 達也<br> <br>パルスヒートによる樹脂と金属の異種材直接接合技術<br>日本アビオニクス　安藤 元彦<br> <br> <br><strong>連載</strong><br> <br>コンバーティング放浪記<br>第43回　スケールアップ論<br>Roll To Roll研究会　浜本 伸夫<br> <br>コンバーティングとシートフォーミング<br>XXVII．設計技術各論（3）成形品設計<br>シートフォーミング テクノロジー　伊神 秀生<br> <br>スピンオフ シートフォーミング<br>エピソード26　印鑑<br>シートフォーミング テクノロジー　伊神 秀生<br> <br>加飾技術を取り巻く環境と動向<br>第10回　表面デザインにおけるカラー・マテリアル・フィニッシュ<br>FEEL GOOD CREATION　玉井 美由紀<br> <br>スズキの視点～ニュースから読み解くバッテリーの今～<br>第14回　「全固体電池は本当にゲームチェンジャーか？」<br>スズキ・マテリアル・テクノロジー・アンド・コンサルティング　鈴木 孝典<br> <br>フィルちゃんによる やさしく学ぶコンバーティング<br>第3回：コーティング編１…ロールコーティング<br>小川 正太郎<br> <br>接着・粘着よもやま話<br>第3回　接着剤、粘着剤の選定<br>ベータテック　三久保 聡<br> <br>粘着と剥離 余聞（31）<br>「食卓の粘着と剥離(21)大豆から産み出される離型性と粘着性」<br>＜味噌の粘着性＞＜海外で伸びている味噌需要＞<br>＜ヨセミテ国立公園の黄葉＞<br>柴野 富四<br> <br>NEW印刷WOW！<br>第16回　五感を刺激する香りの印刷<br>DI Palette 東京本部<br> <br>世界のプラスチック材料メーカー：その事業展開と環境政策<br>第9回<br>マツダ包装技術W&amp;R／東洋紡パッケージング・プラン・サービス　松田 修成<br> <br> <br><strong>寄稿</strong><br> <br>フッ素ガス表面処理によるゴムの機能化－潤滑性向上、粘着・固着防止－<br>高松帝酸　橋谷 矩史 <br> <br>先端半導体パッケージ材料は「実使用状態」でどう評価するか－塗工・乾燥・Bステージ化から熱・Warpageまでをつなぐ－<br>松尾産業　西岡 恒雄<br> <br>表面張力モニタリングにも最適な超小型最大泡圧方式表面張力計<br>Surfgauge INSTRUMENTS（表面測器製作所）　小坂 耕平、植村 夕夏祐一</td></tr></tbody></table></figure>
 </div></div>
 </div>
 </div>
 <style>.dbp-id-21522c59.dbp-column{grid-template-columns:0.4fr 1.6fr;}</style>
 
 
-<p class="wp-block-paragraph"><span style="font-size:.8em" class="dbp-e-font-size">▶10月号は10月13日発刊予定です。</span></p>
+<p class="wp-block-paragraph"><span style="font-size:.8em" class="dbp-e-font-size">▶11月号は11月10日発刊予定です。</span></p>
 </div></div>
 
 
@@ -591,7 +592,7 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 
 
 <div class="wp-block-dbp-section alignfull dbp-section" style="border-style:none;border-width:0px"><div class="dbp-section-overlay" style="background:#f4f7ff;--diver--bg-pattern--color:#ffffff"></div><div class="dbp-section__inner has-content-gap l-inner-wide padding-block:70 are-vertically-aligned-center" style="padding-top:0;padding-right:0;padding-bottom:var(--wp--preset--spacing--30);padding-left:0">
-<div class="wp-block-dbp-frame l-frame-wrap is-design-inner is-frame-style-default has-bgcolor dbp-frame dbp-id-4ac17002" style="margin-top:var(--wp--preset--spacing--20);margin-right:var(--wp--preset--spacing--20);margin-bottom:0;margin-left:var(--wp--preset--spacing--20);--dbp-frame--color--background:#f4f7ff;--dbp-frame--size--border:0px;--block--size-gap:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><div class="dbp-frame-title" style="font-size:1em">注目記事</div><div class="dbp-frame-content has-content-gap" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><div class="dbp-slide-article wp-block-dbp-slide-article"><section data-splide='{&quot;type&quot;:&quot;slide&quot;,&quot;rewind&quot;:false,&quot;arrows&quot;:true,&quot;pagination&quot;:true,&quot;controller&quot;:&quot;center&quot;,&quot;autoplay&quot;:true,&quot;interval&quot;:4000,&quot;snap&quot;:true,&quot;drag&quot;:true,&quot;perPage&quot;:5,&quot;perMove&quot;:1,&quot;gap&quot;:&quot;1%&quot;,&quot;padding&quot;:0,&quot;height&quot;:0}' class='wrap-pb l-pb-grid is-card is-slider splide-6acc5fd49013f splide js-diver-slider' style='--postbox--size--font:calc((20/16)*0.6em);'><style>.splide-6acc5fd49013f.splide:not(.is-initialized){opacity:1;.splide__list > *{background:rgb(var(--rd--c--primary));border-radius:var(--rd--s--shadow);margin-right:1%;width:20%;}}</style><div class="splide__track"><div class="splide__list">        <article class="pb p-id-34647 is-position-relative" role="article">
+<div class="wp-block-dbp-frame l-frame-wrap is-design-inner is-frame-style-default has-bgcolor dbp-frame dbp-id-4ac17002" style="margin-top:var(--wp--preset--spacing--20);margin-right:var(--wp--preset--spacing--20);margin-bottom:0;margin-left:var(--wp--preset--spacing--20);--dbp-frame--color--background:#f4f7ff;--dbp-frame--size--border:0px;--block--size-gap:0;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><div class="dbp-frame-title" style="font-size:1em">注目記事</div><div class="dbp-frame-content has-content-gap" style="padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><div class="dbp-slide-article wp-block-dbp-slide-article"><section data-splide='{&quot;type&quot;:&quot;slide&quot;,&quot;rewind&quot;:false,&quot;arrows&quot;:true,&quot;pagination&quot;:true,&quot;controller&quot;:&quot;center&quot;,&quot;autoplay&quot;:true,&quot;interval&quot;:4000,&quot;snap&quot;:true,&quot;drag&quot;:true,&quot;perPage&quot;:5,&quot;perMove&quot;:1,&quot;gap&quot;:&quot;1%&quot;,&quot;padding&quot;:0,&quot;height&quot;:0}' class='wrap-pb l-pb-grid is-card is-slider splide-6acdc68675f36 splide js-diver-slider' style='--postbox--size--font:calc((20/16)*0.6em);'><style>.splide-6acdc68675f36.splide:not(.is-initialized){opacity:1;.splide__list > *{background:rgb(var(--rd--c--primary));border-radius:var(--rd--s--shadow);margin-right:1%;width:20%;}}</style><div class="splide__track"><div class="splide__list">        <article class="pb p-id-34647 is-position-relative" role="article">
             <a class="pb-contents" href="https://www.ctiweb.co.jp/2026/10/08/%e3%80%90semicon-japan-2026%e3%80%91semi%e3%80%81%e5%85%a5%e5%a0%b4%e7%99%bb%e9%8c%b2%e3%81%8a%e3%82%88%e3%81%b3%e3%82%bb%e3%83%9f%e3%83%8a%e3%83%bc%e3%83%bb%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88/">
                 <div class="pb__thumb"><img loading="lazy" decoding="async" width="300" height="51" src="" class="is-position-overlay lazyload wp-post-image" alt="" data-src="https://www.ctiweb.co.jp/wp-content/uploads/2026/10/SEMI／SEMICON-JAPAN-50周年ロゴ-300x51.png" srcset="" sizes="auto, (max-width: 300px) 100vw, 300px" data-srcset="https://www.ctiweb.co.jp/wp-content/uploads/2026/10/SEMI／SEMICON-JAPAN-50周年ロゴ-300x51.png 300w, https://www.ctiweb.co.jp/wp-content/uploads/2026/10/SEMI／SEMICON-JAPAN-50周年ロゴ.png 503w" /></div><div class="pb__body l-column is-flex-1"><div class="pb-title is-omit-line:2">【SEMICON Japan 2026】SEMI、入場登録およびセミナー・イベント受付開始</div></div>            </a>
         </article>
@@ -628,27 +629,27 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 <figure class="wp-block-image aligncenter size-full"><a href="https://ctiweb.co.jp/soran/" target="_blank" rel=" noreferrer noopener"><img loading="lazy" decoding="async" width="190" height="59" src="http://hcv100484uow.smartrelease.jp/wp-content/uploads/2026/05/kikisoran.jpg" alt="コンバーティング機械・機器総覧" class="wp-image-1048"/></a></figure>
 </div><div id="block-27" class="widget widget_block widget-block-column ">
 <div class="wp-block-dbp-column l-grid has-gap:30 dbp-column dbp-id-79cf20cd" style="margin-top:var(--wp--preset--spacing--30);margin-right:var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--30);margin-left:var(--wp--preset--spacing--40)">
-<div class="wp-block-dbp-column-item dbp-column-item is-vertical is-content-justification-center is-layout-flex wp-container-dbp-column-item-is-layout-9a7df72e wp-block-dbp-column-item-is-layout-flex" style="min-height:0px"><div id="ctiwe-3176136734"><a href="https://www.katsura-roller.co.jp/" target="_blank" aria-label="加貫ローラー製作所"><img loading="lazy" decoding="async" src="https://www.ctiweb.co.jp/wp-content/uploads/2026/06/加貫ローラー製作所.png" alt=""  width="180" height="90"   /></a></div>
+<div class="wp-block-dbp-column-item dbp-column-item is-vertical is-content-justification-center is-layout-flex wp-container-dbp-column-item-is-layout-9a7df72e wp-block-dbp-column-item-is-layout-flex" style="min-height:0px"><div id="ctiwe-87787856"><a href="https://www.katsura-roller.co.jp/" target="_blank" aria-label="加貫ローラー製作所"><img loading="lazy" decoding="async" src="https://www.ctiweb.co.jp/wp-content/uploads/2026/06/加貫ローラー製作所.png" alt=""  width="180" height="90"   /></a></div>
 </div>
 
 
 
-<div class="wp-block-dbp-column-item dbp-column-item is-vertical is-content-justification-center is-layout-flex wp-container-dbp-column-item-is-layout-67d5a16b wp-block-dbp-column-item-is-layout-flex" style="min-height:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><div id="ctiwe-3607759180"><a href="https://www.labojapan.co.jp/" target="_blank" aria-label="labo"><img loading="lazy" decoding="async" src="https://www.ctiweb.co.jp/wp-content/uploads/2026/06/labo.png" alt=""  width="180" height="90"   /></a></div>
+<div class="wp-block-dbp-column-item dbp-column-item is-vertical is-content-justification-center is-layout-flex wp-container-dbp-column-item-is-layout-67d5a16b wp-block-dbp-column-item-is-layout-flex" style="min-height:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><div id="ctiwe-708733875"><a href="https://www.labojapan.co.jp/" target="_blank" aria-label="labo"><img loading="lazy" decoding="async" src="https://www.ctiweb.co.jp/wp-content/uploads/2026/06/labo.png" alt=""  width="180" height="90"   /></a></div>
 </div>
 
 
 
-<div class="wp-block-dbp-column-item dbp-column-item is-vertical is-content-justification-center is-layout-flex wp-container-dbp-column-item-is-layout-9afb5e49 wp-block-dbp-column-item-is-layout-flex" style="min-height:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><div id="ctiwe-2219240604"><a href="https://www.himecs.com/" target="_blank" aria-label="himecs"><img loading="lazy" decoding="async" src="https://www.ctiweb.co.jp/wp-content/uploads/2026/06/himecs.png" alt=""  width="180" height="90"   /></a></div>
+<div class="wp-block-dbp-column-item dbp-column-item is-vertical is-content-justification-center is-layout-flex wp-container-dbp-column-item-is-layout-9afb5e49 wp-block-dbp-column-item-is-layout-flex" style="min-height:0px;padding-top:0;padding-right:0;padding-bottom:0;padding-left:0"><div id="ctiwe-545034611"><a href="https://www.himecs.com/" target="_blank" aria-label="himecs"><img loading="lazy" decoding="async" src="https://www.ctiweb.co.jp/wp-content/uploads/2026/06/himecs.png" alt=""  width="180" height="90"   /></a></div>
 </div>
 
 
 
-<div class="wp-block-dbp-column-item dbp-column-item is-layout-flow wp-block-dbp-column-item-is-layout-flow"><div id="ctiwe-2707272072"><a href="https://www.fuji-shoko.co.jp/" target="_blank" aria-label="富士商興_banner"><img loading="lazy" decoding="async" src="https://www.ctiweb.co.jp/wp-content/uploads/2026/06/富士商興_banner.png" alt=""  width="180" height="90"   /></a></div>
+<div class="wp-block-dbp-column-item dbp-column-item is-layout-flow wp-block-dbp-column-item-is-layout-flow"><div id="ctiwe-2483009963"><a href="https://www.fuji-shoko.co.jp/" target="_blank" aria-label="富士商興_banner"><img loading="lazy" decoding="async" src="https://www.ctiweb.co.jp/wp-content/uploads/2026/06/富士商興_banner.png" alt=""  width="180" height="90"   /></a></div>
 </div>
 
 
 
-<div class="wp-block-dbp-column-item dbp-column-item is-layout-flow wp-block-dbp-column-item-is-layout-flow"><div id="ctiwe-2154815541"><a href="https://www.katsukawa.co.jp/" target="_blank" aria-label="katsukawa"><img loading="lazy" decoding="async" src="https://www.ctiweb.co.jp/wp-content/uploads/2026/05/katsukawa.png" alt=""  width="180" height="90"   /></a></div>
+<div class="wp-block-dbp-column-item dbp-column-item is-layout-flow wp-block-dbp-column-item-is-layout-flow"><div id="ctiwe-3361614626"><a href="https://www.katsukawa.co.jp/" target="_blank" aria-label="katsukawa"><img loading="lazy" decoding="async" src="https://www.ctiweb.co.jp/wp-content/uploads/2026/05/katsukawa.png" alt=""  width="180" height="90"   /></a></div>
 </div>
 
 
@@ -765,13 +766,13 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 //# sourceURL=wp-i18n-js-after
 </script>
-<script id="swv-js" src="https://www.ctiweb.co.jp/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.1.7"></script>
+<script id="swv-js" src="https://www.ctiweb.co.jp/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.2.2"></script>
 <script id="contact-form-7-js-translations">
 ( function( domain, translations ) {
 	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
 	localeData[""].domain = domain;
 	wp.i18n.setLocaleData( localeData, domain );
-} )( "contact-form-7", {"translation-revision-date":"2025-11-30 08:12:23+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ja_JP"},"This contact form is placed in the wrong place.":["\u3053\u306e\u30b3\u30f3\u30bf\u30af\u30c8\u30d5\u30a9\u30fc\u30e0\u306f\u9593\u9055\u3063\u305f\u4f4d\u7f6e\u306b\u7f6e\u304b\u308c\u3066\u3044\u307e\u3059\u3002"],"Error:":["\u30a8\u30e9\u30fc:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
+} )( "contact-form-7", {"translation-revision-date":"2026-10-06 03:34:05+0000","generator":"GlotPress\/4.1.0","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ja_JP"},"This contact form is placed in the wrong place.":["\u3053\u306e\u30b3\u30f3\u30bf\u30af\u30c8\u30d5\u30a9\u30fc\u30e0\u306f\u9593\u9055\u3063\u305f\u4f4d\u7f6e\u306b\u7f6e\u304b\u308c\u3066\u3044\u307e\u3059\u3002"],"Error:":["\u30a8\u30e9\u30fc:"]}},"comment":{"reference":"includes\/js\/index.js"}} );
 //# sourceURL=contact-form-7-js-translations
 </script>
 <script id="contact-form-7-js-before">
@@ -783,7 +784,7 @@ var wpcf7 = {
 };
 //# sourceURL=contact-form-7-js-before
 </script>
-<script id="contact-form-7-js" src="https://www.ctiweb.co.jp/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.1.7"></script>
+<script id="contact-form-7-js" src="https://www.ctiweb.co.jp/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.2.2"></script>
 <script id="dbp/view-js" src="https://www.ctiweb.co.jp/wp-content/plugins/diver-blocks/build/view.js?ver=0.3.9"></script>
 <script id="diver-main-js-extra">
 var diverObj = {"ajaxurl":"https://www.ctiweb.co.jp/wp-admin/admin-ajax.php","apiurl":"https://www.ctiweb.co.jp/wp-json/wp/v2/posts","adminbarHeight":""};
@@ -798,14 +799,27 @@ let prevScrollY=window.scrollY,isScrollDown=!1;function getFixedTopHeight(){let 
 <script data-wp-strategy="defer" defer id="unveilhooks-js" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/plugins/unveilhooks/ls.unveilhooks.min.js?ver=7.1.3"></script>
 <script id="advanced-ads-find-adblocker-js" src="https://www.ctiweb.co.jp/wp-content/plugins/advanced-ads/admin/assets/js/advertisement.js"></script>
 <script id="wp-statistics-tracker-js-extra">
-var WP_Statistics_Tracker_Object = {"requestUrl":"https://www.ctiweb.co.jp/wp-json/wp-statistics/v2","ajaxUrl":"https://www.ctiweb.co.jp/wp-admin/admin-ajax.php","hitParams":{"wp_statistics_hit":1,"source_type":"home","source_id":358,"search_query":"","signature":"e7e9d0b4c0206557ada1c39ea9166839","endpoint":"hit"},"option":{"dntEnabled":"","bypassAdBlockers":"","consentIntegration":{"name":null,"status":[]},"isPreview":false,"userOnline":false,"isWpConsentApiActive":false},"isLegacyEventLoaded":"","customEventAjaxUrl":"https://www.ctiweb.co.jp/wp-admin/admin-ajax.php?action=wp_statistics_custom_event&nonce=48d3b2fd12","onlineParams":{"wp_statistics_hit":1,"source_type":"home","source_id":358,"search_query":"","signature":"e7e9d0b4c0206557ada1c39ea9166839","action":"wp_statistics_online_check"},"jsCheckTime":"60000"};
+var WP_Statistics_Tracker_Object = {"requestUrl":"https://www.ctiweb.co.jp/wp-json/wp-statistics/v2","ajaxUrl":"https://www.ctiweb.co.jp/wp-admin/admin-ajax.php","hitParams":{"wp_statistics_hit":1,"source_type":"home","source_id":358,"search_query":"","signature":"e7e9d0b4c0206557ada1c39ea9166839","endpoint":"hit"},"option":{"dntEnabled":"","bypassAdBlockers":"","consentIntegration":{"name":null,"status":[]},"isPreview":false,"userOnline":false,"isWpConsentApiActive":false},"isLegacyEventLoaded":"","customEventAjaxUrl":"https://www.ctiweb.co.jp/wp-admin/admin-ajax.php?action=wp_statistics_custom_event&nonce=ca4e09b0bc","onlineParams":{"wp_statistics_hit":1,"source_type":"home","source_id":358,"search_query":"","signature":"e7e9d0b4c0206557ada1c39ea9166839","action":"wp_statistics_online_check"},"jsCheckTime":"60000"};
 //# sourceURL=wp-statistics-tracker-js-extra
 </script>
-<script id="wp-statistics-tracker-js" src="https://www.ctiweb.co.jp/wp-content/plugins/wp-statistics/assets/js/tracker.js?ver=14.16.15"></script>
+<script id="wp-statistics-tracker-js" src="https://www.ctiweb.co.jp/wp-content/plugins/wp-statistics/assets/js/tracker.js?ver=14.16.16"></script>
+<script id="google-recaptcha-js" src="https://www.google.com/recaptcha/api.js?render=6LemeuwtAAAAACJTVc0zTWE7wJjjTc04RicgUgwi&#038;ver=3.0"></script>
+<script id="wp-polyfill-js" src="https://www.ctiweb.co.jp/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0"></script>
+<script id="wpcf7-recaptcha-js-before">
+var wpcf7_recaptcha = {
+    "sitekey": "6LemeuwtAAAAACJTVc0zTWE7wJjjTc04RicgUgwi",
+    "actions": {
+        "homepage": "homepage",
+        "contactform": "contactform"
+    }
+};
+//# sourceURL=wpcf7-recaptcha-js-before
+</script>
+<script id="wpcf7-recaptcha-js" src="https://www.ctiweb.co.jp/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=6.2.2"></script>
 <script data-wp-strategy="defer" defer id="child-script-js" src="https://www.ctiweb.co.jp/wp-content/themes/rediver-child/script.js"></script>
 <script data-wp-strategy="defer" defer id="diver-blogcard-js" src="https://www.ctiweb.co.jp/wp-content/themes/rediver/components/blogcard/script.min.js?ver=0.7.0"></script>
 <script id="diver-ajaxpost-js-extra">
-var diverPostObj = {"ajaxurl":"https://www.ctiweb.co.jp/wp-admin/admin-ajax.php","title":"\u304a\u6c17\u306b\u5165\u308a","name":"diver-post-bookmark","max":"12","label":{"save":"\u304a\u6c17\u306b\u5165\u308a\u306b\u4fdd\u5b58\u3059\u308b","saved":"\u304a\u6c17\u306b\u5165\u308a\u306b\u4fdd\u5b58\u3057\u307e\u3057\u305f","cancel":"\u304a\u6c17\u306b\u5165\u308a\u3092\u89e3\u9664\u3059\u308b","canceled":"\u304a\u6c17\u306b\u5165\u308a\u3092\u89e3\u9664\u3057\u307e\u3057\u305f"},"endpoint":"https://www.ctiweb.co.jp/wp-json/rediver/v1","nonces":{"bookmark":"1c1eb126e9"}};
+var diverPostObj = {"ajaxurl":"https://www.ctiweb.co.jp/wp-admin/admin-ajax.php","title":"\u304a\u6c17\u306b\u5165\u308a","name":"diver-post-bookmark","max":"12","label":{"save":"\u304a\u6c17\u306b\u5165\u308a\u306b\u4fdd\u5b58\u3059\u308b","saved":"\u304a\u6c17\u306b\u5165\u308a\u306b\u4fdd\u5b58\u3057\u307e\u3057\u305f","cancel":"\u304a\u6c17\u306b\u5165\u308a\u3092\u89e3\u9664\u3059\u308b","canceled":"\u304a\u6c17\u306b\u5165\u308a\u3092\u89e3\u9664\u3057\u307e\u3057\u305f"},"endpoint":"https://www.ctiweb.co.jp/wp-json/rediver/v1","nonces":{"bookmark":"26d752167e"}};
 //# sourceURL=diver-ajaxpost-js-extra
 </script>
 <script data-wp-strategy="defer" defer id="diver-ajaxpost-js" src="https://www.ctiweb.co.jp/wp-content/themes/rediver/components/ajaxpost/script.min.js?ver=0.7.0"></script>

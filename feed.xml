@@ -6,7 +6,18 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Tue, 13 Oct 2026 05:37:53 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 13 Oct 2026 05:57:10 +0000</lastBuildDate>
+  <item>
+    <title>美國向6K Additive公司注資5,000萬美元，旨在2027年禁令生效前結束對中國鎢的依賴</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3f87557fa279802998e4c47fb2872e74</link>
+    <guid isPermaLink="false">3f87557fa279802998e4c47fb2872e74</guid>
+    <pubDate>Tue, 13 Oct 2026 00:00:00 +0800</pubDate>
+    <category>美國</category>
+    <category>鈦合金</category>
+    <category>3D print</category>
+    <category>鈦粉</category>
+    <description>聯邦貸款和《國防生產法》撥款將用於支持耐火金屬粉末廠；距離1月份的最後期限還有83天。 賓州金屬粉末生產商6K Additive於10月2日從美國進出口銀行獲得最後一筆2,740萬美元貸款，進一步擴大了聯邦政府5,080萬美元的投資規模，旨在打造美國首個經認證的國防用耐火金屬粉末國內供應商。這筆交易的達成距離大多數國防承包商密切關注的法定截止日期僅剩八天：2027年1月1日，聯邦法律將禁止從中國採購鎢用於美國國防的許多領域，迫使採購經理們更換他們依賴了幾十年的供應鏈。 6K Additive位於賓州伯吉茨敦的工廠已向航空航太和國防客戶供應鎳合金、鈦和耐火金屬粉末。此次獲得的美國進出口銀行貸款是…</description>
+  </item>
   <item>
     <title>利用雷射中和 PFAS 的新技術，降解率可達 99.999% 以上</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3f07557fa2798046925ec928cb42b55b</link>
@@ -413,16 +424,6 @@
     <category>德國</category>
     <category>鈦合金</category>
     <description></description>
-  </item>
-  <item>
-    <title>Circular Materials receives wastewater metals recovery funding</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3aa7557fa2798082ba20e4cd3a220a9e</link>
-    <guid isPermaLink="false">3aa7557fa2798082ba20e4cd3a220a9e</guid>
-    <pubDate>Mon, 27 Jul 2026 00:00:00 +0800</pubDate>
-    <category>義大利</category>
-    <category>廢水處理</category>
-    <category>環保</category>
-    <description>這家總部位於義大利的公司提供從工業廢水中回收可銷售金屬的技術。 總部位於義大利帕多瓦的 Circular Materials 公司表示，已獲得 1,180 萬歐元（1,340 萬美元）的融資，以支持其擴大從工業廢水流中回收可銷售金屬的製程規模。 該公司表示，未來股權簡單協議 (SAFE) 融資來自一群歐洲投資者，包括 CDP Venture Capital、歐洲創新理事會基金、EIT RawMaterials、360 Capital、Corbites 和 Lumar Srl。 Circular Materials 也感謝 BonelliErede 提供的法律協助。 該公司表示，這筆資金將支持其…</description>
   </item>
 </channel>
 </rss>
