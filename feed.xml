@@ -6,7 +6,17 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Mon, 19 Oct 2026 16:48:57 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 20 Oct 2026 01:29:18 +0000</lastBuildDate>
+  <item>
+    <title>鈦薄膜中的長程訊號由界面轉變和自旋流解釋：解釋軌道輸運的新結果。</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ff7557fa2798001857bc52eec51ac92</link>
+    <guid isPermaLink="false">3ff7557fa2798001857bc52eec51ac92</guid>
+    <pubDate>Tue, 20 Oct 2026 00:00:00 +0800</pubDate>
+    <category>日本</category>
+    <category>鈦材應用</category>
+    <category>鈦薄膜</category>
+    <description>利用鈦薄膜進行的實驗表明，即使薄膜厚度從2奈米變化到60奈米，檢測到的電荷電流也幾乎保持不變。研究團隊提出了一種機制，其中軌道角動量和自旋在兩個界面處轉換，自旋電流在鈦內部承載訊號。研究成果於2026年10月14日發表在學術期刊《物理評論快報》（Physical Review Letters）。 ■鈦金屬吸引關注的原因 軌道電子學是一個利用電子軌道角動量進行資訊處理的研究領域。它與自旋電子學（利用電子的固有角動量－自旋）一起，正被研究作為提高磁性記憶體寫入效率的方法。 理論預測鈦具有顯著的“軌道霍爾效應”，該效應會在電流方向產生橫向的軌道角動量流。其自旋霍爾效應的貢獻預計很小，因此鈦是研究軌道…</description>
+  </item>
   <item>
     <title>PTC旗下Aerolloy獲Safran LEAP引擎鈦鑄件開發訂單</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3fa7557fa27980d889b5dcbcd6f0a90e</link>
@@ -415,17 +425,6 @@
     <category>3D print</category>
     <category>汽車零組件</category>
     <description>📄 文章重點摘要 市場快速成長：根據 Maximize Market Research 報告，鈦金屬市場價值預計於 2032 年達到 479.6 億美元。 從航太走入主流汽車：鈦金屬過去主要用於航太與頂級超級跑車，如今各大汽車品牌正逐步將其引入一般乘用車領域。 極佳的輕量化與節能優勢： 關鍵部件應用廣泛： 高度耐用與安全性：具有高熔點（耐高溫）、強抗腐蝕與防鏽能力（表面自然形成氧化層），能延長部件壽命、降低維護成本並保障碰撞安全。 💡 鈦金屬汽車產業趨勢與 Insights 1. 3D 列印（積層製造）打破成本壁壘 傳統鈦合金原料採購與加工成本高昂。車廠現今結合 3D 列印技術（如使用 5 級…</description>
-  </item>
-  <item>
-    <title>隨著小型化進程的推進，表面處理的要求日益嚴格，Surf Industries 將為您解讀高純度時代下的防腐蝕措施。</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ad7557fa27980088387fb4348c4a70b</link>
-    <guid isPermaLink="false">3ad7557fa27980088387fb4348c4a70b</guid>
-    <pubDate>Thu, 30 Jul 2026 00:00:00 +0800</pubDate>
-    <category>日本</category>
-    <category>工業應用</category>
-    <category>半導體</category>
-    <category>高純度</category>
-    <description>Surf Industries Co., Ltd. 將分享基於行業趨勢的見解，探討半導體行業「小型化和高純度」的發展及其對錶面處理技術日益增長的需求。隨著半導體尺寸的縮小，薄膜沉積、蝕刻和清洗過程中使用的特殊氣體和化學品對純度的要求也越來越高，即使是微量雜質也必須嚴格控制。因此，對於處理這些材料的管道、腔室和化學儲存槽等設備而言，具有更高耐化學性和防腐蝕性的表面處理至關重要。 Surf Industries Co., Ltd. 憑藉其在厚膜氟樹脂烘烤襯裡方面的獨特優勢，為應對這一挑戰做出了貢獻。與傳統的 500 μm 厚度相比，此技術可達到高達 1500 μm 的薄膜厚度。</description>
   </item>
 </channel>
 </rss>
