@@ -4,6 +4,46 @@
 //   python3 scripts/sync_notion.py
 window.TITANIUM_DATA = [
   {
+    "id": "4007557fa279802aaf2ad5330da4241f",
+    "title": "Apple承諾採購最高1億美元美國再生鈦材",
+    "date": "2026-10-21",
+    "region": "美國",
+    "tags": [
+      "鈦材應用",
+      "手機應用",
+      "廢鈦回收"
+    ],
+    "image": "assets/images/synced/4007557fa279802aaf2ad5330da4241f.png",
+    "sourceUrl": "https://kevinchoufind.notion.site/Apple-1-4007557fa279802aaf2ad5330da4241f",
+    "summary": "Apple與Perryman簽署三年、最高1億美元的鈦材採購承諾，材料將含至少80%再生成分，並在賓州完成熔煉、鍛造與軋延，供iPhone Duo等產品使用。此案把消費電子的輕量化與耐蝕材料需求連結到美國本土鈦材閉環供應，可能帶動廢鈦回收、熔煉純化及精密成形產能。\n\n三個重點：\n\nApple與Perryman簽署三年、最高1億美元的鈦材採購承諾，材料將含至少80%再生成分，並在賓州完成熔煉、鍛造與軋延，供iPhone Duo等產品使用\n\n此案把消費電子的輕量化與耐蝕材料需求連結到美國本土鈦材閉環供應，可能帶動廢鈦回收、熔煉純化及精密成形產能\n\nApple、Perryman Company與至少80%再生鈦、熔煉、鍛造、軋延成為本則新聞核心。\n\nhttps://www.reuters.com/business/retail-consumer/apple-commits-up-100-million-us-titanium-domestic-manufacturing-push-2026-10-20/",
+    "content": [
+      {
+        "type": "p",
+        "text": "Apple與Perryman簽署三年、最高1億美元的鈦材採購承諾，材料將含至少80%再生成分，並在賓州完成熔煉、鍛造與軋延，供iPhone Duo等產品使用。此案把消費電子的輕量化與耐蝕材料需求連結到美國本土鈦材閉環供應，可能帶動廢鈦回收、熔煉純化及精密成形產能。"
+      },
+      {
+        "type": "p",
+        "text": "三個重點："
+      },
+      {
+        "type": "numbered_list_item",
+        "text": "Apple與Perryman簽署三年、最高1億美元的鈦材採購承諾，材料將含至少80%再生成分，並在賓州完成熔煉、鍛造與軋延，供iPhone Duo等產品使用"
+      },
+      {
+        "type": "numbered_list_item",
+        "text": "此案把消費電子的輕量化與耐蝕材料需求連結到美國本土鈦材閉環供應，可能帶動廢鈦回收、熔煉純化及精密成形產能"
+      },
+      {
+        "type": "numbered_list_item",
+        "text": "Apple、Perryman Company與至少80%再生鈦、熔煉、鍛造、軋延成為本則新聞核心。"
+      },
+      {
+        "type": "p",
+        "text": "https://www.reuters.com/business/retail-consumer/apple-commits-up-100-million-us-titanium-domestic-manufacturing-push-2026-10-20/"
+      }
+    ]
+  },
+  {
     "id": "4007557fa2798080a963d6173f2784c5",
     "title": "美國進出口銀行證實 Elk Creek 融資目標為 65%",
     "date": "2026-10-21",
