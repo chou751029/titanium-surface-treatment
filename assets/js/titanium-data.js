@@ -7,7 +7,7 @@ window.TITANIUM_DATA = [
     "id": "4007557fa2798080a963d6173f2784c5",
     "title": "美國進出口銀行證實 Elk Creek 融資目標為 65%",
     "date": "2026-10-21",
-    "region": "",
+    "region": "美國",
     "tags": [
       "鈦礦/海綿鈦"
     ],
