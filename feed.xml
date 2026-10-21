@@ -6,7 +6,15 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Tue, 20 Oct 2026 03:31:14 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 21 Oct 2026 01:03:11 +0000</lastBuildDate>
+  <item>
+    <title>美國進出口銀行證實 Elk Creek 融資目標為 65%</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=4007557fa2798080a963d6173f2784c5</link>
+    <guid isPermaLink="false">4007557fa2798080a963d6173f2784c5</guid>
+    <pubDate>Wed, 21 Oct 2026 00:00:00 +0800</pubDate>
+    <category>鈦礦/海綿鈦</category>
+    <description></description>
+  </item>
   <item>
     <title>氫能精度提升：新型壓製製程提純輕質鈦鋁合金</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ff7557fa279802888a7c0efa8223dfa</link>
@@ -414,18 +422,6 @@
     <pubDate>Thu, 06 Aug 2026 00:00:00 +0800</pubDate>
     <category>日本</category>
     <description>透過鋁化學轉化塗層技術的轉移和集團協同效應的創造，提升企業價值。 專注於製造業的企業傳承平台提供商Seiwa Holdings Co., Ltd.（總部：愛知縣名古屋市，代表董事：野宮山雄太，以下簡稱「本公司」）透過其獨特的系統，不斷對缺乏繼承人的中小企業進行併購，從而提升其價值。該公司已完成對Daiei Parker Co., Ltd.（總部：神奈川縣川崎市，代表董事：長澤弘典，以下簡稱“Daiei Parker”）的業務傳承。 經過化學轉化塗層處理的產品 背景和目標 我們集團的主要業務之一是金屬產品的表面處理，主要採用陽離子電沉積塗層和電鍍技術，產品供應給包括半導體製造設備、汽車和工具機在…</description>
-  </item>
-  <item>
-    <title>飛行未來：先進技術在航空航太製造中的作用 The future of flight: Advanced technology’s role in aerospace manufacturing</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3b47557fa279807aaaf2e4bac783828c</link>
-    <guid isPermaLink="false">3b47557fa279807aaaf2e4bac783828c</guid>
-    <pubDate>Thu, 06 Aug 2026 00:00:00 +0800</pubDate>
-    <category>英國</category>
-    <category>3D print</category>
-    <category>鈦合金</category>
-    <category>複合材料</category>
-    <category>航太應用</category>
-    <description>精確性至關重要 航空航太製造歷來對標準要求極高，而對更輕、更節能飛機的追求更強化了這些要求。先進合金、陶瓷基複合材料和鈦合金零件是現代設計的主流。這些材料雖然具有卓越的強度重量比，但也帶來了巨大的加工難度。 傳統的品質控制方法通常依賴測量技術或抽樣方法，這可能會降低生產效率並增加成本。而雷尼紹在計量領域的專業技術——特別是其坐標測量機 (CMM) 測頭系統、製程測量和校準工具——幫助製造商彌合了設計與生產之間的差距。 透過將計量技術直接嵌入加工流程，製造商可以即時監控和調整零件，而無需等到下游才發現缺陷。這種閉環方法可以減少廢品，縮短交貨週期，並確保渦輪盤或燃油系統殼體等高價值部件的一致性。對…</description>
   </item>
 </channel>
 </rss>

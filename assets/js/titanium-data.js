@@ -4,6 +4,19 @@
 //   python3 scripts/sync_notion.py
 window.TITANIUM_DATA = [
   {
+    "id": "4007557fa2798080a963d6173f2784c5",
+    "title": "美國進出口銀行證實 Elk Creek 融資目標為 65%",
+    "date": "2026-10-21",
+    "region": "",
+    "tags": [
+      "鈦礦/海綿鈦"
+    ],
+    "image": "",
+    "sourceUrl": "https://kevinchoufind.notion.site/Elk-Creek-65-4007557fa2798080a963d6173f2784c5",
+    "summary": "",
+    "content": []
+  },
+  {
     "id": "3ff7557fa279802888a7c0efa8223dfa",
     "title": "氫能精度提升：新型壓製製程提純輕質鈦鋁合金",
     "date": "2026-10-20",
