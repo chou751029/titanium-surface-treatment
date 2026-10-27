@@ -6,7 +6,16 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Tue, 27 Oct 2026 03:49:46 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 27 Oct 2026 17:41:31 +0000</lastBuildDate>
+  <item>
+    <title>烏克蘭襲擊俄羅斯鈦廠，導致供應鏈中斷，5名員工受傷</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=4067557fa279805aa8ecc5b23c54caf1</link>
+    <guid isPermaLink="false">4067557fa279805aa8ecc5b23c54caf1</guid>
+    <pubDate>Tue, 27 Oct 2026 00:00:00 +0800</pubDate>
+    <category>俄羅斯／烏克蘭</category>
+    <category>鈦礦/海綿鈦</category>
+    <description>【SMM鈦金快訊】根據外媒報道，10月25日，烏克蘭國防軍襲擊了位於俄羅斯彼爾姆邊疆區列寧斯基市的AVISMA化工冶金廠。該廠隸屬於VSMPO-AVISMA集團，是全球最大的鈦金屬生產商之一。根據美國地質調查局的數據，該集團預計2024年將生產約33,500噸海綿鈦，約佔俄羅斯海綿鈦總產量的96%。當地政府證實了這起攻擊，並表示防空系統擊落了11架無人機，對一家工業設施造成了「輕微損壞」。初步資料顯示，5名員工受傷。該廠生產的海綿鈦是一種高端鈦合金原料，可用於製造飛機結構件、航太設備以及部分導引設備。這次襲擊可能會對俄羅斯鈦供應鏈的穩定性造成影響，其對產能的後續損害需要進一步評估。</description>
+  </item>
   <item>
     <title>JX Metals將加強位於倉見和室蘭的鈦銅生產設施。</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=4037557fa2798078a84bea3ca9232090</link>
@@ -413,18 +422,6 @@
     <category>國防軍工產業</category>
     <category>無人機</category>
     <description>全球電動垂直起降（eVTOL）飛機外部抗損傷塗層市場預計將從2025年的12.31億美元成長到2032年的34.86億美元，2026年至2032年的複合年增長率（CAGR）預計為16.3%。 eVTOL外部抗損傷塗層是專為電動垂直起降（eVTOL）飛機設計的先進防護塗層系統，旨在提高暴露表面的耐久性、安全性和使用壽命。這些塗層能夠抵抗磨損、衝擊和侵蝕等機械損傷，以及紫外線輻射、潮濕、溫度循環和化學物質侵蝕等環境因素的影響。它們通常應用於複合材料機身、旋翼葉片、前緣和起落架。 從價值鏈的角度來看，上游包括樹脂、添加劑、顏料和奈米材料。中游包括塗料配方、混合、測試和航空認證。下游需求主要由電動垂直…</description>
-  </item>
-  <item>
-    <title>鈦絲電弧定向電沉積在鎂合金上：金屬蒸氣誘導沉積失效的機制理解及機械互鎖策略的有效性</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ba7557fa27980d5b230e25c9a10ea12</link>
-    <guid isPermaLink="false">3ba7557fa27980d5b230e25c9a10ea12</guid>
-    <pubDate>Wed, 12 Aug 2026 00:00:00 +0800</pubDate>
-    <category>日本</category>
-    <category>鈦加工</category>
-    <category>鈦材應用</category>
-    <category>定向能量沉積 (DED)</category>
-    <category>mechanical interlocking strategy</category>
-    <description>本文深入探討了利用電弧定向能量沉積（DED）技術在鎂合金上沉積鈦所面臨的挑戰和解決方案。該工藝對於開發航空航天和交通運輸行業輕質、耐腐蝕部件至關重要。研究首先指出，由於鈦和鎂的物理性質差異巨大且互不相容，二者結合存在固有的困難，這通常會導致冶金界面強度不足或沉積失敗。透過高速成像和定量分析，作者揭示了製程過程中產生的金屬蒸氣（尤其是鎂蒸汽）的關鍵作用。這些蒸氣會幹擾液滴轉移，破壞電弧等離子體的穩定性，並導致過多的飛濺，從而使傳統的沉積策略失效。 為了克服這些障礙，本文提出了一種機械互鎖策略，將鈦支柱嵌入鎂合金零件中，從而在不依賴冶金熔合的情況下形成牢固的機械連接。研究系統地評估了這種方法，證明…</description>
   </item>
 </channel>
 </rss>
