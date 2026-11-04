@@ -6,7 +6,16 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Wed, 04 Nov 2026 04:57:20 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 04 Nov 2026 16:44:56 +0000</lastBuildDate>
+  <item>
+    <title>透過策略性地調控多相中的氧含量來提高鈦合金的高性能</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=40e7557fa27980a4babde2d7a432584c</link>
+    <guid isPermaLink="false">40e7557fa27980a4babde2d7a432584c</guid>
+    <pubDate>Wed, 04 Nov 2026 00:00:00 +0800</pubDate>
+    <category>中國大陸</category>
+    <category>鈦合金</category>
+    <description>傳統上，氧會降低鈦合金的延展性。但近年來，氧的作用已被重新定義為一種設計工具，可用於形成有益的微觀結構並提高性能。然而，氧的作用主要限於雙相α-β鈦合金中的α相。當α和β相共存時，在β相中引入足夠的氧可能有助於形成有益的結構單元並提高性能。我們發現，透過在共存的α相和β相之間進行策略性的氧分配，可以使β相中含有大量的氧，並透過原子重排引發β→O'相變。這種O'相在變形過程中作為應力誘導馬氏體相變（O'→α）的前驅體，活化了協同的相變誘導和孿晶誘導塑性。所得的α-β-O'鈦合金（Ti-6Al-4V-0.39O）的極限抗拉強度為1200±30 MPa，延展性為23.5±1.5%，強度-應變乘積為2…</description>
+  </item>
   <item>
     <title>烏克蘭襲擊俄羅斯鈦廠，導致供應鏈中斷，5名員工受傷</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=4067557fa279805aa8ecc5b23c54caf1</link>
@@ -410,18 +419,6 @@
     <guid isPermaLink="false">3ba7557fa27980a4b82ec5272345b9ec</guid>
     <pubDate>Wed, 12 Aug 2026 00:00:00 +0800</pubDate>
     <description>一種新型矽烷基塗層將被動輻射冷卻、C5級高耐久性防腐蝕和耐候性整合於一體，適用於工業金屬表面。 專注於無電冷卻解決方案的技術公司 i2Cool 推出了 i2Coating CorroCool，這是一種新型功能塗層，旨在保護工業金屬表面免受過熱和腐蝕的影響。 CorroCool是在Kinte材料科學技術公司的技術支援下開發的，它將i2Cool的被動輻射冷卻材料與高固含量矽烷聚合物系統結合。最終形成一種整合塗層，無需電力、水或機械冷卻設備即可實現冷卻、防腐蝕和耐候性。 本產品適用於金屬屋頂、石油化學儲存槽、戶外電氣設備、電信機櫃以及其他暴露在強烈陽光或腐蝕性環境中的金屬基礎設施。 一種塗層即可解決…</description>
-  </item>
-  <item>
-    <title>全球 eVTOL 抗創傷塗層市場（2026-2032 年），其中包括市場規模（聚氨酯塗層、環氧塗層、氟聚合物塗層和奈米複合塗層）</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ba7557fa27980789902c74c07bda70a</link>
-    <guid isPermaLink="false">3ba7557fa27980789902c74c07bda70a</guid>
-    <pubDate>Wed, 12 Aug 2026 00:00:00 +0800</pubDate>
-    <category>日本</category>
-    <category>coating</category>
-    <category>航太產業</category>
-    <category>國防軍工產業</category>
-    <category>無人機</category>
-    <description>全球電動垂直起降（eVTOL）飛機外部抗損傷塗層市場預計將從2025年的12.31億美元成長到2032年的34.86億美元，2026年至2032年的複合年增長率（CAGR）預計為16.3%。 eVTOL外部抗損傷塗層是專為電動垂直起降（eVTOL）飛機設計的先進防護塗層系統，旨在提高暴露表面的耐久性、安全性和使用壽命。這些塗層能夠抵抗磨損、衝擊和侵蝕等機械損傷，以及紫外線輻射、潮濕、溫度循環和化學物質侵蝕等環境因素的影響。它們通常應用於複合材料機身、旋翼葉片、前緣和起落架。 從價值鏈的角度來看，上游包括樹脂、添加劑、顏料和奈米材料。中游包括塗料配方、混合、測試和航空認證。下游需求主要由電動垂直…</description>
   </item>
 </channel>
 </rss>
