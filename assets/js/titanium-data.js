@@ -8174,7 +8174,7 @@ window.TITANIUM_DATA = [
     "tags": [
       "扣件"
     ],
-    "image": "",
+    "image": "assets/images/synced/2717557fa2798011bfa6cda987b3a5a2.jpg",
     "sourceUrl": "https://kevinchoufind.notion.site/Riverspan-Partners-United-Titanium-2717557fa2798011bfa6cda987b3a5a2",
     "summary": "",
     "content": []
