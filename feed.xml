@@ -6,7 +6,18 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Wed, 11 Nov 2026 17:05:29 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 11 Nov 2026 17:14:57 +0000</lastBuildDate>
+  <item>
+    <title>卡拉威斥資1500萬美元在沃斯堡建廠，用於3D列印鈦合金高爾夫球桿</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=4157557fa279806ba75de6eedfc9d08d</link>
+    <guid isPermaLink="false">4157557fa279806ba75de6eedfc9d08d</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 +0800</pubDate>
+    <category>美國</category>
+    <category>高爾夫球</category>
+    <category>鈦合金</category>
+    <category>3D print</category>
+    <description>多年來美國第一家新的高爾夫球桿工廠將在卡拉威位於德克薩斯州聯盟市的分銷中心附近開始 3D 列印客製化鈦合金球桿 卡拉威高爾夫公司（NYSE：CALY）正在沃斯堡的AllianceTexas投資1,500萬美元興建一家工廠，用於先進的3D列印技術生產客製化鈦合金高爾夫球桿。 總部位於加州卡爾斯巴德的卡拉威公司（Callaway）是一家生產和銷售高爾夫球具、裝備和服裝的公司。該公司表示，新工廠將擴大其先進製造和研發能力。光是高爾夫球桿一項，卡拉威的年銷售額就高達10億美元。 記者未能聯繫到卡拉威公司的代表，就該工廠的規模和員工人數發表評論。 突破性技術 該公司總裁兼執行長奇普·布魯爾表示，位於沃斯…</description>
+  </item>
   <item>
     <title>Fraunhofer IPK展示電子束熔融、冷噴塗與超精密表面技術</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=4157557fa27980379c7ceb920176a5ab</link>
@@ -411,17 +422,6 @@
     <category>鈦合金</category>
     <category>超音波表面滾壓(ultrasonic surface rolling process)</category>
     <description>摘要 鈦合金因其優異的機械性能在航空航太領域至關重要，然而，其在嚴苛服役環境下的性能往往受限於耐磨性和耐腐蝕性不足。本研究探討了利用超音波表面滾壓製程（USRP）增強新型Ti65高溫鈦合金表面完整性的方法，該合金採用雷射定向能量沉積技術製備。系統地評估了USRP處理壓力對錶面粗糙度、微觀結構演變、電化學行為和摩擦學性能的影響。結果表明，USRP能夠有效消除初始表面缺陷，並以壓力依賴的方式顯著降低表面粗糙度。 在處理後的表面上形成了一個厚度約為19.6 μm的晶粒細化層，平均晶粒尺寸從9.63 μm減小到2.73 μm（減小了71.65%），同時高角度晶界比例和位錯密度顯著增加。因此，經USRP…</description>
-  </item>
-  <item>
-    <title>ACM Research的Ultra ECP ap-p水平面板電鍍工具獲得客戶的首份生產訂單和評估訂單。推動大尺寸水平電鍍技術邁向量產，並鞏固ACM在先進封裝領域的地位</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3bb7557fa27980f9be72fc6ebb4a97a5</link>
-    <guid isPermaLink="false">3bb7557fa27980f9be72fc6ebb4a97a5</guid>
-    <pubDate>Thu, 13 Aug 2026 00:00:00 +0800</pubDate>
-    <category>美國</category>
-    <category>電鍍</category>
-    <category>半導體</category>
-    <category>PCB</category>
-    <description>Ultra ECP ap-p 是全球首款面向大型面板市場的商用水平面板級銅沉積系統，支援柱狀、凸點和重分佈層 (RDL) 製程中的電鍍步驟。這些訂單擴大了 Ultra ECP ap-p 的市場覆蓋範圍，有助於 ACM 全球客戶群的擴張，並進一步鞏固 ACM 在面板級先進封裝設備市場的地位。 「隨著先進封裝技術向更高整合度和更大面板尺寸發展，對電鍍均勻性、製程穩定性和生產效率的要求也日益提高，因此我們開發了Ultra ECP ap-p電鍍平台，」ACM總裁兼執行長David Wang博士表示。 「我們對這些訂單所體現的客戶回饋感到鼓舞，並將繼續致力於推進面板級電鍍技術的發展，支援客戶的認證和批量…</description>
   </item>
 </channel>
 </rss>
