@@ -6,7 +6,17 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Wed, 11 Nov 2026 04:48:47 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 11 Nov 2026 16:42:08 +0000</lastBuildDate>
+  <item>
+    <title>Fraunhofer IPK展示電子束熔融、冷噴塗與超精密表面技術</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=4157557fa27980379c7ceb920176a5ab</link>
+    <guid isPermaLink="false">4157557fa27980379c7ceb920176a5ab</guid>
+    <pubDate>Wed, 11 Nov 2026 00:00:00 +0800</pubDate>
+    <category>德國</category>
+    <category>鈦加工</category>
+    <category>Selective electron beam melting (SEBM) 選擇性電漿熔融</category>
+    <description>我們在 Formnext 2026 上的演講重點介紹了我們在選擇性電子束熔化、冷噴塗和流光精加工方面的專業知識，以實現光滑表面。 © 弗勞恩霍夫 IPK / Larissa Klassen在粉末床中，利用電子束在基板上製造的元件 © 弗勞恩霍夫 IPK/Larissa Klassen © Fraunhofer IPK上圖為積層製造零件初步粗加工後的成品，下圖為採用流光拋光製程拋光後的成品。 選擇性電子束熔融（SEBM） 金屬粉末在真空腔室中透過塗覆機塗覆，並由電子束選擇性熔化。與雷射製程不同，電磁偏轉電子束無慣性，可同時維持多個熔池，即使在大規模生產中，也能實現薄壁和厚壁零件的近乎無變形製造。…</description>
+  </item>
   <item>
     <title>透過策略性地調控多相中的氧含量來提高鈦合金的高性能</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=40e7557fa27980a4babde2d7a432584c</link>
@@ -412,13 +422,6 @@
     <category>半導體</category>
     <category>PCB</category>
     <description>Ultra ECP ap-p 是全球首款面向大型面板市場的商用水平面板級銅沉積系統，支援柱狀、凸點和重分佈層 (RDL) 製程中的電鍍步驟。這些訂單擴大了 Ultra ECP ap-p 的市場覆蓋範圍，有助於 ACM 全球客戶群的擴張，並進一步鞏固 ACM 在面板級先進封裝設備市場的地位。 「隨著先進封裝技術向更高整合度和更大面板尺寸發展，對電鍍均勻性、製程穩定性和生產效率的要求也日益提高，因此我們開發了Ultra ECP ap-p電鍍平台，」ACM總裁兼執行長David Wang博士表示。 「我們對這些訂單所體現的客戶回饋感到鼓舞，並將繼續致力於推進面板級電鍍技術的發展，支援客戶的認證和批量…</description>
-  </item>
-  <item>
-    <title>i2Cool推出i2Coating CorroCool，將無電冷卻與工業級防腐蝕保護結合</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3ba7557fa27980a4b82ec5272345b9ec</link>
-    <guid isPermaLink="false">3ba7557fa27980a4b82ec5272345b9ec</guid>
-    <pubDate>Wed, 12 Aug 2026 00:00:00 +0800</pubDate>
-    <description>一種新型矽烷基塗層將被動輻射冷卻、C5級高耐久性防腐蝕和耐候性整合於一體，適用於工業金屬表面。 專注於無電冷卻解決方案的技術公司 i2Cool 推出了 i2Coating CorroCool，這是一種新型功能塗層，旨在保護工業金屬表面免受過熱和腐蝕的影響。 CorroCool是在Kinte材料科學技術公司的技術支援下開發的，它將i2Cool的被動輻射冷卻材料與高固含量矽烷聚合物系統結合。最終形成一種整合塗層，無需電力、水或機械冷卻設備即可實現冷卻、防腐蝕和耐候性。 本產品適用於金屬屋頂、石油化學儲存槽、戶外電氣設備、電信機櫃以及其他暴露在強烈陽光或腐蝕性環境中的金屬基礎設施。 一種塗層即可解決…</description>
   </item>
 </channel>
 </rss>
