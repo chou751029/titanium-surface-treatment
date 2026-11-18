@@ -6,7 +6,16 @@
   <atom:link href="https://chou751029.github.io/titanium-surface-treatment/feed.xml" rel="self" type="application/rss+xml" />
   <description>彙整金屬表面處理與鈦產業的最新新聞、技術趨勢與案例分析。</description>
   <language>zh-Hant</language>
-  <lastBuildDate>Wed, 18 Nov 2026 06:02:03 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 18 Nov 2026 16:37:27 +0000</lastBuildDate>
+  <item>
+    <title>優美科在歐洲推出用於高頻和超細線應用的無鎳IGEPIG技術</title>
+    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=41c7557fa27980abbae3f3b73c6b2d9f</link>
+    <guid isPermaLink="false">41c7557fa27980abbae3f3b73c6b2d9f</guid>
+    <pubDate>Wed, 18 Nov 2026 00:00:00 +0800</pubDate>
+    <category>台灣</category>
+    <category>半導體</category>
+    <description>優美科電鍍公司（Umicore Electroplating）作為其在歐洲的獨家經銷合作夥伴，正式推出由Uyemura公司開發的IGEPIG製程。這種不含鎳的最終表面處理過程結合了金籽晶層、鈀擴散阻擋層和最終的金面層。此製程尤其適用於對訊號完整性、極窄線間距或柔性銅基板有較高要求的電子應用。 隨著電子組件頻率的不斷提高和小型化程度的不斷降低，最終表面處理製程的選擇變得愈發重要。諸如ENIG（化學鍍鎳，浸金）和ENEPIG（化學鍍鎳，化學鍍鈀，浸金）等成熟的電鍍工藝，都在銅基板和外層貴金屬鍍層之間增加了一層鎳層。此鎳層的作用之一是阻擋擴散，並為後續的層結構奠定基礎。然而，在某些高頻、細線和柔性電…</description>
+  </item>
   <item>
     <title>卡拉威斥資1500萬美元在沃斯堡建廠，用於3D列印鈦合金高爾夫球桿</title>
     <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=4157557fa279806ba75de6eedfc9d08d</link>
@@ -413,15 +422,6 @@
     <category>3D print</category>
     <category>鈦粉</category>
     <description>美國一家大型應用研究實驗室首次向 PyroGenesis 公司訂購了採用等離子體霧化技術生產的鈦粉。 PyroGenesis公司並未透露該設施的具體名稱或協議金額。據悉，該公司所進行的研究得到了美國國防部和NASA的資助。它是規模最大的應用研究實驗室之一，支援多個先進技術領域的研究工作。 PyroGenesis公司將供應用於電子束熔煉（EBM）的粗粒Ti64鈦粉。該技術可用於生產航空航天和生物醫學領域的複雜金屬零件。 此外，PyroGenesis公司已完成《國防聯邦採購條例補充條款》（DFARS）的合規要求，此次訂單正是在此背景下下達的。這些條款包含適用於某些美國國防承包商的安全標準。 由於研…</description>
-  </item>
-  <item>
-    <title>超音波表面滾壓製程對新型Ti65鈦合金耐磨性和耐腐蝕性的影響</title>
-    <link>https://chou751029.github.io/titanium-surface-treatment/article.html?id=3be7557fa279805abec6cb5cdde20643</link>
-    <guid isPermaLink="false">3be7557fa279805abec6cb5cdde20643</guid>
-    <pubDate>Sun, 16 Aug 2026 00:00:00 +0800</pubDate>
-    <category>鈦合金</category>
-    <category>超音波表面滾壓(ultrasonic surface rolling process)</category>
-    <description>摘要 鈦合金因其優異的機械性能在航空航太領域至關重要，然而，其在嚴苛服役環境下的性能往往受限於耐磨性和耐腐蝕性不足。本研究探討了利用超音波表面滾壓製程（USRP）增強新型Ti65高溫鈦合金表面完整性的方法，該合金採用雷射定向能量沉積技術製備。系統地評估了USRP處理壓力對錶面粗糙度、微觀結構演變、電化學行為和摩擦學性能的影響。結果表明，USRP能夠有效消除初始表面缺陷，並以壓力依賴的方式顯著降低表面粗糙度。 在處理後的表面上形成了一個厚度約為19.6 μm的晶粒細化層，平均晶粒尺寸從9.63 μm減小到2.73 μm（減小了71.65%），同時高角度晶界比例和位錯密度顯著增加。因此，經USRP…</description>
   </item>
 </channel>
 </rss>
